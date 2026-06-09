@@ -111,12 +111,11 @@
       return pageMap[key];
     }
 
-    // Available date, but no content yet
+    // Available date, but no content yet <p class="day-quote">"Elke dag met jou is een geschenk."</p>
     const dayNum = dayDiff(startDate, date) + 1;
     return `
       <div class="default-page">
-        <p class="day-quote">"Elke dag met jou is een geschenk."</p>
-        <p class="day-note">Dag ${dayNum} — inhoud volgt binnenkort.</p>
+        <p class="day-note">Dag ${dayNum} — Oei wacht hier is niks. Zie je toch graag, euhm... Deze lege pagina staat symbool voor alle mogelijke dingen die we nog samen kunnen doen!<br/>Een eindeloze vlakte vol mogelijke avonturen.<br/>Ofzo<br/>ok doei</p>
       </div>`;
   }
 

@@ -49,37 +49,40 @@ const START_DATE = "2026-06-01";
 const PAGES = [
 
   {
-    date: "2025-06-14",
+    date: "2026-06-01",
     content: `
       <h2>Dag één ♥</h2>
       <p>
-        Vandaag begint iets bijzonders. Dit is de eerste pagina van ons kleine dagboek —
-        één pagina voor elke dag dat wij samen zijn.
+      Omdat ik een nerd ben en je heel graag zie heb ik een website proberen maken!<br>
+      Elke dag krijg je iets nieuws en kan je naar de vorige dingen gaan kijken.<br>
+      Soms iets leuks, soms iets klef en soms iets super diepzinnig, maar waarschijnlijk niet want ik schrijf de dingen.<br>
+      Ik zal mijn best doen zodat je elke dag iets nieuws hebt! ❤️<br>
+      Dat gaat zeker lukken!<br>
+      Sowieso<br>
+      Ja<br>
+      <br>
+      <br>
+      <br>
+      Zie je graag en veel plezier xxx
+      <img src="images/foto1.jpg" title="Wajo liefdevol enzo 💕" />
       </p>
-      <div class="heart-divider">♥ ♥ ♥</div>
-      <p>
-        Elke dag wacht hier iets nieuws op je. Kom elke dag terug.
-      </p>
-      <p><em>— Met heel veel liefde</em></p>
+
     `
   },
 
   {
-    date: "2025-06-15",
+    date: "2026-06-05",
     content: `
-      <h2>Dag twee</h2>
+      <h2>OMG SCHAKEN JOEPIEEEEE</h2>
       <p>
-        Al de tweede dag — en ik denk al aan niets anders dan jou.
+        Eindelijk, een dagelijkse schaakpuzzel!
       </p>
-      <blockquote>
-        "Liefde is niet kijken naar elkaar, maar samen in dezelfde richting kijken."
-      </blockquote>
-      <p><em>— Antoine de Saint-Exupéry</em></p>
+      <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 400px; aspect-ratio: 10/11;" allowtransparency="true" frameborder="0"></iframe>
     `
   },
 
   {
-    date: "2025-06-16",
+    date: "2026-06-06",
     content: `
       <h2>Dag drie</h2>
       <p>
