@@ -71,6 +71,49 @@ const PAGES = [
   },
 
   {
+    date: "2026-06-02",
+    content: `
+      <h2>Goed begonnen,...</h2>
+      <p>
+        Wat is lekker en zit in de onderste lade van je bureau?
+      </p>
+      `
+  },
+
+  {
+    date: "2026-06-03",
+    content: `
+    <h2>Quote van de dag:</h2>
+      <p>
+        <blockquote>“Yesterday is history, tomorrow is a mystery, but today is a gift. That's why it's called the present.”</blockquote>
+        <i>- Master Oogway</i>
+        <br>
+        <p>
+        <img src="images/foto2.jpg" title="Yeah, dude 🍂" style="width: 60%; display: block; margin: 20px auto 0;">
+      </p></p>
+    `
+  },
+
+  {
+    date: "2026-06-04",
+    content: `
+      <h2>Puzzel van de dag:</h2>
+      <p>
+        Begin in het blauwe vakje, hoe ga je naar het blauwe vakje door elk wit vakje maar één keer te gebruiken?
+      </p>
+      <img src="images/Raadsel1.jpeg" title="Gaat da zelfs?" style="height: 300px; display: block; margin: 20px auto 0;">
+    `
+  },
+
+  {
+    date: "2026-06-09",
+    content: `
+      <h2>Time-waster van de dag:</h2>
+      <iframe src="https://www.eyezmaze.com/game/grow_Island.html" style="width:800px;height:640px;border:none;" frameborder="0" scrolling="no"></iframe>
+    `
+  },
+
+  {
     date: "2026-06-05",
     content: `
       <h2>OMG SCHAKEN JOEPIEEEEE</h2>
@@ -79,34 +122,7 @@ const PAGES = [
       </p>
       <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 400px; aspect-ratio: 10/11;" allowtransparency="true" frameborder="0"></iframe>
     `
-  },
-
-  {
-    date: "2026-06-06",
-    content: `
-      <h2>Dag drie</h2>
-      <p>
-        Drie dagen, en het voelt al alsof je er altijd al was.
-      </p>
-      <p>
-        Weet je nog waar we waren? Sluit je ogen en denk terug aan die lach van jou.
-        Dat is het eerste wat ik zag en het laatste wat ik vergeet.
-      </p>
-    `
-  },
-
-  // ─────────────────────────────────────────────────────────────
-  // VOEG HIER NIEUWE PAGINA'S TOE
-  // ─────────────────────────────────────────────────────────────
-
-  // Voorbeeld voor een toekomstige pagina (wordt pas zichtbaar op die datum):
-  // {
-  //   date: "2025-07-14",
-  //   content: `
-  //     <h2>Eén maand ♥</h2>
-  //     <p>Al een hele maand samen. Ik ben zo blij.</p>
-  //   `
-  // },
+  }
 
 ];
 

@@ -48,8 +48,7 @@ body {
 }
 
 .site-title {
-  /*font-family: 'Playfair Display', serif;*/
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--cream);
