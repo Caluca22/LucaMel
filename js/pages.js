@@ -40,7 +40,7 @@
  */
 
 // ─── STARTDATUM — dag 1 van jullie verhaal ───────────────────
-const START_DATE = "2025-06-14";
+const START_DATE = "2026-06-01";
 
 // ─── PAGINA'S ─────────────────────────────────────────────────
 // Voeg hier je pagina's toe. Ze hoeven niet in volgorde te staan.
