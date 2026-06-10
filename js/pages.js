@@ -40,7 +40,7 @@
  */
 
 // ─── STARTDATUM — dag 1 van jullie verhaal ───────────────────
-const START_DATE = "2026-06-01";
+const START_DATE = "2026-06-14";
 
 // ─── PAGINA'S ─────────────────────────────────────────────────
 // Voeg hier je pagina's toe. Ze hoeven niet in volgorde te staan.
@@ -49,7 +49,7 @@ const START_DATE = "2026-06-01";
 const PAGES = [
 
   {
-    date: "2026-06-01",
+    date: "2026-06-14",
     content: `
       <h2>Dag één ♥</h2>
       <p>
@@ -71,7 +71,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-06-02",
+    date: "2026-06-15",
     content: `
       <h2>Goed begonnen,...</h2>
       <p>
@@ -81,7 +81,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-06-03",
+    date: "2026-06-16",
     content: `
     <h2>Quote van de dag:</h2>
       <p>
@@ -95,7 +95,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-06-04",
+    date: "2026-06-17",
     content: `
       <h2>Puzzel van de dag:</h2>
       <p>
@@ -106,7 +106,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-06-09",
+    date: "2026-06-18",
     content: `
       <h2>Time-waster van de dag:</h2>
       <iframe src="https://www.eyezmaze.com/game/grow_Island.html" style="width:800px;height:640px;border:none;" frameborder="0" scrolling="no"></iframe>
@@ -114,7 +114,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-06-05",
+    date: "2026-06-19",
     content: `
       <h2>OMG SCHAKEN JOEPIEEEEE</h2>
       <p>
