@@ -99,7 +99,7 @@ const PAGES = [
     content: `
       <h2>Puzzel van de dag:</h2>
       <p>
-        Begin in het blauwe vakje, hoe ga je naar het blauwe vakje door elk wit vakje maar één keer te gebruiken?
+        Begin in het blauwe vakje, hoe ga je naar het groene vakje door elk wit vakje maar één keer te gebruiken?
       </p>
       <img src="images/Raadsel1.jpeg" title="Gaat da zelfs?" style="height: 300px; display: block; margin: 20px auto 0;">
     `
