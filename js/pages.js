@@ -40,7 +40,7 @@
  */
 
 // ─── STARTDATUM — dag 1 van jullie verhaal ───────────────────
-const START_DATE = "2026-06-14";
+const START_DATE = "2026-06-11";
 
 // ─── PAGINA'S ─────────────────────────────────────────────────
 // Voeg hier je pagina's toe. Ze hoeven niet in volgorde te staan.
@@ -114,7 +114,17 @@ const PAGES = [
   },
 
   {
-    date: "2026-06-19",
+    date: "2026-06-11",
+    content: `
+      <h2>Diertje van de dag:</h2>
+      <h3>De Snijvogel</h3>
+      <p>De Snijvogel (tailor bird) is een vogel die zijn nest maakt door een blad dicht te 'naaien' met zijde van spinnewebben.<br>Ze zijn getalenteerde rakkers en verdienen zeker een complimentje als je er één ziet.</p>
+      <iframe width="975" height="548" src="https://www.youtube.com/embed/QQMYpzbQIDA" title="Tailorbird building Nest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      `
+  },
+
+  {
+    date: "2026-06-20",
     content: `
       <h2>OMG SCHAKEN JOEPIEEEEE</h2>
       <p>
