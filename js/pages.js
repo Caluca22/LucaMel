@@ -119,7 +119,7 @@ const PAGES = [
       <h2>Diertje van de dag:</h2>
       <h3>De Snijvogel</h3>
       <p>De Snijvogel (tailor bird) is een vogel die zijn nest maakt door een blad dicht te 'naaien' met zijde van spinnewebben.<br>Ze zijn getalenteerde rakkers en verdienen zeker een complimentje als je er één ziet.</p>
-      <iframe width="975" height="548" src="https://www.youtube.com/embed/QQMYpzbQIDA" title="Tailorbird building Nest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="975" height="548" src="https://www.youtube.com/embed/QQMYpzbQIDA?t=33&mute=1" title="Tailorbird building Nest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       `
   },
 
