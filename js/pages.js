@@ -40,7 +40,7 @@
  */
 
 // ─── STARTDATUM — dag 1 van jullie verhaal ───────────────────
-const START_DATE = "2026-06-11";
+const START_DATE = "2026-06-14";
 
 // ─── PAGINA'S ─────────────────────────────────────────────────
 // Voeg hier je pagina's toe. Ze hoeven niet in volgorde te staan.
@@ -114,7 +114,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-06-11",
+    date: "2026-06-19",
     content: `
       <h2>Diertje van de dag:</h2>
       <h3>De Snijvogel</h3>
@@ -124,7 +124,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-06-21",
+    date: "2026-06-20",
     content: `
       <h2>OMG SCHAKEN JOEPIEEEEE</h2>
       <p>
