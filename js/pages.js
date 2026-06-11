@@ -124,7 +124,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-06-20",
+    date: "2026-06-21",
     content: `
       <h2>OMG SCHAKEN JOEPIEEEEE</h2>
       <p>
