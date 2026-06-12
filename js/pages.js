@@ -75,7 +75,7 @@ const PAGES = [
     content: `
       <h2>Goed begonnen,...</h2>
       <p>
-        Wat is lekker en zit in de onderste lade van je bureau?
+        Wat is lekker en ligt onder je bed?
       </p>
       `
   },
