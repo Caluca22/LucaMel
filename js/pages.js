@@ -109,6 +109,7 @@ const PAGES = [
     date: "2026-06-18",
     content: `
       <h2>Time-waster van de dag:</h2>
+      <p>Deze zal op de laptop moeten x</p>
       <iframe src="https://www.eyezmaze.com/game/grow_Island.html" style="width:800px;height:640px;border:none;" frameborder="0" scrolling="no"></iframe>
     `
   },
@@ -126,13 +127,44 @@ const PAGES = [
   {
     date: "2026-06-20",
     content: `
+      <h2>Foto van de dag</h2>
+      <img src="images/foto3.jpg" title="Me and the gang 💯" style="width: 60%; display: block; margin: 20px auto 0;">
+      
+    `
+  },
+  {
+    date: "2026-06-21",
+    content: `
+      <h2>Nutteloos weetje van de dag</h2>
+      <p>Als je Ctrl + Alt + Shift + Windows + L indrukt start LinkedIn op je windows laptop</p>
+      <p>Wauuuuuuw</p>      
+    `
+  },
+  {
+    date: "2026-06-22",
+    content: `
+      <h2>Mopje van de dag</h2>
+      <p>Loopt een olifant het toneel op</p>
+      <br>
+      <br>
+      <p>...</p>
+      <br>
+      <br>
+      <p>Toneelstuk!</p>  
+    `
+  },
+  {
+    date: "2026-06-23",
+    content: `
       <h2>OMG SCHAKEN JOEPIEEEEE</h2>
       <p>
-        Eindelijk, een dagelijkse schaakpuzzel!
+        Eindelijk, een dagelijkse schaakpuzzel!<br>
+        (Je kan er op klikken)
       </p>
       <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 400px; aspect-ratio: 10/11;" allowtransparency="true" frameborder="0"></iframe>
     `
   }
+  
 
 ];
 

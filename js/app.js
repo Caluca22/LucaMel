@@ -60,6 +60,8 @@
   const pagesArray = window.ANNIVERSARY_PAGES || [];
   const pageMap    = {};  // "YYYY-MM-DD" → HTML string
 
+  const DEBUG_MODE = false; //OM TE TESTEN
+
   pagesArray.forEach(function (p) {
     pageMap[p.date] = p.content;
   });
@@ -89,7 +91,7 @@
     const key = toKey(date);
 
     // Future date — locked
-    if (date > todayDate) {
+    if (date > todayDate && !DEBUG_MODE) {
       return `
         <div class="locked-page">
           <div class="lock-icon">🔒</div>
@@ -102,7 +104,7 @@
       return `
         <div class="locked-page">
           <div class="lock-icon">📅</div>
-          <p>Ons verhaal begon op ${formatBelgian(startDate)}.</p>
+          <p>Woooow, das een beetje vroeg, keer maar terug! ❤️</p>
         </div>`;
     }
 
@@ -111,7 +113,7 @@
       return pageMap[key];
     }
 
-    // Available date, but no content yet <p class="day-quote">"Elke dag met jou is een geschenk."</p>
+    // Available date, but no content yet
     const dayNum = dayDiff(startDate, date) + 1;
     return `
       <div class="default-page">
@@ -138,7 +140,7 @@
     const prevDate = addDays(date, -1);
     const nextDate = addDays(date, 1);
     navPrevBtn.disabled = prevDate < startDate;
-    navNextBtn.disabled = nextDate > todayDate;
+    navNextBtn.disabled = nextDate > todayDate && !DEBUG_MODE;
 
     // Animate
     const dir = direction || 0;
@@ -182,9 +184,10 @@
 
   navNextBtn.addEventListener('click', function () {
     const todayDate = today();
-    if (!navNextBtn.disabled && addDays(currentDate, 1) <= todayDate) {
+    if ((!navNextBtn.disabled && addDays(currentDate, 1) <= todayDate) || DEBUG_MODE) {
       renderPage(addDays(currentDate, 1), 1);
-    }
+      console.log("Hierzo")
+    } else {console.log(!navNextBtn.disabled);console.log()}
   });
 
   // Keyboard nav
