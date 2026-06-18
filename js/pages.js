@@ -173,6 +173,16 @@ const PAGES = [
         Hij heeft de naam <a href="https://www.sciencefocus.com/nature/hector-the-convector">Hector de Convector</a> Gekregen.
       </p>
     `
+  },
+  {
+    date: "2026-06-25",
+    content: `
+      <h2>Liedje van de dag:</h2>
+      <p>(Misschien op Spotify luisteren want dit is maar een stukje)</p>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6fyI2QGPzUiqRHnuYD7oOp?utm_source=generator&si=9065a818f3cf4afe" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <img src="images/HollowKnight.gif" title="Chillende" style="width: 80%; display: block; margin: 20px auto 0;">
+
+    `
   }
   
 

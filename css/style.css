@@ -406,6 +406,11 @@ body {
   box-shadow: 0 2px 12px var(--shadow);
 }
 
+.page-card-inner iframe {
+  display: block;
+  margin: 0.8rem auto;
+}
+
 .page-card-inner .heart-divider {
   text-align: center;
   color: var(--gold);
