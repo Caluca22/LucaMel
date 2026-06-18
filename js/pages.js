@@ -183,50 +183,6 @@ const PAGES = [
       <img src="images/HollowKnight.gif" title="Chillende" style="width: 80%; display: block; margin: 20px auto 0;">
 
     `
-  },
-  {
-    date: "2026-06-26",
-    content: `
-    <h2>Raad het getal!</h2>
-
-    <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; max-width:500px; margin:auto;">
-      <img src="images/foto1.jpg" style="width:100%;">
-      <img src="images/foto2.jpg" style="width:100%;">
-      <img src="images/foto3.jpg" style="width:100%;">
-      <img src="images/foto4.jpg" style="width:100%;">
-    </div>
-
-    <div style="text-align:center; margin-top:20px;">
-      <input type="number" id="guessInput" placeholder="Raad het getal">
-      <button onclick="checkGuess()">Controleer</button>
-
-      <p id="resultMessage" style="font-weight:bold; margin-top:10px;"></p>
-    </div>
-
-    <script>
-      function checkGuess() {
-        const juisteAntwoord = 42; // <-- hier jouw antwoord invullen
-        const gok = parseInt(document.getElementById('guessInput').value);
-
-        const result = document.getElementById('resultMessage');
-
-        if (gok === juisteAntwoord) {
-          result.innerHTML = "🎉 Juist! Goed geraden! 🎉";
-          result.style.color = "green";
-
-          // Klein effectje
-          document.body.style.backgroundColor = "#d4ffd4";
-          setTimeout(() => {
-            document.body.style.backgroundColor = "";
-          }, 1000);
-
-        } else {
-          result.innerHTML = "❌ Helaas, probeer opnieuw!";
-          result.style.color = "red";
-        }
-      }
-    </script>
-  `
   }
 ];
 

@@ -1,0 +1,164 @@
+<div id="reisgame-root" style="max-width: 600px; margin: 20px auto; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align:center;">🧳 Ik ga op reis en ik neem mee...</h2>
+  <p id="reisgame-instructions" style="text-align:center; color:#555;">
+    Typ wat je meeneemt op reis, in de juiste volgorde!
+  </p>
+
+  <div id="reisgame-progress" style="text-align:center; font-weight:bold; margin-bottom: 10px;"></div>
+
+  <ul id="reisgame-list" style="list-style:none; padding:0; max-width: 500px; margin: 0 auto;"></ul>
+
+  <div id="reisgame-input-area" style="text-align:center; margin-top: 15px;">
+    <input id="reisgame-input" type="text" placeholder="Wat neem je mee?"
+      style="padding:8px 12px; width: 70%; max-width: 350px; border-radius:8px; border:1px solid #ccc; font-size:16px;">
+    <button id="reisgame-submit"
+      style="padding:8px 16px; border-radius:8px; border:none; background:#4a7c59; color:white; font-size:16px; cursor:pointer; margin-left:6px;">
+      ✓
+    </button>
+  </div>
+
+  <div id="reisgame-feedback" style="text-align:center; margin-top: 10px; min-height: 24px; font-weight:bold;"></div>
+
+  <div id="reisgame-win" style="text-align:center; margin-top: 20px; display:none;">
+    <p style="font-size:20px;">🎉 Helemaal goed! Alles ingepakt! 🎉</p>
+  </div>
+</div>
+
+<script>
+(function() {
+  // ====================================================================
+  // DE LIJST: voeg hier elke paar weken een nieuw item toe.
+  // - text: wat er getoond wordt in de lijst zodra het goed is
+  // - keywords: woorden die VERPLICHT in haar antwoord moeten staan
+  //   (gebruik meerdere arrays binnen "any" als er meerdere varianten
+  //   mogelijk zijn, zie voorbeeld bij item 3)
+  // ====================================================================
+  const reisgameItems = [
+    {
+      text: "een rugzak",
+      keywords: ["rugzak"]
+    },
+    {
+      text: "een tandenborstel",
+      keywords: ["tandenborstel"]
+    },
+    {
+      text: "een kleine dwerg genaamd Louis, zo groot als je duim",
+      keywords: ["louis", "dwerg"]
+    },
+    {
+      // Voorbeeld van meerdere geldige varianten voor 1 item:
+      // "any" betekent: als 1 van deze losse keyword-sets matcht, is het goed
+      text: "zonnebrandcrème",
+      any: [
+        ["zonnebrand"],
+        ["zonnecreme"],
+        ["zonbescherming"]
+      ]
+    }
+  ];
+
+  // ====================================================================
+  // MATCHING LOGICA — hier hoef je normaal niks aan te veranderen
+  // ====================================================================
+  function normalize(str) {
+    return str
+      .toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // accenten weg (é -> e)
+      .replace(/[^\w\s]/g, " ") // leestekens weg
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function checkAnswer(input, item) {
+    const normInput = normalize(input);
+
+    function allKeywordsPresent(keywordList) {
+      // substring match (niet woord-grens), want NL kent veel
+      // samengestelde woorden zoals "zonnebrandcreme"
+      return keywordList.every(function(kw) {
+        return normInput.indexOf(normalize(kw)) !== -1;
+      });
+    }
+
+    if (item.keywords) {
+      return allKeywordsPresent(item.keywords);
+    }
+    if (item.any) {
+      return item.any.some(function(keywordSet) {
+        return allKeywordsPresent(keywordSet);
+      });
+    }
+    return false;
+  }
+
+  // ====================================================================
+  // GAME STATE & UI
+  // ====================================================================
+  let currentIndex = 0;
+
+  const listEl = document.getElementById('reisgame-list');
+  const inputEl = document.getElementById('reisgame-input');
+  const submitEl = document.getElementById('reisgame-submit');
+  const feedbackEl = document.getElementById('reisgame-feedback');
+  const progressEl = document.getElementById('reisgame-progress');
+  const winEl = document.getElementById('reisgame-win');
+  const inputAreaEl = document.getElementById('reisgame-input-area');
+
+  function renderProgress() {
+    progressEl.textContent = currentIndex + " / " + reisgameItems.length;
+  }
+
+  function renderList() {
+    listEl.innerHTML = "";
+    for (let i = 0; i < currentIndex; i++) {
+      const li = document.createElement('li');
+      li.style.padding = "6px 10px";
+      li.style.margin = "4px 0";
+      li.style.background = "#eaf4ec";
+      li.style.borderRadius = "8px";
+      li.textContent = (i + 1) + ". " + reisgameItems[i].text;
+      listEl.appendChild(li);
+    }
+  }
+
+  function showFeedback(message, isError) {
+    feedbackEl.textContent = message;
+    feedbackEl.style.color = isError ? "#c0392b" : "#4a7c59";
+  }
+
+  function handleSubmit() {
+    if (currentIndex >= reisgameItems.length) return;
+    const value = inputEl.value;
+    if (!value.trim()) return;
+
+    const item = reisgameItems[currentIndex];
+    if (checkAnswer(value, item)) {
+      currentIndex++;
+      inputEl.value = "";
+      renderList();
+      renderProgress();
+      if (currentIndex >= reisgameItems.length) {
+        showFeedback("", false);
+        inputAreaEl.style.display = "none";
+        winEl.style.display = "block";
+      } else {
+        showFeedback("Goed zo! Volgende...", false);
+      }
+    } else {
+      showFeedback("Niet helemaal goed, probeer het nog eens!", true);
+    }
+    inputEl.focus();
+  }
+
+  submitEl.addEventListener('click', handleSubmit);
+  inputEl.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      handleSubmit();
+    }
+  });
+
+  renderProgress();
+  renderList();
+})();
+</script>

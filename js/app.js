@@ -186,8 +186,7 @@
     const todayDate = today();
     if ((!navNextBtn.disabled && addDays(currentDate, 1) <= todayDate) || DEBUG_MODE) {
       renderPage(addDays(currentDate, 1), 1);
-      console.log("Hierzo")
-    } else {console.log(!navNextBtn.disabled);console.log()}
+    }
   });
 
   // Keyboard nav
