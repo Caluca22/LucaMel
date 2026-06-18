@@ -163,6 +163,16 @@ const PAGES = [
       </p>
       <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 400px; aspect-ratio: 10/11;" allowtransparency="true" frameborder="0"></iframe>
     `
+  },
+  {
+    date: "2026-06-24",
+    content: `
+      <h2>Weetje van de dag:</h2>
+      <p>
+        Over de Tiwi eilanden ten noorden van Australië is er een storm die tussen september en maart elke dag om exact 15u verschijnt.<br>
+        Hij heeft de naam <a href="https://www.sciencefocus.com/nature/hector-the-convector">Hector de Convector</a> Gekregen.
+      </p>
+    `
   }
   
 
