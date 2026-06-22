@@ -42,6 +42,9 @@
 // ─── STARTDATUM — dag 1 van jullie verhaal ───────────────────
 const START_DATE = "2026-06-14";
 
+// ─── OPLOSSINGEN VOOR PUZZEL-PAGINA'S ────────────────────────
+// Hier zet je de juiste antwoorden voor de foto-puzzels.
+const PUZZEL_26_ANTWOORD = 7; // 👈 pas dit getal aan naar het juiste antwoord voor 26 juni
 // ─── PAGINA'S ─────────────────────────────────────────────────
 // Voeg hier je pagina's toe. Ze hoeven niet in volgorde te staan.
 // Toekomstige datums zijn alvast toegestaan.
@@ -182,6 +185,148 @@ const PAGES = [
       <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6fyI2QGPzUiqRHnuYD7oOp?utm_source=generator&si=9065a818f3cf4afe" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       <img src="images/HollowKnight.gif" title="Chillende" style="width: 80%; display: block; margin: 20px auto 0;">
 
+    `
+  },
+  {
+    date: "2026-06-23",
+    content: `
+      <h2>OMG SCHAKEN JOEPIEEEEE</h2>
+      <p>
+        Eindelijk, een dagelijkse schaakpuzzel!<br>
+        (Je kan er op klikken)
+      </p>
+      <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 400px; aspect-ratio: 10/11;" allowtransparency="true" frameborder="0"></iframe>
+    `
+  },
+  {
+    date: "2026-06-24",
+    content: `
+      <h2>Weetje van de dag:</h2>
+      <p>
+        Over de Tiwi eilanden ten noorden van Australië is er een storm die tussen september en maart elke dag om exact 15u verschijnt.<br>
+        Hij heeft de naam <a href="https://www.sciencefocus.com/nature/hector-the-convector">Hector de Convector</a> Gekregen.
+      </p>
+    `
+  },
+  {
+    date: "2026-06-25",
+    content: `
+      <h2>Liedje van de dag:</h2>
+      <p>(Misschien op Spotify luisteren want dit is maar een stukje)</p>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6fyI2QGPzUiqRHnuYD7oOp?utm_source=generator&si=9065a818f3cf4afe" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <img src="images/HollowKnight.gif" title="Chillende" style="width: 80%; display: block; margin: 20px auto 0;">
+
+    `
+  },
+  {
+    date: "2026-06-26",
+    content: `
+      <style>
+        .dag26-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+          max-width: 480px;
+          margin: 16px auto 0;
+        }
+        .dag26-grid img {
+          width: 100%;
+          border-radius: 10px;
+          display: block;
+        }
+        .dag26-input {
+          padding: 10px 14px;
+          font-size: 1.1rem;
+          border-radius: 10px;
+          border: 2px solid #ccc;
+          width: 140px;
+          text-align: center;
+        }
+        .dag26-input.shake {
+          animation: dag26shake 0.4s;
+          border-color: #c0392b;
+        }
+        @keyframes dag26shake {
+          10%, 90% { transform: translateX(-4px); }
+          20%, 80% { transform: translateX(4px); }
+          30%, 50%, 70% { transform: translateX(-6px); }
+          40%, 60% { transform: translateX(6px); }
+        }
+        .dag26-btn {
+          padding: 10px 18px;
+          font-size: 1rem;
+          border-radius: 10px;
+          border: none;
+          background: #6c63ff;
+          color: white;
+          cursor: pointer;
+          margin-left: 8px;
+        }
+        .dag26-btn:hover { background: #5a52e0; }
+        .dag26-result {
+          margin-top: 16px;
+          font-size: 1.15rem;
+          min-height: 1.4em;
+        }
+        .dag26-correct {
+          color: #2e7d32;
+          font-weight: bold;
+          animation: dag26pop 0.5s;
+        }
+        @keyframes dag26pop {
+          0% { transform: scale(0.5); opacity: 0; }
+          60% { transform: scale(1.25); }
+          100% { transform: scale(1); opacity: 1; }
+        }
+        .dag26-wrong { color: #c0392b; }
+      </style>
+
+      <h2>Foto-puzzel van de dag 🔎</h2>
+      <p>
+        Deze 4 foto's hebben samen iets te vertellen... ergens zit er een getal in verstopt!<br>
+        Welk getal is het?
+      </p>
+
+      <div class="dag26-grid">
+        <img src="images/Raadsel2-1.jpg" title="Hint 1" />
+        <img src="images/Raadsel2-2.jpg" title="Hint 2" />
+        <img src="images/Raadsel2-3.jpg" title="Hint 3" />
+        <img src="images/Raadsel2-4.jpg" title="Hint 4" />
+      </div>
+
+      <div style="text-align:center; margin-top: 24px;">
+        <input
+          type="number"
+          id="dag26-input"
+          class="dag26-input"
+          placeholder="Getal..."
+          onkeypress="if (event.key === 'Enter') { document.getElementById('dag26-btn').click(); }"
+        />
+        <button
+          id="dag26-btn"
+          class="dag26-btn"
+          onclick="
+            var input = document.getElementById('dag26-input');
+            var result = document.getElementById('dag26-result');
+            var goedeAntwoorden = ['Yes!! 🎉','Juist hoor! 🥳','Helemaal correct! ❤️','Slimmerik! 🧠✨'];
+            var foutAntwoorden = ['Niet helemaal... proberen opnieuw! 🙈','Bijna! Nog een poging 🤔','Helaas, dat was het niet 😅','Foutje, bedankt! Nog eens proberen 🍀'];
+            if (parseInt(input.value, 10) === PUZZEL_26_ANTWOORD) {
+              result.textContent = goedeAntwoorden[Math.floor(Math.random() * goedeAntwoorden.length)];
+              result.className = 'dag26-result dag26-correct';
+              input.classList.remove('shake');
+            } else {
+              result.textContent = foutAntwoorden[Math.floor(Math.random() * foutAntwoorden.length)];
+              result.className = 'dag26-result dag26-wrong';
+              input.classList.remove('shake');
+              void input.offsetWidth;
+              input.classList.add('shake');
+            }
+          "
+        >
+          Check! ✅
+        </button>
+        <p id="dag26-result" class="dag26-result"></p>
+      </div>
     `
   }
 ];
