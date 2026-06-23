@@ -42,9 +42,6 @@
 // ─── STARTDATUM — dag 1 van jullie verhaal ───────────────────
 const START_DATE = "2026-06-14";
 
-// ─── OPLOSSINGEN VOOR PUZZEL-PAGINA'S ────────────────────────
-// Hier zet je de juiste antwoorden voor de foto-puzzels.
-const PUZZEL_26_ANTWOORD = 7; // 👈 pas dit getal aan naar het juiste antwoord voor 26 juni
 // ─── PAGINA'S ─────────────────────────────────────────────────
 // Voeg hier je pagina's toe. Ze hoeven niet in volgorde te staan.
 // Toekomstige datums zijn alvast toegestaan.
@@ -221,77 +218,26 @@ const PAGES = [
   {
     date: "2026-06-26",
     content: `
-      <style>
-        .dag26-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 12px;
-          max-width: 480px;
-          margin: 16px auto 0;
-        }
-        .dag26-grid img {
-          width: 100%;
-          border-radius: 10px;
-          display: block;
-        }
-        .dag26-input {
-          padding: 10px 14px;
-          font-size: 1.1rem;
-          border-radius: 10px;
-          border: 2px solid #ccc;
-          width: 140px;
-          text-align: center;
-        }
-        .dag26-input.shake {
-          animation: dag26shake 0.4s;
-          border-color: #c0392b;
-        }
-        @keyframes dag26shake {
-          10%, 90% { transform: translateX(-4px); }
-          20%, 80% { transform: translateX(4px); }
-          30%, 50%, 70% { transform: translateX(-6px); }
-          40%, 60% { transform: translateX(6px); }
-        }
-        .dag26-btn {
-          padding: 10px 18px;
-          font-size: 1rem;
-          border-radius: 10px;
-          border: none;
-          background: #6c63ff;
-          color: white;
-          cursor: pointer;
-          margin-left: 8px;
-        }
-        .dag26-btn:hover { background: #5a52e0; }
-        .dag26-result {
-          margin-top: 16px;
-          font-size: 1.15rem;
-          min-height: 1.4em;
-        }
-        .dag26-correct {
-          color: #2e7d32;
-          font-weight: bold;
-          animation: dag26pop 0.5s;
-        }
-        @keyframes dag26pop {
-          0% { transform: scale(0.5); opacity: 0; }
-          60% { transform: scale(1.25); }
-          100% { transform: scale(1); opacity: 1; }
-        }
-        .dag26-wrong { color: #c0392b; }
-      </style>
 
-      <h2>Foto-puzzel van de dag 🔎</h2>
-      <p>
-        Deze 4 foto's hebben samen iets te vertellen... ergens zit er een getal in verstopt!<br>
-        Welk getal is het?
-      </p>
+      <h2>Wavelength van de dag 🔎</h2>
 
       <div class="dag26-grid">
-        <img src="images/Raadsel2-1.jpg" title="Hint 1" />
-        <img src="images/Raadsel2-2.jpg" title="Hint 2" />
-        <img src="images/Raadsel2-3.jpg" title="Hint 3" />
-        <img src="images/Raadsel2-4.jpg" title="Hint 4" />
+        <div>
+          <img src="images/wavelength_26juni_1.jpg" />
+          <p class="dag26-caption">Dit Avatar karakter</p>
+        </div>
+        <div>
+          <img src="images/wavelength_26juni_2.jpg" />
+          <p class="dag26-caption">Deze standbeeld-pose</p>
+        </div>
+        <div>
+          <img src="images/wavelength_26juni_3.jpg" />
+          <p class="dag26-caption">Dit fruit</p>
+        </div>
+        <div>
+          <img src="images/wavelength_26juni_4.jpg" />
+          <p class="dag26-caption">Deze Pixar film</p>
+        </div>
       </div>
 
       <div style="text-align:center; margin-top: 24px;">
@@ -309,8 +255,8 @@ const PAGES = [
             var input = document.getElementById('dag26-input');
             var result = document.getElementById('dag26-result');
             var goedeAntwoorden = ['Yes!! 🎉','Juist hoor! 🥳','Helemaal correct! ❤️','Slimmerik! 🧠✨'];
-            var foutAntwoorden = ['Niet helemaal... proberen opnieuw! 🙈','Bijna! Nog een poging 🤔','Helaas, dat was het niet 😅','Foutje, bedankt! Nog eens proberen 🍀'];
-            if (parseInt(input.value, 10) === PUZZEL_26_ANTWOORD) {
+            var foutAntwoorden = ['Probeer opnieuw! 🙈','Bijna! Nog een poging 🤔','Ai, dat was em niet 😅','Neeje neeje! Nog eens proberen 🍀'];
+            if (parseInt(input.value, 10) === 8) {
               result.textContent = goedeAntwoorden[Math.floor(Math.random() * goedeAntwoorden.length)];
               result.className = 'dag26-result dag26-correct';
               input.classList.remove('shake');
