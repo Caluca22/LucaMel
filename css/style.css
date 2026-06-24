@@ -592,3 +592,97 @@ body {
   100% { transform: scale(1); opacity: 1; }
 }
 .dag26-wrong { color: #c0392b; }
+
+.spoiler {
+  border: 1px solid var(--parchment);
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  max-width: 400px;
+  background: var(--cream);
+}
+
+.spoiler summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--text-mid);
+  list-style: none; /* hides default triangle */
+}
+
+.spoiler summary::-webkit-details-marker {
+  display: none; /* hides triangle in Chrome/Safari */
+}
+
+.spoiler[open] summary {
+  margin-bottom: 0.5em;
+}
+
+.spoiler p {
+  margin: 0;
+}
+
+/* ---- REISGAME ("Ik ga op reis en ik neem mee") ---- */
+.reisgame-progress {
+  text-align: center;
+  font-weight: 700;
+  color: var(--text-mid);
+  margin: 0.6rem 0;
+}
+
+.reisgame-list {
+  list-style: none;
+  padding: 0;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.reisgame-list-item {
+  padding: 0.5rem 0.8rem;
+  margin: 0.35rem 0;
+  background: var(--cream);
+  border: 1px solid rgba(193, 123, 43, 0.3);
+  border-radius: 8px;
+  color: var(--text-dark);
+}
+
+.reisgame-input-area {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.reisgame-input {
+  padding: 10px 14px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  width: 70%;
+  max-width: 320px;
+}
+
+.reisgame-btn {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background: var(--amber);
+  color: var(--cream);
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+.reisgame-btn:hover { background: var(--sienna); }
+
+.reisgame-feedback {
+  text-align: center;
+  margin-top: 0.7rem;
+  min-height: 1.4em;
+  font-weight: 700;
+}
+.reisgame-feedback--ok { color: #2e7d32; }
+.reisgame-feedback--error { color: #c0392b; }
+
+.reisgame-win {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 1.15rem;
+}

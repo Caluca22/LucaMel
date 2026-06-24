@@ -60,7 +60,7 @@
   const pagesArray = window.ANNIVERSARY_PAGES || [];
   const pageMap    = {};  // "YYYY-MM-DD" → HTML string
 
-  const DEBUG_MODE = false; //OM TE TESTEN ------------------------------------------------------------------
+  const DEBUG_MODE = true; //OM TE TESTEN ------------------------------------------------------------------
 
   pagesArray.forEach(function (p) {
     pageMap[p.date] = p.content;
@@ -121,6 +121,25 @@
       </div>`;
   }
 
+  /**
+   * innerHTML doesn't execute <script> tags by spec.
+   * This re-creates each script tag found in a container so the
+   * browser actually runs it. Lets page content use real <script>
+   * blocks (e.g. for small games/widgets) instead of inline onclick=.
+   */
+  function executeScripts(container) {
+    const scripts = container.querySelectorAll('script');
+    scripts.forEach(function (oldScript) {
+      const newScript = document.createElement('script');
+      for (let i = 0; i < oldScript.attributes.length; i++) {
+        const attr = oldScript.attributes[i];
+        newScript.setAttribute(attr.name, attr.value);
+      }
+      newScript.textContent = oldScript.textContent;
+      oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
+  }
+
   function renderPage(date, direction) {
     const dayNum = Math.max(1, dayDiff(startDate, date) + 1);
     const todayDate = today();
@@ -154,6 +173,7 @@
 
     setTimeout(function () {
       pageContentEl.innerHTML = getPageContent(date);
+      executeScripts(pageContentEl);
       pageContentEl.classList.remove('fade-out');
       pageContentEl.style.transform = '';
       if (dir !== 0) {
