@@ -277,7 +277,12 @@ const REISGAME_ITEMS = [
   },
   {
     text: "Een inktvis met 7 tentakels",
-    keywords: ["inktvis", "7"]
+    any: [
+      ["inktvis", "7"],
+      ["inktvis", "zeven"],
+      ["octopus", "7"],
+      ["octopus", "zeven"]
+    ]
   },
   {
     text: "10 en een halve condoom",
