@@ -372,7 +372,15 @@ const PAGES = [
       <h2>Diertje van de dag:</h2>
       <h3>De Snijvogel</h3>
       <p>De Snijvogel (tailor bird) is een vogel die zijn nest maakt door een blad dicht te 'naaien' met zijde van spinnewebben.<br>Ze zijn getalenteerde rakkers en verdienen zeker een complimentje als je er één ziet.</p>
-      <iframe width="975" height="548" src="https://www.youtube.com/embed/QQMYpzbQIDA?t=33&mute=1" title="Tailorbird building Nest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe 
+        style="width: 100%; aspect-ratio: 16 / 9;"
+        src="https://www.youtube.com/embed/QQMYpzbQIDA?t=33&mute=1" 
+        title="Tailorbird building Nest" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
       `
   },
 
@@ -558,7 +566,7 @@ const PAGES = [
     content: `
       <h2>Raadsel van de dag:</h2>
       <p>
-      Welk getal past er op de lege parkeerplaats?
+      Welk getal past er op de bezette parkeerplaats?
       </p>
       <img src="images/foto7.png" title="Daarom pak ik de fiets" style="height: 80%; display: block; margin: 20px auto 20px;">
       <details class="spoiler">
@@ -704,7 +712,15 @@ const PAGES = [
     date: "2026-07-03",
     content: `
     <h2>Meme van de dag:</h2>
-    <iframe width="989" height="556" src="https://www.youtube.com/embed/sNfB9jC0xn4" title="Jonagolds are gone - Aldi Belgium" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe 
+        style="width: 100%; aspect-ratio: 16 / 9;"
+        src="https://www.youtube.com/embed/sNfB9jC0xn4" 
+        title="Jonagolds are gone - Aldi Belgium" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
     `
   }
 ];
