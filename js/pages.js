@@ -722,6 +722,60 @@ const PAGES = [
         allowfullscreen>
       </iframe>
     `
+  },
+
+  {
+    date: "2026-07-04",
+    content: `
+      <h2>Nutteloos weetje van de dag</h2>
+      <p>Niemand geboren na 1935 heeft ooit op de maan gewandeld 🌖</p>
+    `
+  },
+
+  {
+    date: "2026-07-06",
+    content: `
+    <h2>Quote van de dag:</h2>
+      <p>
+        <blockquote>“La música es lo que me hace sentir libre.”</blockquote>
+        <i>- Violetta</i>
+        <br>
+        <p>
+        <img src="images/violetta.webp" title="Sorry xx" style="width: 80%; display: block; margin: 20px auto 20px;">
+      </p></p>
+    `
+  },
+
+  {
+    date: "2026-07-07",
+    content: `
+      <h2>Mopje van de dag</h2>
+      <p>Hoe noem je een boomerang die niet terug keert?</p>
+      <br>
+      <p>...</p>
+      <br>
+      <p>Een stok!</p>
+    `
+  },
+
+  {
+    date: "2026-07-14",
+    content: `
+      <h2>Nutteloos weetje van de dag</h2>
+      <p>Er is geen enkele Spanjaard geboren op 10 oktober 1582.</p>
+      <br>
+      <br>
+      <p>In 1582 zijn enkele landen van kalender gewisseld zoals Spanje, Portugal en Italië.<br>Na hun 4 oktober kwam 15 oktober!</p>
+      <img src="images/kalender.jpg" title="Wauw dagen" style="width: 80%; display: block; margin: 20px auto 20px;">
+    `
+  },
+
+  {
+    date: "2026-07-24",
+    content: `
+      <h2>Nutteloos weetje van de dag</h2>
+      <p>Als je iemand zijn been amputeert dan gaat zijn BMI omlaag, als je beide benen amputeert dan gaat zijn BMI omhoog!</p>
+    `
   }
 ];
 
