@@ -77,19 +77,20 @@ const REISGAME_ITEMS = [
   {
     text: "Een croque-monsieur machine",
     any: [
-      ["croque"],
-      ["croquemachine"],
-      ["monsieur"],
-      ["croque-monsieurmachine"]
+      ["croque-monsieur"],
+      ["croquemonsieur"],
+      ["croque monsieur"],
+      ["croque-machine"],
+      ["croque machine"]
     ]
   },
   {
     text: "Kabouter Philippe, even groot als je duim",
-    keywords: ["philippe", "kabouter", "duim", "even"]
+    keywords: ["philippe", "kabouter", "even", "duim"]
   },
   {
     text: "Een Dacia Duster",
-    keywords: ["Dacia", "Duster"]
+    keywords: ["dacia", "duster"]
   },
   {
     text: "Een regenboog",
@@ -97,20 +98,24 @@ const REISGAME_ITEMS = [
   },
   {
     text: "27 rollen WC papier",
-    keywords: ["papier", "27"]
+    any: [
+      ["27", "wc"],
+      ["27", "toiletpapier"]
+    ]
   },
   {
-    text: "Toilet groot genoeg voor de luchtbizon",
+    text: "Een toilet groot genoeg voor de luchtbizon",
     any: [
-      ["toilet", "bizon"]
+      ["toilet", "luchtbizon"],
+      ["wc", "luchtbizon"]
     ]
   },
   {
     text: "STB busticketjes",
     any: [
       ["stb"],
-      ["busticket"],
-      ["ticket"]
+      ["bus", "ticket"],
+      ["bus", "kaartje"]
     ]
   },
   {
@@ -131,31 +136,22 @@ const REISGAME_ITEMS = [
   },
   {
     text: "Een gele duikboot",
-    any: [
-      ["duikboot"],
-      ["gele", "duikboot"]
-    ]
+    keywords: ["gele", "duikboot"]
   },
   {
     text: "Één klein champignonnetje",
-    any: [
-      ["champignon"],
-      ["paddenstoel"]
-    ]
+    keywords: ["champignon"]
   },
   {
     text: "Louis de kabouter, iets groter dan je duim",
     any: [
-      ["louis"],
-      ["kabouter", "louis"]
+      ["louis", "kabouter", "groter"],
+      ["lowie", "kabouter", "groter"]
     ]
   },
   {
     text: "Karels crypto",
-    any: [
-      ["karel", "crypto"],
-      ["crypto"]
-    ]
+    keywords: ["karel", "crypto"]
   },
   {
     text: "Een diadeem",
@@ -165,46 +161,34 @@ const REISGAME_ITEMS = [
     text: "Smeagol",
     any: [
       ["smeagol"],
-      ["gollum"]
+      ["sméagol"]
     ]
   },
   {
     text: "Een gouden troon",
-    any: [
-      ["gouden", "troon"],
-      ["troon"]
-    ]
+    keywords: ["troon"]
   },
   {
     text: "Een Chinese vaas",
-    any: [
-      ["chinese", "vaas"],
-      ["vaas"]
-    ]
+    keywords: ["vaas"]
   },
   {
     text: "Star Wars: A New Hope",
-    any: [
-      ["new", "hope"],
-      ["star", "wars"]
-    ]
+    keywords: ["star", "wars","new", "hope"]
   },
   {
     text: "Barbie Mariposa",
-    any: [
-      ["barbie"],
-      ["mariposa"]
-    ]
+    keywords: ["barbie", "mariposa"]
   },
   {
     text: "Een ruimtevloot",
-    keywords: ["ruimtevloot"]
+    keywords: ["ruimte", "vloot"]
   },
   {
     text: "De noot mi",
     any: [
-      ["mi"],
-      ["noot", "mi"]
+      ["noot mi"],
+      ["nootmi"]
     ]
   },
   {
@@ -217,53 +201,41 @@ const REISGAME_ITEMS = [
   },
   {
     text: "Een verwarde Japanse man",
-    any: [
-      ["japanse", "man"],
-      ["verward"]
-    ]
+    keywords: ["japans", "man"]
   },
   {
     text: "Een tapijt met luipaardprint",
-    any: [
-      ["luipaardprint"],
-      ["tapijt"]
-    ]
+    keywords: ["luipaard"]
   },
   {
     text: "Meer dan je denkt",
-    keywords: ["meer"]
+    keywords: ["meer dan je denkt"]
   },
   {
     text: "Perenfanta",
     any: [
       ["perenfanta"],
-      ["fanta", "peer"]
+      ["peren", "fanta"]
     ]
   },
   {
     text: "Tia Hellebaut",
     any: [
-      ["tia"],
-      ["hellebaut"]
+      ["hellebaut"],
+      ["hellebout"]
     ]
   },
   {
     text: "Een lat met een identiteitscrisis",
-    keywords: ["lat"]
+    keywords: ["lat", "identiteitscrisis"]
   },
   {
     text: "Een depressieve robot",
-    any: [
-      ["robot"],
-      ["depressieve", "robot"]
-    ]
+    keywords: ["robot"]
   },
   {
     text: "Een blauwe handdoek met rode bollen",
-    any: [
-      ["blauwe", "handdoek"],
-      ["rode", "bollen"]
-    ]
+    keywords: ["blauw", "rode", "bollen", "handdoek"]
   },
   {
     text: "Een bal",
@@ -271,61 +243,49 @@ const REISGAME_ITEMS = [
   },
   {
     text: "Een snoeppot",
-    keywords: ["snoeppot"]
-  },
-  {
-    text: "The Black Pearl",
     any: [
-      ["black", "pearl"],
-      ["pearl"]
+      ["snoeppot"],
+      ["snoep pot"]
     ]
   },
   {
-    text: "Een koekendoos",
-    keywords: ["koekendoos"]
+    text: "The Black Pearl",
+    keywords: ["black", "pearl"]
+  },
+  {
+    text: "De Koekendoos",
+    any: [
+      ["koekendoos"],
+      ["koeken", "doos"]
+    ]
   },
   {
     text: "Bavo",
     keywords: ["bavo"]
   },
   {
-    text: "Een sticker met \"hier drukken\" erop",
-    any: [
-      ["hier", "drukken"],
-      ["sticker"]
-    ]
+    text: 'Een sticker met "hier drukken" erop',
+    keywords: ["drukken", "sticker"]
   },
   {
     text: "Een knop die niks met die sticker te maken heeft",
-    keywords: ["knop"]
+    keywords: ["knop", "sticker"]
   },
   {
     text: "Een hondenfluitje",
-    any: [
-      ["hondenfluitje"],
-      ["fluitje"]
-    ]
+    keywords: ["hondenfluitje"]
   },
   {
     text: "Een inktvis met 7 tentakels",
-    any: [
-      ["inktvis"],
-      ["7", "tentakels"]
-    ]
+    keywords: ["inktvis", "7"]
   },
   {
     text: "10 en een halve condoom",
-    any: [
-      ["condoom"],
-      ["halve", "condoom"]
-    ]
+    keywords: ["10", "halve", "condoom"]
   },
   {
     text: "Een blije man met een halve piet",
-    any: [
-      ["blije", "man"],
-      ["halve", "piet"]
-    ]
+    keywords: ["blij", "man", "halve"]
   }
 ];
 
