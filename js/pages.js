@@ -733,6 +733,106 @@ const PAGES = [
   },
 
   {
+    date: "2026-07-05",
+    content: `
+      <h2>Top 10 van de dag</h2>
+      <h3>De beste veelhoeken!</h3>
+      
+      <ul class="top10-list">
+        <li class="top10-item">
+          <span class="top10-rank">10</span>
+          <img class="top10-img" src="images/top10-10.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Tiende plaats</p>
+            <p class="top10-desc">Korte beschrijving hier.</p>
+          </div>
+        </li>
+      
+        <li class="top10-item">
+          <span class="top10-rank">9</span>
+          <img class="top10-img" src="images/top10-9.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Negende plaats</p>
+            <p class="top10-desc">Korte beschrijving hier.</p>
+          </div>
+        </li>
+      
+        <li class="top10-item">
+          <span class="top10-rank">8</span>
+          <img class="top10-img" src="images/top10-8.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Achtste plaats</p>
+            <p class="top10-desc">Korte beschrijving hier.</p>
+          </div>
+        </li>
+      
+        <li class="top10-item">
+          <span class="top10-rank">7</span>
+          <img class="top10-img" src="images/top10-7.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Zevende plaats</p>
+            <p class="top10-desc">Korte beschrijving hier.</p>
+          </div>
+        </li>
+      
+        <li class="top10-item">
+          <span class="top10-rank">6</span>
+          <img class="top10-img" src="images/top10-6.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Zesde plaats</p>
+            <p class="top10-desc">Korte beschrijving hier.</p>
+          </div>
+        </li>
+      
+        <li class="top10-item">
+          <span class="top10-rank">5</span>
+          <img class="top10-img" src="images/top10-5.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Vijfde plaats</p>
+            <p class="top10-desc">Korte beschrijving hier.</p>
+          </div>
+        </li>
+      
+        <li class="top10-item">
+          <span class="top10-rank">4</span>
+          <img class="top10-img" src="images/top10-4.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Vierde plaats</p>
+            <p class="top10-desc">Korte beschrijving hier.</p>
+          </div>
+        </li>
+      
+        <li class="top10-item">
+          <span class="top10-rank">3</span>
+          <img class="top10-img" src="images/top10-3.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Derde plaats</p>
+            <p class="top10-desc">Korte beschrijving hier.</p>
+          </div>
+        </li>
+      
+        <li class="top10-item">
+          <span class="top10-rank">2</span>
+          <img class="top10-img" src="images/top10-2.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Tweede plaats</p>
+            <p class="top10-desc">Korte beschrijving hier.</p>
+          </div>
+        </li>
+      
+        <li class="top10-item top10-item--first">
+          <span class="top10-rank">1</span>
+          <img class="top10-img" src="images/top10-1.jpg" alt="">
+          <div class="top10-text">
+            <p class="top10-title">Eerste plaats</p>
+            <p class="top10-desc">Korte beschrijving of reden waarom dit op nummer 1 staat.</p>
+          </div>
+        </li>
+      </ul>
+    `
+  },
+
+  {
     date: "2026-07-06",
     content: `
     <h2>Quote van de dag:</h2>
@@ -757,6 +857,84 @@ const PAGES = [
       <p>Een stok!</p>
     `
   },
+  {
+    date: "2026-07-08",
+    content: `
+
+      <h2>Wavelength van de dag</h2>
+
+      <div class="dag26-grid">
+        <div>
+          <img src="images/nederlands.jpg" />
+          <p class="dag26-caption">Dit vak op school</p>
+        </div>
+        <div>
+          <img src="images/17.jpg" />
+          <p class="dag26-caption">Dit getal</p>
+        </div>
+        <div>
+          <img src="images/kleur.png" />
+          <p class="dag26-caption">Deze kleur</p>
+        </div>
+        <div>
+          <img src="images/donna.jpg" />
+          <p class="dag26-caption">Deze persoon om thee mee te drinken</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: 24px;">
+        <input
+          type="number"
+          id="dag26-input"
+          class="dag26-input"
+          placeholder="Getal..."
+          onkeypress="if (event.key === 'Enter') { document.getElementById('dag26-btn').click(); }"
+        />
+        <button
+          id="dag26-btn"
+          class="dag26-btn"
+          onclick="
+            var input = document.getElementById('dag26-input');
+            var result = document.getElementById('dag26-result');
+            var goedeAntwoorden = ['Yes!! 🎉','Zeker wel! 🥳','Helemaal juist! ❤️','Slimmerik! 🧠✨'];
+            var foutAntwoorden = ['Probeer opnieuw! 🙈','Bijna! Nog een poging 🤔','Ai, dat was em niet 😅','Neeje neeje! Nog eens proberen 🍀'];
+            if (parseInt(input.value, 10) === 3) {
+              result.textContent = goedeAntwoorden[Math.floor(Math.random() * goedeAntwoorden.length)];
+              result.className = 'dag26-result dag26-correct';
+              input.classList.remove('shake');
+            } else {
+              result.textContent = foutAntwoorden[Math.floor(Math.random() * foutAntwoorden.length)];
+              result.className = 'dag26-result dag26-wrong';
+              input.classList.remove('shake');
+              void input.offsetWidth;
+              input.classList.add('shake');
+            }
+          "
+        >
+          Check! ✅
+        </button>
+        <p id="dag26-result" class="dag26-result"></p>
+      </div>
+    `
+  },
+
+  {
+    date: "2026-07-09",
+    content: `
+    <h2>Liedje van de dag:</h2>
+    <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/KC3GrzoQG9U" title="Don&#39;t Stop &#39;Til You Get Enough - Jacob Collier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+  
+
+  {
+    date: "2026-07-10",
+    content: `
+      <h2>Foto van de dag</h2>
+      <img src="images/OudeFoto1.jpg" title="It's-a-me, Rico." style="width: 80%; display: block; margin: 20px auto 0;">
+      
+    `
+  },
 
   {
     date: "2026-07-14",
@@ -771,10 +949,37 @@ const PAGES = [
   },
 
   {
+    date: "2026-07-20",
+    content: `
+      <h2>Foto van de dag</h2>
+      <img src="images/OudeFoto2.jpg" title="Moh, wat een gekke hoed" style="width: 80%; display: block; margin: 20px auto 0;">
+      
+    `
+  },
+
+  {
     date: "2026-07-24",
     content: `
       <h2>Nutteloos weetje van de dag</h2>
       <p>Als je iemand zijn been amputeert dan gaat zijn BMI omlaag, als je beide benen amputeert dan gaat zijn BMI omhoog!</p>
+    `
+  },
+
+  {
+    date: "2026-07-30",
+    content: `
+      <h2>Foto van de dag</h2>
+      <img src="images/OudeFoto3.jpg" title="Wassup, bro" style="width: 80%; display: block; margin: 20px auto 0;">
+      
+    `
+  },
+
+  {
+    date: "2026-08-09",
+    content: `
+      <h2>Foto van de dag</h2>
+      <img src="images/OudeFoto4.jpg" title="No-shoes summer" style="width: 80%; display: block; margin: 20px auto 0;">
+      
     `
   }
 ];

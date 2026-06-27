@@ -686,3 +686,90 @@ body {
   margin-top: 1.2rem;
   font-size: 1.15rem;
 }
+
+/* ---- TOP 10 LIST ---- */
+.top10-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.top10-item {
+  display: grid;
+  grid-template-columns: 36px 64px 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  background: var(--cream);
+  border: 1px solid rgba(193, 123, 43, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.top10-rank {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--amber);
+  text-align: center;
+}
+
+.top10-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--shadow);
+  margin: 0; /* override default page-card-inner img margin */
+}
+
+.top10-text {
+  min-width: 0; /* allow text to wrap/truncate inside the grid column */
+}
+
+.top10-title {
+  font-weight: 700;
+  color: var(--sienna);
+  margin-bottom: 2px;
+  font-size: 1rem;
+}
+
+.top10-desc {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+/* First place gets a little extra flair */
+.top10-item--first {
+  border-color: var(--gold);
+  background: var(--parchment);
+}
+.top10-item--first .top10-rank {
+  color: var(--sienna);
+}
+
+@media (max-width: 600px) {
+  .top10-item {
+    grid-template-columns: 28px 52px 1fr;
+    gap: 10px;
+    padding: 8px 10px;
+  }
+  .top10-img {
+    width: 52px;
+    height: 52px;
+  }
+  .top10-rank {
+    font-size: 1.15rem;
+  }
+  .top10-title {
+    font-size: 0.92rem;
+  }
+  .top10-desc {
+    font-size: 0.82rem;
+  }
+}
