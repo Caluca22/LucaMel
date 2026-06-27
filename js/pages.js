@@ -920,6 +920,21 @@ const PAGES = [
   },
 
   {
+    date: "2026-07-11",
+    content: `
+      <h2>Raadsel van de dag:</h2>
+      <p>
+      Kan je de slang vinden tussen de schildpadden?
+      </p>
+      <img src="images/raadsel2.jpeg" title="Sssssssstom raadseltje" style="height: 80%; display: block; margin: 20px auto 20px;">
+      <details class="spoiler">
+        <summary>Klik hier voor het antwoord</summary>
+        <p>beginnend linksonder, net boven het vierde schild, kijkend naar rechts!</p>
+      </details>
+    `
+  },
+
+  {
     date: "2026-07-14",
     content: `
       <h2>Nutteloos weetje van de dag</h2>
