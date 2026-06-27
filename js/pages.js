@@ -691,7 +691,7 @@ const PAGES = [
                 showFeedback('Goed zo! Volgende...', false);
               }
             } else {
-              showFeedback('Niet helemaal goed, probeer het nog eens!', true);
+              showFeedback('Hmmm nee het was iets anders...', true);
             }
             inputEl.focus();
           }
@@ -735,97 +735,80 @@ const PAGES = [
   {
     date: "2026-07-05",
     content: `
-      <h2>Top 10 van de dag</h2>
+      <h2>Top 8 van de dag</h2>
       <h3>De beste veelhoeken!</h3>
       
       <ul class="top10-list">
-        <li class="top10-item">
-          <span class="top10-rank">10</span>
-          <img class="top10-img" src="images/top10-10.jpg" alt="">
-          <div class="top10-text">
-            <p class="top10-title">Tiende plaats</p>
-            <p class="top10-desc">Korte beschrijving hier.</p>
-          </div>
-        </li>
-      
-        <li class="top10-item">
-          <span class="top10-rank">9</span>
-          <img class="top10-img" src="images/top10-9.jpg" alt="">
-          <div class="top10-text">
-            <p class="top10-title">Negende plaats</p>
-            <p class="top10-desc">Korte beschrijving hier.</p>
-          </div>
-        </li>
       
         <li class="top10-item">
           <span class="top10-rank">8</span>
-          <img class="top10-img" src="images/top10-8.jpg" alt="">
+          <img class="top10-img" src="images/decagon.webp" alt="">
           <div class="top10-text">
-            <p class="top10-title">Achtste plaats</p>
-            <p class="top10-desc">Korte beschrijving hier.</p>
+            <p class="top10-title">Tienhoek</p>
+            <p class="top10-desc">De decagon wordt wel eens "zo goed als rond" en "pointless" genoemd. Ook de jury ziet weinig hoop voor de tienhoek. Ondanks de vele betichtingen weigert ze de gelijkenissen met een cirkel te erkennen. Ze eindigt dit jaar dan ook op de laatste plaats.</p>
           </div>
         </li>
       
         <li class="top10-item">
           <span class="top10-rank">7</span>
-          <img class="top10-img" src="images/top10-7.jpg" alt="">
+          <img class="top10-img" src="images/heptagon.png" alt="">
           <div class="top10-text">
-            <p class="top10-title">Zevende plaats</p>
-            <p class="top10-desc">Korte beschrijving hier.</p>
+            <p class="top10-title">Zevenhoek</p>
+            <p class="top10-desc">"More bark than bite" klinkt het in de wandelgangen. Heptagon is een coole naam, maar dat is het dan ook.</p>
           </div>
         </li>
       
         <li class="top10-item">
           <span class="top10-rank">6</span>
-          <img class="top10-img" src="images/top10-6.jpg" alt="">
+          <img class="top10-img" src="images/nonagon.png" alt="">
           <div class="top10-text">
-            <p class="top10-title">Zesde plaats</p>
-            <p class="top10-desc">Korte beschrijving hier.</p>
+            <p class="top10-title">Negenhoek</p>
+            <p class="top10-desc">Na het breken van nonagon's banden met de tienhoek lijkt ze haar eigen weg te zoeken. Momenteel heeft ze nog weinig kunnen laten zien, maar verlies haar niet uit het oog!</p>
           </div>
         </li>
       
         <li class="top10-item">
           <span class="top10-rank">5</span>
-          <img class="top10-img" src="images/top10-5.jpg" alt="">
+          <img class="top10-img" src="images/octagon.png" alt="">
           <div class="top10-text">
-            <p class="top10-title">Vijfde plaats</p>
-            <p class="top10-desc">Korte beschrijving hier.</p>
+            <p class="top10-title">achthoek</p>
+            <p class="top10-desc">Hoewel de achthoek evenwichtigheid en evenwijdigheid uitstraalt, kon ze dit jaar opnieuw niet overtuigen. Critici erkennen de symmetrie, maar missen concrete verwezelijkingen.</p>
           </div>
         </li>
       
         <li class="top10-item">
           <span class="top10-rank">4</span>
-          <img class="top10-img" src="images/top10-4.jpg" alt="">
+          <img class="top10-img" src="images/hexagon.png" alt="">
           <div class="top10-text">
-            <p class="top10-title">Vierde plaats</p>
-            <p class="top10-desc">Korte beschrijving hier.</p>
+            <p class="top10-title">Zeshoek</p>
+            <p class="top10-desc">Hexagon is best-agon! Steeds meer mensen grijpen naar de modernere en "stylish" zeshoek en stappen af van het traditionele vierkant. De zeshoek eindigt net onder haar bordspelconcurent, maar is aan een stevige opmars bezig. We kijken uit naar wat de hexagon ons nog te bieden heeft in de toekomst!</p>
           </div>
         </li>
       
         <li class="top10-item">
           <span class="top10-rank">3</span>
-          <img class="top10-img" src="images/top10-3.jpg" alt="">
+          <img class="top10-img" src="images/vierkant.png" alt="">
           <div class="top10-text">
-            <p class="top10-title">Derde plaats</p>
-            <p class="top10-desc">Korte beschrijving hier.</p>
+            <p class="top10-title">Vierhoek</p>
+            <p class="top10-desc">Stabiel en betrouwbaar. De vierhoek draait al jaren mee aan de top, maar wordt misschien overschat. Niet elke vierhoek is een vierkant en de ene is al nuttiger dan de andere. De vierhoek is nog steeds "in vorm", maar zakt dit jaar weg naar de derde plaats.</p>
           </div>
         </li>
       
         <li class="top10-item">
           <span class="top10-rank">2</span>
-          <img class="top10-img" src="images/top10-2.jpg" alt="">
+          <img class="top10-img" src="images/pentagon.avif" alt="">
           <div class="top10-text">
-            <p class="top10-title">Tweede plaats</p>
-            <p class="top10-desc">Korte beschrijving hier.</p>
+            <p class="top10-title">Vijfhoek</p>
+            <p class="top10-desc">Een controversiële keuze van de jury, maar de vijhoek staat niet zonder reden zo hoog aangeschreven. Naast haar bekende rol bij de Amerikaanse defensie is de pentagon ook aanwezig in de kunst. Veel kunstenaars zien de vijfhoek als een fundamentele bouwsteen van het menselijk lichaam. Het is de vorm waar men naar vraagt in deze moderne tijden en staat daarom verdiend op een mooie tweede plaats.</p>
           </div>
         </li>
       
         <li class="top10-item top10-item--first">
           <span class="top10-rank">1</span>
-          <img class="top10-img" src="images/top10-1.jpg" alt="">
+          <img class="top10-img" src="images/driehoek.jpg" alt="">
           <div class="top10-text">
-            <p class="top10-title">Eerste plaats</p>
-            <p class="top10-desc">Korte beschrijving of reden waarom dit op nummer 1 staat.</p>
+            <p class="top10-title">Driehoek</p>
+            <p class="top10-desc">Uiteraard, hoe kon het ook anders! De driehoek staat dit jaar weer op de eerste plaats.<br>In architectuur, de liefde en zelfs op het voetbalveld, de driehoek is overal aanwezig en met goede reden. Ze straalt fundamentele stabiliteit en betrouwbaarheid uit en is daarom opnieuw de beste veelhoek van het jaar!</p>
           </div>
         </li>
       </ul>

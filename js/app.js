@@ -60,7 +60,7 @@
   const pagesArray = window.ANNIVERSARY_PAGES || [];
   const pageMap    = {};  // "YYYY-MM-DD" → HTML string
 
-  const DEBUG_MODE = false; //OM TE TESTEN ------------------------------------------------------------------
+  const DEBUG_MODE = true; //OM TE TESTEN ------------------------------------------------------------------
 
   pagesArray.forEach(function (p) {
     pageMap[p.date] = p.content;
