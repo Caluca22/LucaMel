@@ -914,7 +914,7 @@ const PAGES = [
     date: "2026-07-10",
     content: `
       <h2>Foto van de dag</h2>
-      <img src="images/OudeFoto1.jpg" title="It's-a-me, Rico." style="width: 80%; display: block; margin: 20px auto 0;">
+      <img src="images/OudeFoto1.JPG" title="It's-a-me, Rico." style="width: 80%; display: block; margin: 20px auto 0;">
       
     `
   },
@@ -950,7 +950,7 @@ const PAGES = [
     date: "2026-07-20",
     content: `
       <h2>Foto van de dag</h2>
-      <img src="images/OudeFoto2.jpg" title="Moh, wat een gekke hoed" style="width: 80%; display: block; margin: 20px auto 0;">
+      <img src="images/OudeFoto2.JPG" title="Moh, wat een gekke hoed" style="width: 80%; display: block; margin: 20px auto 0;">
       
     `
   },
@@ -976,7 +976,7 @@ const PAGES = [
     date: "2026-08-09",
     content: `
       <h2>Foto van de dag</h2>
-      <img src="images/OudeFoto4.jpg" title="No-shoes summer" style="width: 80%; display: block; margin: 20px auto 0;">
+      <img src="images/OudeFoto4.JPG" title="No-shoes summer" style="width: 80%; display: block; margin: 20px auto 0;">
       
     `
   }
