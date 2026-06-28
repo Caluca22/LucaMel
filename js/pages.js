@@ -935,6 +935,15 @@ const PAGES = [
   },
 
   {
+    date: "2026-07-12",
+    content: `
+    <h2>Meme van de dag:</h2>
+    
+    <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/fMLQVPpzx64" title="Aaah minnen arm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
     date: "2026-07-14",
     content: `
       <h2>Nutteloos weetje van de dag</h2>
