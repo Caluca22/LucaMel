@@ -445,37 +445,6 @@ const PAGES = [
     `
   },
   {
-    date: "2026-06-23",
-    content: `
-      <h2>OMG SCHAKEN JOEPIEEEEE</h2>
-      <p>
-        Eindelijk, een dagelijkse schaakpuzzel!<br>
-        (Je kan er op klikken)
-      </p>
-      <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 400px; aspect-ratio: 10/11;" allowtransparency="true" frameborder="0"></iframe>
-    `
-  },
-  {
-    date: "2026-06-24",
-    content: `
-      <h2>Weetje van de dag:</h2>
-      <p>
-        Over de Tiwi eilanden ten noorden van Australië is er een storm die tussen september en maart elke dag om exact 15u verschijnt.<br>
-        Hij heeft de naam <a href="https://www.sciencefocus.com/nature/hector-the-convector">Hector de Convector</a> Gekregen.
-      </p>
-    `
-  },
-  {
-    date: "2026-06-25",
-    content: `
-      <h2>Liedje van de dag:</h2>
-      <p>(Misschien op Spotify luisteren want dit is maar een stukje)</p>
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6fyI2QGPzUiqRHnuYD7oOp?utm_source=generator&si=9065a818f3cf4afe" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <img src="images/HollowKnight.gif" title="Chillende" style="width: 80%; display: block; margin: 20px auto 0;">
-
-    `
-  },
-  {
     date: "2026-06-26",
     content: `
 
@@ -543,7 +512,7 @@ const PAGES = [
       <p>
       Hi hi, plant goes "weeeeeeeeeeeh"
       </p>
-      <img src="images/foto5.jpg" />
+      <img src="images/foto5.jpg"/>
     `
   },
 
@@ -944,6 +913,18 @@ const PAGES = [
   },
 
   {
+    date: "2026-07-13",
+    content: `
+      <h2>Plant van de dag:</h2>
+      <h3>Monilaria Moniliformis</h3>
+      <p>
+      Want als die klein is zijn het allemaal konijntjes! 🐰
+      </p>
+      <img src="images/plant2.webp"/>
+    `
+  },
+
+  {
     date: "2026-07-14",
     content: `
       <h2>Nutteloos weetje van de dag</h2>
@@ -952,6 +933,29 @@ const PAGES = [
       <br>
       <p>In 1582 zijn enkele landen van kalender gewisseld zoals Spanje, Portugal en Italië.<br>Na hun 4 oktober kwam 15 oktober!</p>
       <img src="images/kalender.jpg" title="Wauw dagen" style="width: 80%; display: block; margin: 20px auto 20px;">
+    `
+  },
+
+  {
+    date: "2026-07-15",
+    content: `
+      <h2>Tijdverspilling van de dag</h2>
+      <h3>Gelieve een wachtwoord in te stellen</h3>
+      <p>Stel <a href="https://neal.fun/password-game/">hier</a> een wachtwoord in.</p>
+    `
+  },
+
+  {
+    date: "2026-07-16",
+    content: `
+    <h2>Quote van de dag:</h2>
+      <p>
+        <blockquote>“If you are a soldier, you will become a general. If you are a monk, you will become the Pope.” Instead, I was a painter, and became Picasso”</blockquote>
+        <i>- Pablo Picasso</i>
+        <br>
+        <p>
+        <img src="images/pablo.jpg" title="Grote meneer" style="width: 60%; display: block; margin: 20px auto 0;">
+      </p></p>
     `
   },
 
@@ -982,11 +986,27 @@ const PAGES = [
   },
 
   {
+    date: "2026-08-03",
+    content: `
+      <h2>Nutteloos weetje van de dag</h2>
+      <p>In de tijd tussen de ontdekking van Pluto en het moment waarop hij niet meer als planeet werd beschouwd, heeft Pluto niet eens een volledige baan rond de zon afgelegd.</p>
+    `
+  },
+
+  {
     date: "2026-08-09",
     content: `
       <h2>Foto van de dag</h2>
       <img src="images/OudeFoto4.JPG" title="No-shoes summer" style="width: 80%; display: block; margin: 20px auto 0;">
       
+    `
+  },
+
+  {
+    date: "2026-08-13",
+    content: `
+      <h2>Nutteloos weetje van de dag</h2>
+      <p>Ik was verkozen als "Time Person of the Year" in 2006.</p>
     `
   }
 ];
