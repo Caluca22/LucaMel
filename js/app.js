@@ -1,3 +1,11 @@
+// ─── Theme: load saved choice immediately to avoid flash ─────
+(function () {
+  const saved = localStorage.getItem('onzedagen-theme');
+  if (saved && saved !== 'amber') {
+    document.documentElement.setAttribute('data-theme', saved);
+  }
+})();
+
 /**
  * ONZE DAGEN — app.js
  * Core logic: navigation, calendar, date calculations

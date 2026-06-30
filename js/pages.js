@@ -960,6 +960,81 @@ const PAGES = [
   },
 
   {
+    date: "2026-07-17",   /* ← pas de datum aan naar wat je wil */
+    content: `
+      <h2>Thema kiezen 🎨</h2>
+      <p>Hier kan je een kleurtje kiezen voor de site</p>
+
+      <div class="theme-grid">
+
+        <button class="theme-btn theme-btn--amber" onclick="setTheme('amber', this)">
+          <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #E8A940, #C17B2B, #7A2E0E);"></span>
+          Stella
+        </button>
+
+        <button class="theme-btn theme-btn--roos" onclick="setTheme('roos', this)">
+          <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #e8a0b0, #c4687e, #6b2040);"></span>
+          Flora
+        </button>
+
+        <button class="theme-btn theme-btn--bos" onclick="setTheme('bos', this)">
+          <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #8fba5e, #5a8a3a, #1e3d12);"></span>
+          Aisha
+        </button>
+
+        <button class="theme-btn theme-btn--zee" onclick="setTheme('zee', this)">
+          <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #7ab8d4, #4a8aaa, #0e3a5a);"></span>
+          Bloom
+        </button>
+
+        <button class="theme-btn theme-btn--nacht" onclick="setTheme('nacht', this)">
+          <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #9b6fd4, #7a4bb5, #3d1f6e);"></span>
+          Trix
+        </button>
+
+      </div>
+
+      <p id="theme-confirm" class="theme-confirm"></p>
+
+      <script>
+        (function () {
+          const confirmEl = document.getElementById('theme-confirm');
+
+          const labels = {
+            amber: 'Amber 🍂',
+            nacht: 'Nacht 🌙',
+            roos:  'Roos 🌸',
+            bos:   'Bos 🌿',
+            zee:   'Zee 🌊'
+          };
+
+          function markActive(theme) {
+            document.querySelectorAll('.theme-btn').forEach(function (btn) {
+              btn.classList.toggle('active', btn.classList.contains('theme-btn--' + theme));
+            });
+          }
+
+          window.setTheme = function (theme, btn) {
+            if (theme === 'amber') {
+              document.documentElement.removeAttribute('data-theme');
+            } else {
+              document.documentElement.setAttribute('data-theme', theme);
+            }
+            localStorage.setItem('onzedagen-theme', theme);
+            markActive(theme);
+            confirmEl.textContent = 'Thema opgeslagen!';
+            setTimeout(function () { confirmEl.textContent = ''; }, 2500);
+          };
+
+          // Mark whichever theme is currently active on page load
+          const current = localStorage.getItem('onzedagen-theme') || 'amber';
+          markActive(current);
+        })();
+      </script>
+    `
+  },
+
+  {
     date: "2026-07-20",
     content: `
       <h2>Foto van de dag</h2>
