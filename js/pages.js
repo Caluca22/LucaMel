@@ -1033,6 +1033,66 @@ const PAGES = [
       </script>
     `
   },
+  {
+    date: "2026-07-19",
+    content: `
+
+      <h2>Wavelength van de dag</h2>
+
+      <div class="dag26-grid">
+        <div>
+          <img src="images/voetbal.webp" />
+          <p class="dag26-caption">Deze sport om te kijken</p>
+        </div>
+        <div>
+          <img src="images/klok.webp" />
+          <p class="dag26-caption">Dit tijdstip</p>
+        </div>
+        <div>
+          <img src="images/vlag.svg" />
+          <p class="dag26-caption">Deze vlag</p>
+        </div>
+        <div>
+          <img src="images/patat.png" />
+          <p class="dag26-caption">Dit eten</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: 24px;">
+        <input
+          type="number"
+          id="dag26-input"
+          class="dag26-input"
+          placeholder="Getal..."
+          onkeypress="if (event.key === 'Enter') { document.getElementById('dag26-btn').click(); }"
+        />
+        <button
+          id="dag26-btn"
+          class="dag26-btn"
+          onclick="
+            var input = document.getElementById('dag26-input');
+            var result = document.getElementById('dag26-result');
+            var goedeAntwoorden = ['Yes!! 🎉','Zeker wel! 🥳','Helemaal juist! ❤️','Slimmerik! 🧠✨'];
+            var foutAntwoorden = ['Probeer opnieuw! 🙈','Bijna! Nog een poging 🤔','Ai, dat was em niet 😅','Neeje neeje! Nog eens proberen 🍀'];
+            if (parseInt(input.value, 10) === 5) {
+              result.textContent = goedeAntwoorden[Math.floor(Math.random() * goedeAntwoorden.length)];
+              result.className = 'dag26-result dag26-correct';
+              input.classList.remove('shake');
+            } else {
+              result.textContent = foutAntwoorden[Math.floor(Math.random() * foutAntwoorden.length)];
+              result.className = 'dag26-result dag26-wrong';
+              input.classList.remove('shake');
+              void input.offsetWidth;
+              input.classList.add('shake');
+            }
+          "
+        >
+          Check! ✅
+        </button>
+        <p id="dag26-result" class="dag26-result"></p>
+      </div>
+    `
+  },
 
   {
     date: "2026-07-20",
