@@ -960,7 +960,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-07-17",   /* ← pas de datum aan naar wat je wil */
+    date: "2026-07-17",
     content: `
       <h2>Thema kiezen 🎨</h2>
       <p>Hier kan je een kleurtje kiezen voor de site</p>
@@ -1031,6 +1031,20 @@ const PAGES = [
           markActive(current);
         })();
       </script>
+    `
+  },
+
+  {
+    date: "2026-07-18",
+    content: `
+    <h2>Diertje van de dag:</h2>
+    <h3>De axolotl</h3>
+    <p>Want die zijn cool wooow. Die rare friemels zijn blijkbaar zijn kiewen en ze kunnen hun botten, spieren, ledematen en zelf hun brein opnieuw groeien, jawadde!</p>
+      <p>
+        <img src="images/axo1.webp" title="Wauw." style="width: 60%; display: block; margin: 20px auto 0;">
+        <img src="images/axo2.webp" title="Wow." style="width: 60%; display: block; margin: 20px auto 0;">
+        <img src="images/axo3.png" title="Wiew." style="width: 60%; display: block; margin: 20px auto 0;">
+      </p>
     `
   },
   {
@@ -1104,10 +1118,26 @@ const PAGES = [
   },
 
   {
+    date: "2026-07-22",
+    content: `
+    <h2>Meme van de dag:</h2>
+    <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/E2760kPimNc" title="Doe gewoon de prikken weg! 1080p" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
     date: "2026-07-24",
     content: `
       <h2>Nutteloos weetje van de dag</h2>
       <p>Als je iemand zijn been amputeert dan gaat zijn BMI omlaag, als je beide benen amputeert dan gaat zijn BMI omhoog!</p>
+    `
+  },
+
+  {
+    date: "2026-07-26",
+    content: `
+      <h2>Tijdverspilling van de dag</h2>
+      <p><a href="https://thetruesize.com/">Hier</a> kan je landen vergelijken door ze te verslepen. Gek voor je wereldbeeld en zo, wauuuuuuw.</p>
     `
   },
 
