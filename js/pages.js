@@ -1118,6 +1118,35 @@ const PAGES = [
   },
 
   {
+    date: "2026-07-21",
+    content: `
+      <h2>Nieuwe queeste! ⚔️</h2>
+
+      <div class="quest-card">
+        <div class="quest-scroll-top"></div>
+
+        <div class="quest-body">
+          <p class="quest-label">Jouw queeste</p>
+          <p class="quest-description">
+            Stuur je geliefde 5 foto's van iets oranje.
+          </p>
+        </div>
+
+        <div class="quest-scroll-bottom"></div>
+      </div>
+
+      <div class="quest-reward">
+        <div class="quest-wax-seal">♥</div>
+        <div class="quest-reward-text">
+          <p class="quest-reward-label">Beloning</p>
+          <p class="quest-reward-title">Hartjes</p>
+          <p class="quest-reward-hearts">+5 ♥</p>
+        </div>
+      </div>
+    `
+  },
+
+  {
     date: "2026-07-22",
     content: `
     <h2>Meme van de dag:</h2>
