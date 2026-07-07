@@ -950,7 +950,7 @@ const PAGES = [
     content: `
     <h2>Quote van de dag:</h2>
       <p>
-        <blockquote>“If you are a soldier, you will become a general. If you are a monk, you will become the Pope.” Instead, I was a painter, and became Picasso”</blockquote>
+        <blockquote>“My mother told me, "If you are a soldier, you will become a general. If you are a monk, you will become the Pope.” Instead, I was a painter, and became Picasso”</blockquote>
         <i>- Pablo Picasso</i>
         <br>
         <p>
@@ -1155,10 +1155,28 @@ const PAGES = [
   },
 
   {
+    date: "2026-07-23",
+    content: `
+      <h2>Mopje weetje van de dag</h2>
+      <p>Ik zag een bijbel op de rommelmarkt voor 12 euro. Heb 10 geboden.</p>
+    `
+  },
+
+  {
     date: "2026-07-24",
     content: `
       <h2>Nutteloos weetje van de dag</h2>
       <p>Als je iemand zijn been amputeert dan gaat zijn BMI omlaag, als je beide benen amputeert dan gaat zijn BMI omhoog!</p>
+    `
+  },
+
+  {
+    date: "2026-07-25",
+    content: `
+      <h2>Liedje van de dag:</h2>
+      <p>(Misschien op Spotify luisteren want dit is maar een stukje)</p>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5hCdqb1dCo5k3zq9XvAyDK?utm_source=generator&si=22436ecc8c904932" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <img src="images/Celeste.gif" title="Chillende" style="width: 80%; display: block; margin: 20px auto 0;">
     `
   },
 
