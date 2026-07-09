@@ -931,7 +931,7 @@ const PAGES = [
       <p>Er is geen enkele Spanjaard geboren op 10 oktober 1582.</p>
       <br>
       <br>
-      <p>In 1582 zijn enkele landen van kalender gewisseld zoals Spanje, Portugal en Italië.<br>Na hun 4 oktober kwam 15 oktober!</p>
+      <p>In 1582 zijn enkele landen van kalender gewisseld zoals Spanje, Portugal en Italië.<br>Na 4 oktober kwam direct 15 oktober!</p>
       <img src="images/kalender.jpg" title="Wauw dagen" style="width: 80%; display: block; margin: 20px auto 20px;">
     `
   },
@@ -1157,7 +1157,7 @@ const PAGES = [
   {
     date: "2026-07-23",
     content: `
-      <h2>Mopje weetje van de dag</h2>
+      <h2>Mopje van de dag</h2>
       <p>Ik zag een bijbel op de rommelmarkt voor 12 euro. Heb 10 geboden.</p>
     `
   },
@@ -1198,10 +1198,35 @@ const PAGES = [
   },
 
   {
+    date: "2026-08-01",
+    content: `
+    <h2>Meme van de dag:</h2>
+    <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/ZbNHUA1FKi0" title="BYE BYE DRIVER!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
     date: "2026-08-03",
     content: `
       <h2>Nutteloos weetje van de dag</h2>
       <p>In de tijd tussen de ontdekking van Pluto en het moment waarop hij niet meer als planeet werd beschouwd, heeft Pluto niet eens een volledige baan rond de zon afgelegd.</p>
+    `
+  },
+
+  {
+    date: "2026-08-04",
+    content: `
+      <h2>Mopje van de dag</h2>
+      <img src="images/hertz.jpg" title="*slapslapslapslap*" style="width: 80%; display: block; margin: 20px auto 0;">
+    `
+  },
+
+  {
+    date: "2026-08-07",
+    content: `
+      <h2>Tijdverspilling van de dag</h2>
+      <h3>Kleur</h3>
+      <p>Ben je goed in <a href="https://dialed.gg/">kleuren</a> kiezen?</p>
     `
   },
 
@@ -1211,6 +1236,14 @@ const PAGES = [
       <h2>Foto van de dag</h2>
       <img src="images/OudeFoto4.JPG" title="No-shoes summer" style="width: 80%; display: block; margin: 20px auto 0;">
       
+    `
+  },
+
+  {
+    date: "2026-08-12",
+    content: `
+      <h2>Mopje van de dag</h2>
+      <img src="images/harryWatt.jpg" title="Y'arrr a pirate, Harry" style="width: 80%; display: block; margin: 20px auto 0;">
     `
   },
 
