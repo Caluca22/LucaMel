@@ -1187,6 +1187,53 @@ const PAGES = [
       <p><a href="https://thetruesize.com/">Hier</a> kan je landen vergelijken door ze te verslepen. Gek voor je wereldbeeld en zo, wauuuuuuw.</p>
     `
   },
+  {
+    date: "2026-07-27",
+    content: `
+      <h2>Plant van de dag:</h2>
+      <h3>Kruidje-roer-me-niet (mimosa pudica)</h3>
+      <p>
+      Die ken je waarschijnlijk al, maar toch is ze cool! Ookal is ze een beetje verlegen.
+      </p>
+      <iframe style="width: 100%; aspect-ratio: 16 / 9;" frameborder="0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; web-share" allowfullscreen src="https://commons.wikimedia.org/wiki/File:Mimosa_pudica_leaves_folding_when_touched_2.ogv?embedplayer=true" />
+    `
+  },
+
+  {
+    date: "2026-07-28",
+    content: `
+      <h2>Puzzel van de dag</h2>
+      <p>Bavo rijdt en wil graag iedereen naar de boot brengen na een gezellige week in Engeland. Maar er zijn een paar probleempjes!</p>
+      <ul>
+        <li>Merel kan niet alleen bij oma blijven, want dan drinken ze de hele dag thee en staan ze te laat klaar</li>
+        <li>Oma en Michiel kunnen niet alleen blijven want dan spelen ze alleen maar Rumikub en zijn de valiezen niet op tijd klaar</li>
+      </ul>
+      <p>Door al dat grief dat mee moet is er maar plaats voor Bavo en één passagier, hij zal dus een paar keer heen en weer moeten rijden...<br>In welke volgorde kan Bavo Merel, oma en Michiel meenemen zonder dat er problemen zijn?</p>
+    `
+  },
+
+  {
+    date: "2026-07-29",
+    content: `
+    <h2>Diertje van de dag:</h2>
+    <h3>De bidsprinkhaankreeft</h3>
+    <p>Lijst met coole dingen over de mantis shrimp:</p>
+    <ul>
+    <li>Ziet er cool uit</li>
+    <li>Bokst tegen roofdieren met slagen tot 23 m/s (de GIF is in slow-motion) waardoor het water rond zijn poten soms kookt</li>
+    <li>Ze zijn moeilijk te houden in een aquarium want ze maken het glas kapot</li>
+    <li>Er zijn ook soorten met stekels die even snel gaan</li>
+    <li>Heeft het meest complexe kleurenzicht van alle dieren op aarde</li>
+    </ul>
+
+      <p>
+        <img src="images/mantis1.jpg" title="Wauw." style="width: 60%; display: block; margin: 20px auto 0;">
+        <img src="images/mantis2.jpg" title="Wow." style="width: 60%; display: block; margin: 20px auto 0;">
+        <img src="images/mantis3.gif" title="Wiew." style="width: 60%; display: block; margin: 20px auto 0;">
+        <img src="images/mantis4.jpg" title="Wuuw." style="width: 60%; display: block; margin: 20px auto 0;">
+      </p>
+    `
+  },
 
   {
     date: "2026-07-30",
@@ -1231,6 +1278,66 @@ const PAGES = [
     content: `
     <h2>Meme van de dag:</h2>
     <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/ZbNHUA1FKi0" title="BYE BYE DRIVER!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+  {
+    date: "2026-08-02",
+    content: `
+
+      <h2>Wavelength van de dag 🔎</h2>
+
+      <div class="dag26-grid">
+        <div>
+          <img src="images/WL2A.jpg" />
+          <p class="dag26-caption">Deze dino om op te rijden</p>
+        </div>
+        <div>
+          <img src="images/WL2B.jpg" />
+          <p class="dag26-caption">Dit dier</p>
+        </div>
+        <div>
+          <img src="images/WL2C.gif" />
+          <p class="dag26-caption">Deze GIF</p>
+        </div>
+        <div>
+          <img src="images/WL2D.png" />
+          <p class="dag26-caption">Deze letter</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: 24px;">
+        <input
+          type="number"
+          id="dag26-input"
+          class="dag26-input"
+          placeholder="Getal..."
+          onkeypress="if (event.key === 'Enter') { document.getElementById('dag26-btn').click(); }"
+        />
+        <button
+          id="dag26-btn"
+          class="dag26-btn"
+          onclick="
+            var input = document.getElementById('dag26-input');
+            var result = document.getElementById('dag26-result');
+            var goedeAntwoorden = ['Yes!! 🎉','Zeker wel! 🥳','Helemaal juist! ❤️','Slimmerik! 🧠✨'];
+            var foutAntwoorden = ['Probeer opnieuw! 🙈','Bijna! Nog een poging 🤔','Ai, dat was em niet 😅','Neeje neeje! Nog eens proberen 🍀'];
+            if (parseInt(input.value, 10) === 2) {
+              result.textContent = goedeAntwoorden[Math.floor(Math.random() * goedeAntwoorden.length)];
+              result.className = 'dag26-result dag26-correct';
+              input.classList.remove('shake');
+            } else {
+              result.textContent = foutAntwoorden[Math.floor(Math.random() * foutAntwoorden.length)];
+              result.className = 'dag26-result dag26-wrong';
+              input.classList.remove('shake');
+              void input.offsetWidth;
+              input.classList.add('shake');
+            }
+          "
+        >
+          Check! ✅
+        </button>
+        <p id="dag26-result" class="dag26-result"></p>
+      </div>
     `
   },
 
