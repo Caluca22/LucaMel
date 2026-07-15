@@ -1358,6 +1358,32 @@ const PAGES = [
   },
 
   {
+    date: "2026-08-05",
+    content: `
+    <h2>Quote van de dag:</h2>
+      <p>
+        <blockquote>“I love deadlines. I love the whooshing noise they make as they go by.”</blockquote>
+        <i>- Douglas Adams</i>
+        <br>
+        <p>
+        <img src="images/Douglas.avif" title="Gekke rakker toch" style="width: 60%; display: block; margin: 20px auto 0;">
+      </p></p>
+    `
+  },
+
+  {
+    date: "2026-08-06",
+    content: `
+      <h2>Plant van de dag:</h2>
+      <h3>Methusela</h3>
+      <p>
+      Methusela is een pinus longaeva uit Californië en wordt gezien als de oudste boom ter wereld. Ze wordt geschat ruim 4800 jaar oud te zijn.<br>Dat er geen duidelijke foto van is, is blijkbaar express, zodat er geen toeristen de boom gaan zoeken.
+      </p>
+        <img src="images/oudeBoom.jpg" title="Oh denneboom, oh denneboom, oh no denneboom" style="width: 60%; display: block; margin: 20px auto 0;">
+    `
+  },
+
+  {
     date: "2026-08-07",
     content: `
       <h2>Tijdverspilling van de dag</h2>
@@ -1388,6 +1414,40 @@ const PAGES = [
     content: `
       <h2>Nutteloos weetje van de dag</h2>
       <p>Ik was verkozen als "Time Person of the Year" in 2006.</p>
+    `
+  },
+
+  {
+    date: "2026-08-14",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/8fSgXuPUP38" title="ik zeg niet ja ik zeg niet nee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
+    date: "2026-08-19",
+    content: `
+      <h2>Foto van de dag</h2>
+      <img src="images/PetworthHouse.png" title="Op tour in Engeland en regio Westveld" style="width: 80%; display: block; margin: 20px auto 0;">
+      
+    `
+  },
+
+  {
+    date: "2026-08-23",
+    content: `
+      <h2>Weetje van de dag</h2>
+      <p>Een groep flamingo's wordt een flamboyance genoemd!</p>
+    `
+  },
+
+  {
+    date: "2026-09-02",
+    content: `
+      <h2>Weetje van de dag</h2>
+      <p>In de jaren 80 en 90 gaf de Zweedse marine miljoenen uit aan het opsporen van snel getik waarvan ze dachten dat het geheime Russische duikboten waren.
+        Het bleek te gaan om de scheten van gigantische scholen haring. Toepasselijk FRTs (Fast Repetitive Ticks) genoemd. Haringen doen dit vooral 's nachts om de school samen te houden bij lage visibiliteit.</p>
     `
   }
 ];
