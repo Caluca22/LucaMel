@@ -1118,7 +1118,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-07-21",
+    date: "2026-07-22",
     content: `
       <h2>Nieuwe queeste! ⚔️</h2>
 
@@ -1147,7 +1147,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-07-22",
+    date: "2026-07-21",
     content: `
     <h2>Meme van de dag:</h2>
     <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/E2760kPimNc" title="Doe gewoon de prikken weg! 1080p" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
