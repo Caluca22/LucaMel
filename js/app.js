@@ -92,6 +92,28 @@
   const calMonthLabel   = document.getElementById('calMonthLabel');
   const calGrid         = document.getElementById('calGrid');
 
+  // ─── Chest ───────────────────────────────────────────────────
+  const chestToggle  = document.getElementById('chestToggleBtn');
+  const chestOverlay = document.getElementById('chestOverlay');
+  const chestCloseBtn        = document.getElementById('chestCloseBtn');
+  const chestCloseBtnBottom  = document.getElementById('chestCloseBtnBottom');
+
+  function openChest() {
+    chestOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeChest() {
+    chestOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  chestToggle.addEventListener('click', openChest);
+  chestCloseBtn.addEventListener('click', closeChest);
+  chestCloseBtnBottom.addEventListener('click', closeChest);
+  chestOverlay.addEventListener('click', function (e) {
+    if (e.target === chestOverlay) closeChest();
+  });
+
   // ─── Page rendering ──────────────────────────────────────────
 
   function getPageContent(date) {

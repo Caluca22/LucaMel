@@ -1015,3 +1015,134 @@ body {
   font-size: 0.95rem;
   margin-bottom: 0;
 }
+
+.chest-toggle-btn {
+  background: color-mix(in srgb, var(--cream) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--cream) 35%, transparent);
+  border-radius: 8px;
+  color: var(--cream);
+  padding: 0.4rem 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s, transform 0.1s;
+  margin-right: 0.4rem;
+}
+.chest-toggle-btn:hover {
+  background: color-mix(in srgb, var(--cream) 28%, transparent);
+  transform: scale(1.05);
+}
+
+/* ---- CHEST OVERLAY ---- */
+.chest-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: color-mix(in srgb, var(--text-dark) 45%, transparent);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+  backdrop-filter: blur(3px);
+}
+.chest-overlay.open {
+  display: flex;
+}
+
+.chest-panel {
+  background: var(--parchment);
+  border: 2px solid var(--amber);
+  border-radius: 16px;
+  box-shadow: 0 8px 40px var(--shadow-deep);
+  padding: 1.25rem 1.5rem 1.5rem;
+  width: 100%;
+  max-width: 340px;
+  animation: slideDown 0.2s ease;
+}
+
+.chest-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.chest-panel-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--sienna);
+}
+
+.chest-close-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+.chest-close-btn:hover {
+  color: var(--sienna);
+  background: color-mix(in srgb, var(--amber) 10%, transparent);
+}
+
+/* ---- REWARD LIST ---- */
+.chest-reward-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chest-reward-row {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--cream);
+  border: 1px solid color-mix(in srgb, var(--amber) 25%, transparent);
+  border-radius: 10px;
+  padding: 0.6rem 0.75rem;
+}
+
+.chest-reward-icon {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.chest-reward-label {
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  font-weight: 400;
+}
+
+.chest-reward-amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--amber);
+}
+
+.chest-close-bottom {
+  margin-top: 1rem;
+  width: 100%;
+  background: var(--amber);
+  color: var(--cream);
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.chest-close-bottom:hover { background: var(--sienna); }
