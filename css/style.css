@@ -1146,3 +1146,85 @@ body {
   transition: background 0.2s;
 }
 .chest-close-bottom:hover { background: var(--sienna); }
+
+/* ── Lavendel ── */
+[data-theme="lavendel"] {
+  --cream:       #f5f0fa;
+  --parchment:   #ede0f5;
+  --gold:        #b48fd4;
+  --amber:       #8a5cb8;
+  --deep-amber:  #5a2e8a;
+  --sienna:      #3d1a6e;
+  --text-dark:   #1e0a3c;
+  --text-mid:    #5a3a7a;
+  --text-light:  #9070b0;
+  --shadow:      rgba(90, 46, 138, 0.18);
+  --shadow-deep: rgba(30, 10, 60, 0.28);
+}
+
+/* ── Koper ── */
+[data-theme="koper"] {
+  --cream:       #faf0e8;
+  --parchment:   #f0dece;
+  --gold:        #d4824a;
+  --amber:       #b05a28;
+  --deep-amber:  #7a3010;
+  --sienna:      #5a1e08;
+  --text-dark:   #2e0e04;
+  --text-mid:    #7a3a18;
+  --text-light:  #b07050;
+  --shadow:      rgba(176, 90, 40, 0.2);
+  --shadow-deep: rgba(90, 30, 8, 0.32);
+}
+
+/* ── Kers ── */
+[data-theme="kers"] {
+  --cream:       #fef0f2;
+  --parchment:   #fad8dc;
+  --gold:        #e06878;
+  --amber:       #c0304a;
+  --deep-amber:  #8a1028;
+  --sienna:      #600818;
+  --text-dark:   #2e0408;
+  --text-mid:    #7a2030;
+  --text-light:  #b06070;
+  --shadow:      rgba(192, 48, 74, 0.18);
+  --shadow-deep: rgba(96, 8, 24, 0.3);
+}
+
+/* ── Zand ── */
+[data-theme="zand"] {
+  --cream:       #fdf6ec;
+  --parchment:   #f5e8d0;
+  --gold:        #d4a06a;
+  --amber:       #b07840;
+  --deep-amber:  #7a4e20;
+  --sienna:      #5a3010;
+  --text-dark:   #2e1804;
+  --text-mid:    #7a5030;
+  --text-light:  #b08858;
+  --shadow:      rgba(176, 120, 64, 0.18);
+  --shadow-deep: rgba(90, 48, 16, 0.28);
+}
+
+/* ── Munt ── */
+[data-theme="munt"] {
+  --cream:       #f0faf6;
+  --parchment:   #d8f0e8;
+  --gold:        #5ab898;
+  --amber:       #2e8a6a;
+  --deep-amber:  #0e5a42;
+  --sienna:      #083c2c;
+  --text-dark:   #021e14;
+  --text-mid:    #2a5a44;
+  --text-light:  #5a9080;
+  --shadow:      rgba(46, 138, 106, 0.18);
+  --shadow-deep: rgba(8, 60, 44, 0.28);
+}
+
+.theme-btn--amber    { background: #F5E6C8; color: #7A2E0E; }
+.theme-btn--lavendel { background: #ede0f5; color: #3d1a6e; }
+.theme-btn--koper    { background: #f0dece; color: #5a1e08; }
+.theme-btn--kers     { background: #fad8dc; color: #600818; }
+.theme-btn--zand     { background: #f5e8d0; color: #5a3010; }
+.theme-btn--munt     { background: #d8f0e8; color: #083c2c; }

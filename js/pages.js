@@ -441,7 +441,6 @@ const PAGES = [
       <p>(Misschien op Spotify luisteren want dit is maar een stukje)</p>
       <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6fyI2QGPzUiqRHnuYD7oOp?utm_source=generator&si=9065a818f3cf4afe" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       <img src="images/HollowKnight.gif" title="Chillende" style="width: 80%; display: block; margin: 20px auto 0;">
-
     `
   },
   {
@@ -1236,7 +1235,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-07-30",
+    date: "2026-07-31",
     content: `
       <h2>Foto van de dag</h2>
       <img src="images/OudeFoto3.jpg" title="Wassup, bro" style="width: 80%; display: block; margin: 20px auto 0;">
@@ -1245,7 +1244,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-07-31",
+    date: "2026-07-30",
     content: `
       <h2>Nieuwe queeste! ⚔️</h2>
 
@@ -1393,11 +1392,29 @@ const PAGES = [
   },
 
   {
+    date: "2026-08-08",
+    content: `
+      <h2>Puzzel van de dag</h2>
+      <p>Kan je de piramide van richting veranderen door maar 3 centjes te verplaatsen?</p>
+      <p><img src="images/CentjesPuzzel.png" style="width: 80%; display: block; margin: 20px auto 0;"></p>
+    `
+  },
+
+  {
     date: "2026-08-09",
     content: `
       <h2>Foto van de dag</h2>
       <img src="images/OudeFoto4.JPG" title="No-shoes summer" style="width: 80%; display: block; margin: 20px auto 0;">
       
+    `
+  },
+
+  {
+    date: "2026-08-10",
+    content: `
+    <h2>Liedje van de dag:</h2>
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3BIf974vl0lIEo3EY1XvD1?utm_source=generator&si=7e8d77749e384c3f" width="80%" height="200px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <img src="images/OuterWilds.gif" title="chillende op mijn planeet" style="width: 80%; display: block; margin: 20px auto 0;">
     `
   },
 
@@ -1426,6 +1443,85 @@ const PAGES = [
   },
 
   {
+    date: "2026-08-16",
+    content: `
+      <h2>Nog kleurtjes, wooh!</h2>
+
+      <div class="theme-grid">
+
+      <button class="theme-btn theme-btn--amber" onclick="setTheme('amber', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #E8A940, #C17B2B, #7A2E0E);"></span>
+        Origineel
+      </button>
+
+      <button class="theme-btn theme-btn--lavendel" onclick="setTheme('lavendel', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #b48fd4, #8a5cb8, #3d1a6e);"></span>
+        Bosbes
+      </button>
+
+      <button class="theme-btn theme-btn--koper" onclick="setTheme('koper', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #d4824a, #b05a28, #5a1e08);"></span>
+        Karamel
+      </button>
+
+      <button class="theme-btn theme-btn--kers" onclick="setTheme('kers', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #e06878, #c0304a, #600818);"></span>
+        Kers
+      </button>
+
+      <button class="theme-btn theme-btn--zand" onclick="setTheme('zand', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #d4a06a, #b07840, #5a3010);"></span>
+        Koffie
+      </button>
+
+      <button class="theme-btn theme-btn--munt" onclick="setTheme('munt', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #5ab898, #2e8a6a, #083c2c);"></span>
+        Munt
+      </button>
+
+      </div>
+
+      <p id="theme-confirm" class="theme-confirm"></p>
+
+      <script>
+        (function () {
+          const confirmEl = document.getElementById('theme-confirm');
+
+          const labels = {
+            amber: 'Amber 🍂',
+            nacht: 'Nacht 🌙',
+            roos:  'Roos 🌸',
+            bos:   'Bos 🌿',
+            zee:   'Zee 🌊'
+          };
+
+          function markActive(theme) {
+            document.querySelectorAll('.theme-btn').forEach(function (btn) {
+              btn.classList.toggle('active', btn.classList.contains('theme-btn--' + theme));
+            });
+          }
+
+          window.setTheme = function (theme, btn) {
+            if (theme === 'amber') {
+              document.documentElement.removeAttribute('data-theme');
+            } else {
+              document.documentElement.setAttribute('data-theme', theme);
+            }
+            localStorage.setItem('onzedagen-theme', theme);
+            markActive(theme);
+            confirmEl.textContent = 'Thema opgeslagen!';
+            setTimeout(function () { confirmEl.textContent = ''; }, 2500);
+          };
+
+          // Mark whichever theme is currently active on page load
+          const current = localStorage.getItem('onzedagen-theme') || 'amber';
+          markActive(current);
+        })();
+      </script>
+    `
+  },
+
+  {
     date: "2026-08-19",
     content: `
       <h2>Foto van de dag</h2>
@@ -1443,11 +1539,68 @@ const PAGES = [
   },
 
   {
+    date: "2026-08-24",
+    content: `
+      <h2>Liedje van de dag:</h2>
+      <p>(Misschien op Spotify luisteren want dit is maar een stukje)</p>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0ldPfYO58u8zo9Mmj03z8n?utm_source=generator&si=3d8f457e0c7d4d82" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <img src="images/zelda.gif" title="Link jammende" style="width: 80%; display: block; margin: 20px auto 0;">
+    `
+  },
+
+  {
+    date: "2026-08-25",
+    content: `
+      <h2>(Eigenlijk geen) Mopje van de dag</h2>
+      <p>Mars is de enige bekende planeet volledig bewoond door robots!</p>
+    `
+  },
+
+  {
+    date: "2026-08-26",
+    content: `
+      <h2>Nieuwe queeste! ⚔️</h2>
+
+      <div class="quest-card">
+        <div class="quest-scroll-top"></div>
+
+        <div class="quest-body">
+          <p class="quest-label">Jouw queeste</p>
+          <p class="quest-description">
+            Stuur je geliefde 5 foto's van iets geel.
+          </p>
+        </div>
+
+        <div class="quest-scroll-bottom"></div>
+      </div>
+
+      <div class="quest-reward">
+        <div class="quest-wax-seal">♥</div>
+        <div class="quest-reward-text">
+          <p class="quest-reward-label">Beloning</p>
+          <p class="quest-reward-title">Hartjes</p>
+          <p class="quest-reward-hearts">+5 ♥</p>
+        </div>
+      </div>
+    `
+  },
+
+  {
     date: "2026-09-02",
     content: `
       <h2>Weetje van de dag</h2>
       <p>In de jaren 80 en 90 gaf de Zweedse marine miljoenen uit aan het opsporen van snel getik waarvan ze dachten dat het geheime Russische duikboten waren.
         Het bleek te gaan om de scheten van gigantische scholen haring. Toepasselijk FRTs (Fast Repetitive Ticks) genoemd. Haringen doen dit vooral 's nachts om de school samen te houden bij lage visibiliteit.</p>
+    `
+  },
+
+  {
+    date: "2026-09-06",
+    content: `
+      <h2>Foto van de dag</h2>
+      <p>1 Jaar geleden vandaag! Wat een schatjes.</p>
+      <img src="images/Sander.jpg" title="Njam" style="width: 80%; display: block; margin: 20px auto 0;">
+      
     `
   }
 ];
