@@ -294,6 +294,15 @@ const REISGAME_ITEMS = [
   }
 ];
 
+//---- TEMPLATES ------------------------------------------------
+
+function fotoVanDeDag(file, extraText="") {
+  return `
+          <h2>Foto van de dag</h2>
+          <img src="images/${file}" title="${extraText}" style="width: 80%; display: block; margin: 20px auto 0;">
+          `
+}
+
 // ─── PAGINA'S ─────────────────────────────────────────────────
 // Voeg hier je pagina's toe. Ze hoeven niet in volgorde te staan.
 // Toekomstige datums zijn alvast toegestaan.
@@ -1202,7 +1211,7 @@ const PAGES = [
     date: "2026-07-28",
     content: `
       <h2>Puzzel van de dag</h2>
-      <p>Bavo rijdt en wil graag iedereen naar de boot brengen na een gezellige week in Engeland. Maar er zijn een paar probleempjes!</p>
+      <p>Bavo rijdt en wil graag iedereen naar de boot brengen na een gezellige week in Engeland. Maar er zijn een paar probleempjes...</p>
       <ul>
         <li>Merel kan niet alleen bij oma blijven, want dan drinken ze de hele dag thee en staan ze te laat klaar</li>
         <li>Oma en Michiel kunnen niet alleen blijven want dan spelen ze alleen maar Rumikub en zijn de valiezen niet op tijd klaar</li>
@@ -1402,11 +1411,7 @@ const PAGES = [
 
   {
     date: "2026-08-09",
-    content: `
-      <h2>Foto van de dag</h2>
-      <img src="images/OudeFoto4.JPG" title="No-shoes summer" style="width: 80%; display: block; margin: 20px auto 0;">
-      
-    `
+    content: fotoVanDeDag("OudeFoto4.JPG", "No-shoes summer")
   },
 
   {
@@ -1415,6 +1420,67 @@ const PAGES = [
     <h2>Liedje van de dag:</h2>
     <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3BIf974vl0lIEo3EY1XvD1?utm_source=generator&si=7e8d77749e384c3f" width="80%" height="200px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <img src="images/OuterWilds.gif" title="chillende op mijn planeet" style="width: 80%; display: block; margin: 20px auto 0;">
+    `
+  },
+
+  {
+    date: "2026-08-11",
+    content: `
+      <h2>Winkel</h2>
+
+      <!-- ═══════════════════════════════════════════════════
+          WINKELHOUDER — verander src naar jouw foto/afbeelding
+          en pas de naam en tekst aan
+      ═══════════════════════════════════════════════════ -->
+      <div class="shop-keeper">
+        <img class="shop-keeper-img" src="images/TomHolland.webp" alt="Winkelhouder">
+        <div class="shop-keeper-bubble">
+          <p class="shop-keeper-name">Koopman Tom</p>
+          <p class="shop-keeper-speech">Hoi! Ik ben Tom.<br>Welkom in mijn winkel, wat mag het zijn? <br>Kom gerust eens terug als je nog wil sparen, we komen elkaar nog wel eens tegen.<br>Ik moet de dingen nog gaan halen, dus stuur ze maar gewoon door via Whatsapp naar Luca.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════
+          ITEMS — kopieer een .shop-item blok voor elk item
+          Verander: img src, naam, beschrijving, symbool en prijs
+      ═══════════════════════════════════════════════════ -->
+      <div class="shop-grid">
+
+        <div class="shop-item">
+          <img class="shop-item-img" id="shop-image" src="images/massage.jpg" alt="Item 1">
+          <div class="shop-item-body">
+            <p class="shop-item-name">Massage</p>
+            <p class="shop-item-desc">Een ontspannende massage door één van onze professionals.</p>
+          </div>
+          <div class="shop-item-footer">
+            <span class="shop-item-price"><span class="shop-currency-symbol">♥</span> 4</span>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <img class="shop-item-img" id="shop-image" src="images/Vraagteken.webp" alt="Item 2">
+          <div class="shop-item-body">
+            <p class="shop-item-name">Iets lekkers</p>
+            <p class="shop-item-desc">Laat je verrassen door onze huis-chef met een snack voor jou en je vriend.</p>
+          </div>
+          <div class="shop-item-footer">
+            <span class="shop-item-price"><span class="shop-currency-symbol">♥</span> 5</span>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <img class="shop-item-img" id="shop-image" src="images/diner.jpg" alt="Item 3">
+          <div class="shop-item-body">
+            <p class="shop-item-name">Etentje</p>
+            <p class="shop-item-desc">Eens lekker gaan eten met je lief.</p>
+          </div>
+          <div class="shop-item-footer">
+            <span class="shop-item-price"><span class="shop-currency-symbol">♥</span> 10</span>
+            <span class="shop-item-price"><span class="shop-currency-symbol">♦</span> 1</span>
+          </div>
+        </div>
+
+      </div>
     `
   },
 
@@ -1430,7 +1496,7 @@ const PAGES = [
     date: "2026-08-13",
     content: `
       <h2>Nutteloos weetje van de dag</h2>
-      <p>Ik was verkozen als "Time Person of the Year" in 2006.</p>
+      <p>Merel De Cock was verkozen als "Time Person of the Year" in 2006.</p>
     `
   },
 
@@ -1602,6 +1668,16 @@ const PAGES = [
       <img src="images/Sander.jpg" title="Njam" style="width: 80%; display: block; margin: 20px auto 0;">
       
     `
+  },
+
+  {
+    date: "2026-09-16",
+    content: fotoVanDeDag("OudeFoto5.png", "Go voetbal!")
+  },
+
+  {
+    date: "2026-09-26",
+    content: fotoVanDeDag("Rico.png", "Sint en gekke Piet")
   }
 ];
 

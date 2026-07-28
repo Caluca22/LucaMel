@@ -68,7 +68,7 @@
   const pagesArray = window.ANNIVERSARY_PAGES || [];
   const pageMap    = {};  // "YYYY-MM-DD" → HTML string
 
-  const DEBUG_MODE = false; //TRUE OM TE TESTEN ------------------------------------------------------------------
+  const DEBUG_MODE = location.origin == "file://"; //TRUE OM TE TESTEN ------------------------------------------------------------------
 
   pagesArray.forEach(function (p) {
     pageMap[p.date] = p.content;
@@ -234,6 +234,7 @@
 
   navNextBtn.addEventListener('click', function () {
     const todayDate = today();
+    console.log("NEXT");
     if ((!navNextBtn.disabled && addDays(currentDate, 1) <= todayDate) || DEBUG_MODE) {
       renderPage(addDays(currentDate, 1), 1);
     }
