@@ -1263,7 +1263,7 @@ const PAGES = [
         <div class="quest-body">
           <p class="quest-label">Jouw queeste</p>
           <p class="quest-description">
-            Teken een kameel en stuur hem naar je geliefde.<br>Vergeet niet de naam van je kameel erbij te schrijven.
+            Teken een kameel in 3 minuten en stuur hem naar je geliefde.<br>Vergeet niet de naam van je kameel erbij te schrijven.
           </p>
         </div>
 
@@ -1505,6 +1505,23 @@ const PAGES = [
     content: `
     <h2>Meme van de dag</h2>
     <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/8fSgXuPUP38" title="ik zeg niet ja ik zeg niet nee" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
+    date: "2026-08-15",
+    content: `
+    <h2>Dier van de dag:</h2>
+    <h3>De Schoenbekooievaar</h3>
+    <p>Omdat hij zo kijkt:</p>
+    <p>
+      <img src="images/shoebill.jpg" title="Aura" style="width: 70%; display: block; margin: 20px auto 0;">
+      <img src="images/shoebill2.jpg" title="De blik" style="width: 70%; display: block; margin: 20px auto 0;">
+    </p>
+    <p>En dan nog eens als je ziet hoe groot hij is</p>
+    <p>
+      <img src="images/shoebill3.webp" title="Wauw." style="width: 70%; display: block; margin: 20px auto 0;">
+    </p>
     `
   },
 
