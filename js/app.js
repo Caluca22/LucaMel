@@ -234,7 +234,6 @@
 
   navNextBtn.addEventListener('click', function () {
     const todayDate = today();
-    console.log("NEXT");
     if ((!navNextBtn.disabled && addDays(currentDate, 1) <= todayDate) || DEBUG_MODE) {
       renderPage(addDays(currentDate, 1), 1);
     }

@@ -294,6 +294,21 @@ const REISGAME_ITEMS = [
   }
 ];
 
+//----VERHAAL-----------------------------------------------------
+/* ═══════════════════════════════════════════════════════════
+  CONFIGURATIE — pas hier jouw versie aan
+
+  PROMPTS: de woorden die de speler moet invullen.
+    id:    unieke naam, gebruik dit in je verhaal met {{id}}
+    label: wat er gevraagd wordt aan de speler
+
+  STORY: het verhaal. Gebruik {{id}} op elke plek waar
+          een ingevuld woord moet komen.
+═══════════════════════════════════════════════════════════ */
+
+
+
+
 //---- TEMPLATES ------------------------------------------------
 
 function fotoVanDeDag(file, extraText="") {
@@ -301,6 +316,66 @@ function fotoVanDeDag(file, extraText="") {
           <h2>Foto van de dag</h2>
           <img src="images/${file}" title="${extraText}" style="width: 80%; display: block; margin: 20px auto 0;">
           `
+}
+
+function wavelength(ans, foto1, titel1, foto2, titel2, foto3, titel3, foto4, titel4) {
+  return `
+
+      <h2>Wavelength van de dag</h2>
+
+      <div class="dag26-grid">
+        <div>
+          <img src="images/${foto1}" />
+          <p class="dag26-caption">${titel1}</p>
+        </div>
+        <div>
+          <img src="images/${foto2}" />
+          <p class="dag26-caption">${titel2}</p>
+        </div>
+        <div>
+          <img src="images/${foto3}" />
+          <p class="dag26-caption">${titel3}</p>
+        </div>
+        <div>
+          <img src="images/${foto4}" />
+          <p class="dag26-caption">${titel4}</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: 24px;">
+        <input
+          type="number"
+          id="dag26-input"
+          class="dag26-input"
+          placeholder="Getal..."
+          onkeypress="if (event.key === 'Enter') { document.getElementById('dag26-btn').click(); }"
+        />
+        <button
+          id="dag26-btn"
+          class="dag26-btn"
+          onclick="
+            var input = document.getElementById('dag26-input');
+            var result = document.getElementById('dag26-result');
+            var goedeAntwoorden = ['Yes!! 🎉','Zeker wel! 🥳','Helemaal juist! ❤️','Slimmerik! 🧠✨'];
+            var foutAntwoorden = ['Probeer opnieuw! 🙈','Bijna! Nog een poging 🤔','Ai, dat was em niet 😅','Neeje neeje! Nog eens proberen 🍀'];
+            if (parseInt(input.value, 10) === ${ans}) {
+              result.textContent = goedeAntwoorden[Math.floor(Math.random() * goedeAntwoorden.length)];
+              result.className = 'dag26-result dag26-correct';
+              input.classList.remove('shake');
+            } else {
+              result.textContent = foutAntwoorden[Math.floor(Math.random() * foutAntwoorden.length)];
+              result.className = 'dag26-result dag26-wrong';
+              input.classList.remove('shake');
+              void input.offsetWidth;
+              input.classList.add('shake');
+            }
+          "
+        >
+          Check! ✅
+        </button>
+        <p id="dag26-result" class="dag26-result"></p>
+      </div>
+    `
 }
 
 // ─── PAGINA'S ─────────────────────────────────────────────────
@@ -1605,11 +1680,119 @@ const PAGES = [
   },
 
   {
+    date: "2026-08-17",
+    content: wavelength(7, "witHaar.jpg", "Dit kleur haar", "mercurius.jpg", "De planeet mercurius", "clouseau.jpg", "Deze groep", "Denken.webp", "Deze first-class mage")
+  },
+
+  {
     date: "2026-08-19",
     content: `
       <h2>Foto van de dag</h2>
       <img src="images/PetworthHouse.png" title="Op tour in Engeland en regio Westveld" style="width: 80%; display: block; margin: 20px auto 0;">
       
+    `
+  },
+
+  {
+    date: "2026-08-21",
+    content: `
+    <h2>Verhaaltjestijd</h2>
+    <p>Vul de woorden in, en breng het verhaal tot leven!</p>
+
+    <div id="madlibs-root"></div>
+
+    <script>
+
+    const PROMPTS = [
+      { id: "naam",         label: "Een voornaam" },
+      { id: "dier",         label: "Een dier (meervoud)" },
+      { id: "werkwoord",    label: "Een werkwoord" },
+      { id: "bijvoeglijk",  label: "Een bijvoeglijk naamwoord" },
+      { id: "plaats",       label: "Een plaatsnaam" },
+      { id: "getal",        label: "Een getal" },
+      { id: "zelfstandig",  label: "Een zelfstandig naamwoord" },
+      { id: "uitroep",      label: "Een uitroep" },
+    ];
+
+    const STORY = \`
+      Op een {{bijvoeglijk}} dag besloot {{naam}} om naar {{plaats}} te gaan.
+      Onderweg zag hij maar liefst {{getal}} wilde {{dier}} die probeerden
+      te {{werkwoord}} op een {{zelfstandig}}.
+      "{{uitroep}}!" riep {{naam}}.
+      "Dit is het {{bijvoeglijk}}ste wat ik ooit heb gezien in {{plaats}}!"
+      De {{dier}} keken op, maar gingen gewoon verder met {{werkwoord}}en.
+      En zo eindigde een heel {{bijvoeglijk}} avontuur in {{plaats}}.
+    \`;
+
+    (function () {
+
+      const root = document.getElementById('madlibs-root');
+      let submitted = false;
+
+      function buildStory(answers) {
+        return STORY.replace(/\{\{(\w+)\}\}/g, function (_, id) {
+          return '<strong class="ml-answer">' + (answers[id] || '???') + '</strong>';
+        });
+      }
+
+      function validate(answers) {
+        return PROMPTS.every(function (p) {
+          return answers[p.id] && answers[p.id].trim() !== '';
+        });
+      }
+
+      function render(answers) {
+        if (submitted) {
+          root.innerHTML = '<div class="ml-story">' + buildStory(answers) + '</div>'
+            + '<button class="ml-reset-btn" onclick="mlReset()">↺ Opnieuw</button>';
+          return;
+        }
+
+        const fields = PROMPTS.map(function (p, i) {
+          return '<div class="ml-field">'
+            + '<label class="ml-label" for="ml-' + p.id + '">' + (i + 1) + '. ' + p.label + '</label>'
+            + '<input class="ml-input" id="ml-' + p.id + '" type="text" placeholder="..." '
+            + 'value="' + (answers[p.id] || '') + '" '
+            + 'oninput="mlUpdate(\'' + p.id + '\', this.value)"'
+            + 'onkeydown="if(event.key===\'Enter\') document.getElementById(\'ml-submit\').click()">'
+            + '</div>';
+        }).join('');
+
+        const allFilled = validate(answers);
+
+        root.innerHTML = '<div class="ml-fields">' + fields + '</div>'
+          + '<button class="ml-submit-btn" id="ml-submit" '
+          + (allFilled ? '' : 'disabled ')
+          + 'onclick="mlSubmit()">Onthul het verhaal! ✨</button>'
+          + '<p class="ml-hint">' + (allFilled ? 'Klaar! Druk op de knop.' : 'Vul alle woorden in om verder te gaan.') + '</p>';
+      }
+
+      let answers = {};
+
+      window.mlUpdate = function (id, value) {
+        answers[id] = value;
+        // re-check just the button + hint without full re-render (avoids losing focus)
+        const btn = document.getElementById('ml-submit');
+        const hint = root.querySelector('.ml-hint');
+        if (btn) btn.disabled = !validate(answers);
+        if (hint) hint.textContent = validate(answers) ? 'Klaar! Druk op de knop.' : 'Vul alle woorden in om verder te gaan.';
+      };
+
+      window.mlSubmit = function () {
+        if (!validate(answers)) return;
+        submitted = true;
+        render(answers);
+      };
+
+      window.mlReset = function () {
+        answers = {};
+        submitted = false;
+        render(answers);
+      };
+
+      render(answers);
+    })();
+    </script>
     `
   },
 
