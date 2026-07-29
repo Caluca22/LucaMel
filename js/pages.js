@@ -1685,12 +1685,34 @@ const PAGES = [
   },
 
   {
+    date: "2026-08-18",
+    content: `
+    <h2>Plaats van de dag:</h2>
+    <h3>Dallol, Ethiopië</h3>
+    <p>De heetste bewoonde plaats op aarde met zwavelbronnen en zure meren, maar wel mooie kleuren:</p>
+    <p>
+      <img src="images/dallol.jpg" title="Aliengewijs" style="width: 80%; display: block; margin: 20px auto 0;">
+      <img src="images/dallol2.cms" title="Toch maar oppassen" style="width: 80%; display: block; margin: 20px auto 0;">
+    </p>
+    `
+  },
+
+  {
     date: "2026-08-19",
     content: `
-      <h2>Foto van de dag</h2>
-      <img src="images/PetworthHouse.png" title="Op tour in Engeland en regio Westveld" style="width: 80%; display: block; margin: 20px auto 0;">
+      <h2>Album van de dag</h2>
+      <img src="images/PetworthHouse.png" title="Op tour in Engeland en regio Westveld" style="width: 50%; display: block; margin: 20px auto 0;">
       
     `
+  },
+
+  {
+    date: "2026-08-20",
+    content: `
+      <h2>Woord van de dag</h2>
+      <h3>Hippopotomonstrosesquippedaliofobie</h3>
+      <p>De angst voor lange woorden.</p>
+      `
   },
 
   {
