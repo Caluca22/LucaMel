@@ -28,6 +28,12 @@ body {
   flex-direction: column;
 }
 
+img {
+  width: 80%;
+  display: block;
+  margin: 20px auto 0;
+}
+
 /* ---- HEADER ---- */
 .site-header {
   position: fixed;
@@ -597,7 +603,8 @@ body {
   border: 1px solid var(--parchment);
   border-radius: 6px;
   padding: 0.5em 1em;
-  max-width: 400px;
+  width: max-content;
+  min-width: 40%;
   background: var(--cream);
 }
 

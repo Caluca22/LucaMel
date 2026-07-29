@@ -1819,6 +1819,21 @@ const PAGES = [
   },
 
   {
+    date: "2026-08-22",
+    content: `
+      <h2>Plant van de dag:</h2>
+      <h3>Erwtenplant (Senecio rowleyanus)</h3>
+      <p>
+        Allemaal bolletjes en de mooie engelse naam "String of Pearls"
+      </p>
+      <p>
+        <img src="images/stringOfPearls.webp" style="width: 80%; display: block; margin: 20px auto 0;">
+        <img src="images/stringOfPearls2.jpg" style="width: 80%; display: block; margin: 20px auto 0;">
+      </p>
+    `
+  },
+
+  {
     date: "2026-08-23",
     content: `
       <h2>Weetje van de dag</h2>
@@ -1870,6 +1885,64 @@ const PAGES = [
           <p class="quest-reward-hearts">+5 ♥</p>
         </div>
       </div>
+    `
+  },
+
+  {
+    date: "2026-08-27",
+    content: `
+    <h2>Quote van de dag:</h2>
+      <p>
+        <blockquote>“Sometimes I wonder if I wouldn’t be such a feminist if I had bigger tits.”</blockquote>
+        <i>- Fleabag</i>
+        <br>
+        <p>
+        <img src="images/fleabag.jpg" title="Queen." style="width: 60%; display: block; margin: 20px auto 0;">
+      </p></p>
+    `
+  },
+
+  {
+    date: "2026-08-28",
+    content: `
+      <h2>Raadsel van de dag:</h2>
+      <p>
+        Je maakt (veel) frambozenconfituur met je papa en je hebt exact 6 liter water nodig.
+      </p>
+      <p>
+        Jammergenoeg heb je maar 2 emmers. Een emmer van 4 liter en een emmer van 9 liter.<br>
+        Hoe kan je toch exact 6 liter afmeten? Je hebt een kraan met zoveel water als je wil.
+      </p>
+      <details class="spoiler">
+        <summary>Klik hier voor het antwoord</summary>
+        <ul>
+          <li>Vul de emmer van 9 liter</li>
+          <li>Giet ze over in de emmer van 4 liter, er blijft 5 liter over</li>
+          <li>Giet de emmer van 4 liter leeg</li>
+          <li>Vul ze opnieuw met de andere emmer, er blijft nu nog 1 liter over</li>
+          <li>Giet de emmer van 4 liter opnieuw leeg en vul ze met de laatste liter</li>
+          <li>Vul de emmer van 9 liter opnieuw</li>
+          <li>Giet water in de emmer van 4 liter tot ze vol is</li>
+          <li>Er blijft nu nog 6 liter over in de emmer van 9 liter</li>
+        </ul>
+      </details>
+    `
+  },
+
+  {
+    date: "2026-08-29",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/Jr-zvdKivig" title="Water? Do you want to poison me or something Meme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
+    date: "2026-08-30",
+    content: `
+    <h2>Plaats van de dag:</h2>
+    <h3>Alien Throne in New Mexico</h3>
+    <img src="images/alienThrone.jpg" title="Aliengewijs" style="width: 80%; display: block; margin: 20px auto 0;">
     `
   },
 

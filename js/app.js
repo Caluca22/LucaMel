@@ -294,7 +294,7 @@
       const isBeforeStart = dateObj < startDate;
       const hasPage    = !!pageMap[key];
 
-      if (isFuture || isBeforeStart) {
+      if ((isFuture || isBeforeStart) && !DEBUG_MODE) {
         btn.classList.add(isBeforeStart ? 'cal-day--disabled' : 'cal-day--future');
         btn.disabled = true;
       } else {
@@ -343,7 +343,7 @@
     let m = calViewMonth + 1;
     let y = calViewYear;
     if (m > 11) { m = 0; y++; }
-    if (y > todayDate.getFullYear() || (y === todayDate.getFullYear() && m > todayDate.getMonth())) return;
+    if ((y > todayDate.getFullYear() || (y === todayDate.getFullYear() && m > todayDate.getMonth())) && !DEBUG_MODE) return;
     buildCalendar(y, m);
   });
 
