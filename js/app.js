@@ -358,4 +358,65 @@
 
   init();
 
+  // ─── Mad Libs ────────────────────────────────────────────────
+  window.initMadLibs = function (prompts, story) {
+    const root = document.getElementById('madlibs-root');
+    if (!root) return;
+    let submitted = false;
+    let answers = {};
+
+    function buildStory() {
+      return story.replace(new RegExp('\\{\\{(\\w+)\\}\\}', 'g'), function (_, id) {
+        return '<strong class="ml-answer">' + (answers[id] || '???') + '</strong>';
+      });
+    }
+
+    function validate() {
+      return prompts.every(function (p) {
+        return answers[p.id] && answers[p.id].trim() !== '';
+      });
+    }
+
+    function render() {
+      if (submitted) {
+        root.innerHTML = '<div class="ml-story">' + buildStory() + '</div>'
+          + '<button class="ml-reset-btn" onclick="mlReset()">&#8635; Opnieuw</button>';
+        return;
+      }
+      const fields = prompts.map(function (p, i) {
+        return '<div class="ml-field">'
+          + '<label class="ml-label" for="ml-' + p.id + '">' + (i + 1) + '. ' + p.label + '</label>'
+          + '<input class="ml-input" id="ml-' + p.id + '" type="text" placeholder="..." '
+          + 'value="' + (answers[p.id] || '') + '" '
+          + 'oninput="mlUpdate(\'' + p.id + '\', this.value)" '
+          + 'onkeydown="if(event.key===\'Enter\') document.getElementById(\'ml-submit\').click()">'
+          + '</div>';
+      }).join('');
+      const allFilled = validate();
+      root.innerHTML = '<div class="ml-fields">' + fields + '</div>'
+        + '<button class="ml-submit-btn" id="ml-submit" ' + (allFilled ? '' : 'disabled ') + 'onclick="mlSubmit()">Onthul het verhaal! &#10024;</button>'
+        + '<p class="ml-hint">' + (allFilled ? 'Klaar! Druk op de knop.' : 'Vul alle woorden in om verder te gaan.') + '</p>';
+    }
+
+    window.mlUpdate = function (id, value) {
+      answers[id] = value;
+      const btn = document.getElementById('ml-submit');
+      const hint = root.querySelector('.ml-hint');
+      if (btn) btn.disabled = !validate();
+      if (hint) hint.textContent = validate() ? 'Klaar! Druk op de knop.' : 'Vul alle woorden in om verder te gaan.';
+    };
+    window.mlSubmit = function () {
+      if (!validate()) return;
+      submitted = true;
+      render();
+    };
+    window.mlReset = function () {
+      answers = {};
+      submitted = false;
+      render();
+    };
+
+    render();
+  };
+
 })();

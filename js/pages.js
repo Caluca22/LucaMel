@@ -294,21 +294,6 @@ const REISGAME_ITEMS = [
   }
 ];
 
-//----VERHAAL-----------------------------------------------------
-/* ═══════════════════════════════════════════════════════════
-  CONFIGURATIE — pas hier jouw versie aan
-
-  PROMPTS: de woorden die de speler moet invullen.
-    id:    unieke naam, gebruik dit in je verhaal met {{id}}
-    label: wat er gevraagd wordt aan de speler
-
-  STORY: het verhaal. Gebruik {{id}} op elke plek waar
-          een ingevuld woord moet komen.
-═══════════════════════════════════════════════════════════ */
-
-
-
-
 //---- TEMPLATES ------------------------------------------------
 
 function fotoVanDeDag(file, extraText="") {
@@ -1718,103 +1703,32 @@ const PAGES = [
   {
     date: "2026-08-21",
     content: `
-    <h2>Verhaaltjestijd</h2>
-    <p>Vul de woorden in, en breng het verhaal tot leven!</p>
+      <h2>Verhaaltjestijd</h2>
+      <p>Vul de woorden in, en breng het verhaal tot leven!</p>
 
-    <div id="madlibs-root"></div>
+      <div id="madlibs-root"></div>
 
-    <script>
-
-    const PROMPTS = [
-      { id: "naam",         label: "Een voornaam" },
-      { id: "dier",         label: "Een dier (meervoud)" },
-      { id: "werkwoord",    label: "Een werkwoord" },
-      { id: "bijvoeglijk",  label: "Een bijvoeglijk naamwoord" },
-      { id: "plaats",       label: "Een plaatsnaam" },
-      { id: "getal",        label: "Een getal" },
-      { id: "zelfstandig",  label: "Een zelfstandig naamwoord" },
-      { id: "uitroep",      label: "Een uitroep" },
-    ];
-
-    const STORY = \`
-      Op een {{bijvoeglijk}} dag besloot {{naam}} om naar {{plaats}} te gaan.
-      Onderweg zag hij maar liefst {{getal}} wilde {{dier}} die probeerden
-      te {{werkwoord}} op een {{zelfstandig}}.
-      "{{uitroep}}!" riep {{naam}}.
-      "Dit is het {{bijvoeglijk}}ste wat ik ooit heb gezien in {{plaats}}!"
-      De {{dier}} keken op, maar gingen gewoon verder met {{werkwoord}}en.
-      En zo eindigde een heel {{bijvoeglijk}} avontuur in {{plaats}}.
-    \`;
-
-    (function () {
-
-      const root = document.getElementById('madlibs-root');
-      let submitted = false;
-
-      function buildStory(answers) {
-        return STORY.replace(/\{\{(\w+)\}\}/g, function (_, id) {
-          return '<strong class="ml-answer">' + (answers[id] || '???') + '</strong>';
-        });
-      }
-
-      function validate(answers) {
-        return PROMPTS.every(function (p) {
-          return answers[p.id] && answers[p.id].trim() !== '';
-        });
-      }
-
-      function render(answers) {
-        if (submitted) {
-          root.innerHTML = '<div class="ml-story">' + buildStory(answers) + '</div>'
-            + '<button class="ml-reset-btn" onclick="mlReset()">↺ Opnieuw</button>';
-          return;
-        }
-
-        const fields = PROMPTS.map(function (p, i) {
-          return '<div class="ml-field">'
-            + '<label class="ml-label" for="ml-' + p.id + '">' + (i + 1) + '. ' + p.label + '</label>'
-            + '<input class="ml-input" id="ml-' + p.id + '" type="text" placeholder="..." '
-            + 'value="' + (answers[p.id] || '') + '" '
-            + 'oninput="mlUpdate(\'' + p.id + '\', this.value)"'
-            + 'onkeydown="if(event.key===\'Enter\') document.getElementById(\'ml-submit\').click()">'
-            + '</div>';
-        }).join('');
-
-        const allFilled = validate(answers);
-
-        root.innerHTML = '<div class="ml-fields">' + fields + '</div>'
-          + '<button class="ml-submit-btn" id="ml-submit" '
-          + (allFilled ? '' : 'disabled ')
-          + 'onclick="mlSubmit()">Onthul het verhaal! ✨</button>'
-          + '<p class="ml-hint">' + (allFilled ? 'Klaar! Druk op de knop.' : 'Vul alle woorden in om verder te gaan.') + '</p>';
-      }
-
-      let answers = {};
-
-      window.mlUpdate = function (id, value) {
-        answers[id] = value;
-        // re-check just the button + hint without full re-render (avoids losing focus)
-        const btn = document.getElementById('ml-submit');
-        const hint = root.querySelector('.ml-hint');
-        if (btn) btn.disabled = !validate(answers);
-        if (hint) hint.textContent = validate(answers) ? 'Klaar! Druk op de knop.' : 'Vul alle woorden in om verder te gaan.';
-      };
-
-      window.mlSubmit = function () {
-        if (!validate(answers)) return;
-        submitted = true;
-        render(answers);
-      };
-
-      window.mlReset = function () {
-        answers = {};
-        submitted = false;
-        render(answers);
-      };
-
-      render(answers);
-    })();
-    </script>
+      <script>
+      window.initMadLibs(
+        [
+          { id: "naam",        label: "Een voornaam" },
+          { id: "dier",        label: "Een dier (meervoud)" },
+          { id: "werkwoord",   label: "Een werkwoord" },
+          { id: "bijvoeglijk", label: "Een bijvoeglijk naamwoord" },
+          { id: "plaats",      label: "Een plaatsnaam" },
+          { id: "getal",       label: "Een getal" },
+          { id: "zelfstandig", label: "Een zelfstandig naamwoord" },
+          { id: "uitroep",     label: "Een uitroep" }
+        ],
+        "Op een {{bijvoeglijk}} dag besloot {{naam}} om naar {{plaats}} te gaan.\n"
+        + "Onderweg zag hij maar liefst {{getal}} wilde {{dier}} die probeerden\n"
+        + "te {{werkwoord}} op een {{zelfstandig}}.\n"
+        + "{{uitroep}}! riep {{naam}}.\n"
+        + "Dit is het {{bijvoeglijk}}ste wat ik ooit heb gezien in {{plaats}}!\n"
+        + "De {{dier}} keken op, maar gingen gewoon verder met {{werkwoord}}en.\n"
+        + "En zo eindigde een heel {{bijvoeglijk}} avontuur in {{plaats}}."
+      );
+      </script>
     `
   },
 
