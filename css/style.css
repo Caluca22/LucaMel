@@ -1364,3 +1364,109 @@ img {
 #shop-image {
   box-shadow: none;
 }
+
+/* ---- MAD LIBS ---- */
+.ml-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.ml-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ml-label {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  font-weight: 700;
+}
+
+.ml-input {
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  border: 1.5px solid color-mix(in srgb, var(--amber) 40%, transparent);
+  background: var(--cream);
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ml-input:focus {
+  outline: none;
+  border-color: var(--amber);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--amber) 20%, transparent);
+}
+
+.ml-submit-btn {
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 0.65rem;
+  background: var(--amber);
+  color: var(--cream);
+  border: none;
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+.ml-submit-btn:hover:not(:disabled) { background: var(--sienna); }
+.ml-submit-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.ml-hint {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.ml-story {
+  background: var(--cream);
+  border: 1.5px solid color-mix(in srgb, var(--amber) 30%, transparent);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--text-dark);
+  margin: 1rem 0;
+  white-space: pre-line;
+}
+
+.ml-answer {
+  color: var(--amber);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.ml-reset-btn {
+  display: block;
+  margin: 0 auto;
+  background: none;
+  border: 1.5px solid var(--amber);
+  color: var(--amber);
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 0.45rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.ml-reset-btn:hover {
+  background: var(--amber);
+  color: var(--cream);
+}

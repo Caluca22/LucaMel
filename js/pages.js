@@ -1706,29 +1706,12 @@ const PAGES = [
       <h2>Verhaaltjestijd</h2>
       <p>Vul de woorden in, en breng het verhaal tot leven!</p>
 
-      <div id="madlibs-root"></div>
+      <div id="madlibs-root"
+        data-story="Op een BIJVOEGLIJK dag besloot NAAM om naar PLAATS te gaan. Onderweg zag hij maar liefst GETAL wilde DIER die probeerden te WERKWOORD op een ZELFSTANDIG. UITROEP riep NAAM. Dit is het BIJVOEGLIJKste wat ik ooit heb gezien in PLAATS! De DIER keken op maar gingen gewoon verder met WERKWOORDen. En zo eindigde een heel BIJVOEGLIJK avontuur in PLAATS."
+        data-prompts="naam|Een voornaam,dier|Een dier meervoud,werkwoord|Een werkwoord,bijvoeglijk|Een bijvoeglijk naamwoord,plaats|Een plaatsnaam,getal|Een getal,zelfstandig|Een zelfstandig naamwoord,uitroep|Een uitroep">
+      </div>
 
-      <script>
-      window.initMadLibs(
-        [
-          { id: "naam",        label: "Een voornaam" },
-          { id: "dier",        label: "Een dier (meervoud)" },
-          { id: "werkwoord",   label: "Een werkwoord" },
-          { id: "bijvoeglijk", label: "Een bijvoeglijk naamwoord" },
-          { id: "plaats",      label: "Een plaatsnaam" },
-          { id: "getal",       label: "Een getal" },
-          { id: "zelfstandig", label: "Een zelfstandig naamwoord" },
-          { id: "uitroep",     label: "Een uitroep" }
-        ],
-        "Op een {{bijvoeglijk}} dag besloot {{naam}} om naar {{plaats}} te gaan.\n"
-        + "Onderweg zag hij maar liefst {{getal}} wilde {{dier}} die probeerden\n"
-        + "te {{werkwoord}} op een {{zelfstandig}}.\n"
-        + "{{uitroep}}! riep {{naam}}.\n"
-        + "Dit is het {{bijvoeglijk}}ste wat ik ooit heb gezien in {{plaats}}!\n"
-        + "De {{dier}} keken op, maar gingen gewoon verder met {{werkwoord}}en.\n"
-        + "En zo eindigde een heel {{bijvoeglijk}} avontuur in {{plaats}}."
-      );
-      </script>
+      <script>window.initMadLibs();<\/script>
     `
   },
 
@@ -1858,6 +1841,11 @@ const PAGES = [
     <h3>Alien Throne in New Mexico</h3>
     <img src="images/alienThrone.jpg" title="Aliengewijs" style="width: 80%; display: block; margin: 20px auto 0;">
     `
+  },
+
+  {
+    date: "2026-08-31",
+    content: wavelength(9, "evanCall.jpg", "Deze componist voor de soundtrack in mijn leven", "Schaak.png", "Deze opening", "uxie.jpg", "Deze pokémon", "lars.jpg", "Deze persoon om mee opgesloten te zitten in een escape room")
   },
 
   {

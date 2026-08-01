@@ -359,15 +359,27 @@
   init();
 
   // ─── Mad Libs ────────────────────────────────────────────────
-  window.initMadLibs = function (prompts, story) {
+  window.initMadLibs = function () {
     const root = document.getElementById('madlibs-root');
     if (!root) return;
+
+    // Read config from data attributes — avoids passing complex objects
+    // through executeScripts which can choke on braces and special chars
+    const story   = root.getAttribute('data-story') || '';
+    const prompts = root.getAttribute('data-prompts').split(',').map(function (entry) {
+      const parts = entry.split('|');
+      return { id: parts[0], label: parts[1] };
+    });
+
     let submitted = false;
-    let answers = {};
+    let answers   = {};
 
     function buildStory() {
-      return story.replace(new RegExp('\\{\\{(\\w+)\\}\\}', 'g'), function (_, id) {
-        return '<strong class="ml-answer">' + (answers[id] || '???') + '</strong>';
+      return story.replace(new RegExp('([A-Z]+)', 'g'), function (match) {
+        const id = match.toLowerCase();
+        const found = prompts.find(function (p) { return p.id.toUpperCase() === match; });
+        if (!found) return match;
+        return '<strong class="ml-answer">' + (answers[found.id] || '???') + '</strong>';
       });
     }
 
@@ -400,9 +412,9 @@
 
     window.mlUpdate = function (id, value) {
       answers[id] = value;
-      const btn = document.getElementById('ml-submit');
+      const btn  = document.getElementById('ml-submit');
       const hint = root.querySelector('.ml-hint');
-      if (btn) btn.disabled = !validate();
+      if (btn)  btn.disabled = !validate();
       if (hint) hint.textContent = validate() ? 'Klaar! Druk op de knop.' : 'Vul alle woorden in om verder te gaan.';
     };
     window.mlSubmit = function () {
