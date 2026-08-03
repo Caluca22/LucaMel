@@ -1704,11 +1704,11 @@ const PAGES = [
     date: "2026-08-21",
     content: `
       <h2>Verhaaltjestijd</h2>
-      <p>Vul de woorden in, en breng het verhaal tot leven!</p>
+      <p>Vul de woorden in volgens de beschrijving en ontdek je verhaal!</p>
 
       <div id="madlibs-root"
-        data-story="Op een BIJVOEGLIJK dag besloot NAAM om naar PLAATS te gaan. Onderweg zag hij maar liefst GETAL wilde DIER die probeerden te WERKWOORD op een ZELFSTANDIG. UITROEP riep NAAM. Dit is het BIJVOEGLIJKste wat ik ooit heb gezien in PLAATS! De DIER keken op maar gingen gewoon verder met WERKWOORDen. En zo eindigde een heel BIJVOEGLIJK avontuur in PLAATS."
-        data-prompts="naam|Een voornaam,dier|Een dier meervoud,werkwoord|Een werkwoord,bijvoeglijk|Een bijvoeglijk naamwoord,plaats|Een plaatsnaam,getal|Een getal,zelfstandig|Een zelfstandig naamwoord,uitroep|Een uitroep">
+        data-story="Op een BIJVOEGLIJK dag werd NAAM opgeschrikt door zeker GETAL DIEREN! NAAM ontsnapte naar PLAATS, maar zag niet dat daar een BIJV MONSTER zat! NAAM nam een BIJVOEG VOORWERP, gekregen van PERSOON en versloeg zo MONSTER. Samen met NAAM's geliefde, LIEF leefden ze nog lang en gelukkig."
+        data-prompts="naam|Een naam,lief|Een andere naam,bijvoeglijk|Een bijvoeglijk naamwoord,dieren|Een dier (in het meervoud),plaats|Een plaats,bijv|Een bijvoeglijk naamwoord,bijvoeg|Nog een bijvoeglijk naamwoord,getal|Een getal,monster|Een wezen of monster,voorwerp|Een voorwerp,persoon|Een persoon">
       </div>
 
       <script>window.initMadLibs();<\/script>
@@ -1849,11 +1849,33 @@ const PAGES = [
   },
 
   {
+    date: "2026-09-01",
+    content: `
+      <h2>Woord van de dag</h2>
+      <h3>Koekwous</h3>
+      <p>Een dom of vreemd persoon</p>
+      `
+  },
+
+  {
     date: "2026-09-02",
     content: `
       <h2>Weetje van de dag</h2>
       <p>In de jaren 80 en 90 gaf de Zweedse marine miljoenen uit aan het opsporen van snel getik waarvan ze dachten dat het geheime Russische duikboten waren.
         Het bleek te gaan om de scheten van gigantische scholen haring. Toepasselijk FRTs (Fast Repetitive Ticks) genoemd. Haringen doen dit vooral 's nachts om de school samen te houden bij lage visibiliteit.</p>
+    `
+  },
+
+  {
+    date: "2026-09-04",
+    content: `
+    <h2>Dier van de dag:</h2>
+    <h3>De Laaglandstreeptenrek</h3>
+    <p>Een soort egel-achtig dingetje met coole stekels waarmee hij ook geluid maakt als hij bedreigd wordt:</p>
+    <p>
+      <img src="images/egel.jpg" title="Aura" style="width: 70%; display: block; margin: 20px auto 0;">
+      <img src="images/egel2.jpg" title="De blik" style="width: 70%; display: block; margin: 20px auto 0;">
+    </p>
     `
   },
 

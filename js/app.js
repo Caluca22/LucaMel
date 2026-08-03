@@ -406,7 +406,7 @@
       }).join('');
       const allFilled = validate();
       root.innerHTML = '<div class="ml-fields">' + fields + '</div>'
-        + '<button class="ml-submit-btn" id="ml-submit" ' + (allFilled ? '' : 'disabled ') + 'onclick="mlSubmit()">Onthul het verhaal! &#10024;</button>'
+        + '<button class="ml-submit-btn" id="ml-submit" ' + (allFilled ? '' : 'disabled ') + 'onclick="mlSubmit()">Onthul het verhaal!;</button>'
         + '<p class="ml-hint">' + (allFilled ? 'Klaar! Druk op de knop.' : 'Vul alle woorden in om verder te gaan.') + '</p>';
     }
 
