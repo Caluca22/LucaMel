@@ -363,6 +363,18 @@ function wavelength(ans, foto1, titel1, foto2, titel2, foto3, titel3, foto4, tit
     `
 }
 
+function quoteVanDeDag(quote, persoon, foto, extraText="") {
+  return `
+    <h2>Quote van de dag:</h2>
+      <p>
+        <blockquote>“${quote}”</blockquote>
+        <i>- ${persoon}</i>
+        <br>
+        <p>
+        <img src="images/${foto}" title="${extraText}" style="width: 60%; display: block; margin: 20px auto 0;">
+      </p></p>
+    `
+}
 // ─── PAGINA'S ─────────────────────────────────────────────────
 // Voeg hier je pagina's toe. Ze hoeven niet in volgorde te staan.
 // Toekomstige datums zijn alvast toegestaan.
@@ -1867,6 +1879,15 @@ const PAGES = [
   },
 
   {
+    date: "2026-09-03",
+    content: `
+      <h2>Time-waster van de dag:</h2>
+      <p><a href="https://gesture-synth-weld.vercel.app/">Muziekgewijs</a></p>
+      <p>Ik snapte er niks van maar er staat een vraagteken met uitleg linksonder :)</p>
+    `
+  },
+
+  {
     date: "2026-09-04",
     content: `
     <h2>Dier van de dag:</h2>
@@ -1875,7 +1896,24 @@ const PAGES = [
     <p>
       <img src="images/egel.jpg" title="Aura" style="width: 70%; display: block; margin: 20px auto 0;">
       <img src="images/egel2.jpg" title="De blik" style="width: 70%; display: block; margin: 20px auto 0;">
+      <iframe style="width: 30%; aspect-ratio: 352/626;" src="https://www.youtube.com/embed/atZLJpXTpnc" title="Lowland streaked tenrec stridulation in Masoala, Madagascar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </p>
+    `
+  },
+
+  {
+    date: "2026-09-05",
+    content: `
+      <h2>Plant van de dag:</h2>
+      <h3>Gollum (crassula ovata)</h3>
+      <p>
+        Lange buisjes die blijkbaar lijken op de vingers van Smeagol, dus wordt de plant Gollum genoemd!
+      </p>
+      <p>
+        <img src="images/gollumPlant.jpg" style="width: 80%; display: block; margin: 20px auto 0;">
+        <img src="images/gollumPlant3.jpg" style="width: 80%; display: block; margin: 20px auto 0;">
+        <img src="images/gollumPlant2.jpg" style="width: 80%; display: block; margin: 20px auto 0;">
+      </p>
     `
   },
 
@@ -1890,8 +1928,98 @@ const PAGES = [
   },
 
   {
+    date: "2026-09-08",
+    content: `
+      <h2>Mopje van de dag</h2>
+      <p>Brand in een weeshuis...</p>
+      <br>
+      <p>---</p>
+      <br>
+      <p>Wegwezen!</p>
+    `
+  },
+
+  {
+    date: "2026-09-09",
+    content: `
+      <h2>Nieuwe queeste! ⚔️</h2>
+
+      <div class="quest-card">
+        <div class="quest-scroll-top"></div>
+
+        <div class="quest-body">
+          <p class="quest-label">Jouw queeste</p>
+          <p class="quest-description">
+            Neem een selfie met iemand en stuur hem door naar je geliefde!
+          </p>
+        </div>
+
+        <div class="quest-scroll-bottom"></div>
+      </div>
+
+      <div class="quest-reward">
+        <div class="quest-wax-seal">♦</div>
+        <div class="quest-reward-text">
+          <p class="quest-reward-label">Beloning</p>
+          <p class="quest-reward-title">Respectpunt</p>
+          <p class="quest-reward-hearts">+1 ♦</p>
+        </div>
+      </div>
+    `
+  },
+
+  {
+    date: "2026-09-10",
+    content: quoteVanDeDag("I wear suits now.", "Richard \"Richie\" Jerimovich", "richie.jpg", "Forks")
+  },
+
+  {
+    date: "2026-09-11",
+    content: `
+      <h2>Puzzel van de dag:</h2>
+      <p>Als 3 wetenschappers 3 uur nodig hebben om 3 databanken toe te voegen op EMODnet, hoeveel uur hebben 15 wetenschappers dan nodig voor 15 databanken?</p>
+    `
+  },
+
+  {
+    date: "2026-09-12",
+    content: `
+      <h2>Weetje van de dag</h2>
+      <p>Pistachenootjes worden getransporteerd onder de veiligheidscode "4.2 dangerous goods" omdat ze soms spontaan in brand schieten!<br>(Enkel wanneer verpakt in grote hoeveelheden 't schijnt)</p>
+    `
+  },
+
+  {
     date: "2026-09-16",
     content: fotoVanDeDag("OudeFoto5.png", "Go voetbal!")
+  },
+
+  {
+    date: "2026-09-18",
+    content: `
+      <h2>Dier van de dag:</h2>
+      <h3>Harriet (Een galapagosreuzenschildpad)</h3>
+      <p>
+        Harriet was een huisdier van Charles Darwin. Darwin stierf in 1882, Harriet stierf in 2006 op een leeftijd van 176 bij haar eigenaar van toen, Steve Irwin!
+      </p>
+      <p>
+        <img src="images/harriet.avif" style="width: 80%; display: block; margin: 20px auto 0;">
+        <img src="images/harriet2.webp" style="width: 80%; display: block; margin: 20px auto 0;">
+      </p>
+    `
+  },
+
+  {
+    date: "2026-09-22",
+    content: `
+      <h2>Weetje van de dag</h2>
+      <p>Wilhelm Conrad Röntgen heeft de X-rays ontdekt, tijdens zijn ontdekking gaf hij de stralen een tijdelijke naam "X-straal" omdat hij nog niet wist wat ze waren.<br>Ondanks zijn protest is de naam blijven plakken.<br>(De naar hem vernoemde naam röntgenstralen wordt ook veel gebruikt en hij kreeg een nobelprijs, dus hij zal hem niet te veel zorgen maken. Hij is ook dood, dus dat helpt)</p>
+    `
+  },
+
+  {
+    date: "2026-09-23",
+    content: quoteVanDeDag("Cool. Cool cool cool.", "Abed Nadir", "abed.webp", "On the spectrum? None of ya business.")
   },
 
   {
