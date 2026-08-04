@@ -375,6 +375,17 @@ function quoteVanDeDag(quote, persoon, foto, extraText="") {
       </p></p>
     `
 }
+
+function liedjeVanDeDag(lied, tekst="", gif="") {
+  return `
+      <h2>Liedje van de dag:</h2>
+      <p>${tekst}</p>
+      <p>(Misschien op Spotify luisteren want dit is maar een stukje)</p>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="${lied}" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      ${gif ? `<img src="images/${gif}" style="width: 80%; display: block; margin: 20px auto 0;">` : ""}
+    `
+}
+
 // ─── PAGINA'S ─────────────────────────────────────────────────
 // Voeg hier je pagina's toe. Ze hoeven niet in volgorde te staan.
 // Toekomstige datums zijn alvast toegestaan.
@@ -1508,7 +1519,7 @@ const PAGES = [
         <img class="shop-keeper-img" src="images/TomHolland.webp" alt="Winkelhouder">
         <div class="shop-keeper-bubble">
           <p class="shop-keeper-name">Koopman Tom</p>
-          <p class="shop-keeper-speech">Hoi! Ik ben Tom.<br>Welkom in mijn winkel, wat mag het zijn? <br>Kom gerust eens terug als je nog wil sparen, we komen elkaar nog wel eens tegen.<br>Ik moet de dingen nog gaan halen, dus stuur ze maar gewoon door via Whatsapp naar Luca.</p>
+          <p class="shop-keeper-speech">Hoi! Ik ben Tom.<br>Welkom in mijn winkel, wat mag het zijn? <br>Kom gerust een andere keer terug als je nog wil sparen, we komen elkaar nog wel eens tegen.<br>Ik moet de dingen nog gaan halen, dus stuur ze maar gewoon via Whatsapp naar Luca door.</p>
         </div>
       </div>
 
@@ -1928,6 +1939,11 @@ const PAGES = [
   },
 
   {
+    date: "2026-09-07",
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/79Usn4POWC308crb9UA1Rb?utm_source=generator&si=46b9cd452c2b4636")
+  },
+
+  {
     date: "2026-09-08",
     content: `
       <h2>Mopje van de dag</h2>
@@ -1986,6 +2002,25 @@ const PAGES = [
     content: `
       <h2>Weetje van de dag</h2>
       <p>Pistachenootjes worden getransporteerd onder de veiligheidscode "4.2 dangerous goods" omdat ze soms spontaan in brand schieten!<br>(Enkel wanneer verpakt in grote hoeveelheden 't schijnt)</p>
+    `
+  },
+
+  {
+    date: "2026-09-13",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/9KNV4UXTd3k" title="Mand! De korte versie, zonder intro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
+    date: "2026-09-14",
+    content: `
+    <h2>Plaats van de dag:</h2>
+    <h3>Darvaza-krater, Turkmenistan</h3>
+    <p>"De poort naar de hel" is een gaskrater die al meer dan 50 jaar continu brandt, midden in de woestijn.</p>
+    <img src="images/krater.jpg" title="swarm" style="width: 80%; display: block; margin: 20px auto 0;">
+    <img src="images/krater2.jpg" title="Mooi achter het hekje blijven" style="width: 80%; display: block; margin: 20px auto 0;">
     `
   },
 
