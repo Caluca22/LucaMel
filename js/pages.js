@@ -296,10 +296,11 @@ const REISGAME_ITEMS = [
 
 //---- TEMPLATES ------------------------------------------------
 
-function fotoVanDeDag(file, extraText="") {
+function fotoVanDeDag(file, extraText="", fotoText="") {
   return `
           <h2>Foto van de dag</h2>
-          <img src="images/${file}" title="${extraText}" style="width: 80%; display: block; margin: 20px auto 0;">
+          <p>${extraText}</p>
+          <img src="images/${file}" title="${fotoText}" style="width: 80%; display: block; margin: 20px auto 0;">
           `
 }
 
@@ -384,6 +385,33 @@ function liedjeVanDeDag(lied, tekst="", gif="") {
       <iframe data-testid="embed-iframe" style="border-radius:12px" src="${lied}" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       ${gif ? `<img src="images/${gif}" style="width: 80%; display: block; margin: 20px auto 0;">` : ""}
     `
+}
+
+function woordVanDeDag(woord, uitleg) {
+  return `
+      <h2>Woord van de dag</h2>
+      <h3>${woord}</h3>
+      <p>${uitleg}</p>
+      `
+}
+
+function plantVanDeDag(naam, latijnseNaam, uitleg, ...fotos) {
+  const afbeeldingen = fotos
+    .map(foto => `
+      <img src="images/${foto}" style="width: 70%; display: block; margin: 20px auto 0;">
+    `)
+    .join("");
+
+  return `
+    <h2>Plant van de dag:</h2>
+    <h3>${naam} (${latijnseNaam})</h3>
+    <p>
+      ${uitleg}
+    </p>
+    <p>
+      ${afbeeldingen}
+    </p>
+  `;
 }
 
 // ─── PAGINA'S ─────────────────────────────────────────────────
@@ -2025,8 +2053,18 @@ const PAGES = [
   },
 
   {
+    date: "2026-09-15",
+    content: wavelength(6, "Barbarian.png", "Deze DnD klasse", "rotella.webp", "Dit snoepje", "sandy.webp", "Dit Spongebob personage", "carmy.webp", "Deze huisgenoot")
+  },
+
+  {
     date: "2026-09-16",
     content: fotoVanDeDag("OudeFoto5.png", "Go voetbal!")
+  },
+
+  {
+    date: "2026-09-17",
+    content: woordVanDeDag("Petrichor", "De geur die vrijkomt wanneer het na een lange droge periode weer gaat regenen.")
   },
 
   {
@@ -2045,6 +2083,21 @@ const PAGES = [
   },
 
   {
+    date: "2026-09-19",
+    content: plantVanDeDag("Geluksklaver", "Oxalis triangularis", "Precies allemaal kleine vlindertjes!", "shamrock.webp", "shamrock2.jpg", "shamrock3.jpg", "shamrock4.jpg")
+  },
+
+  {
+    date: "2026-09-20",
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/4YDbjd5K0tNntyeWg0HSY8?utm_source=generator&si=86e7a18267844900", "", "drinkGif.gif")
+  },
+
+  {
+    date: "2026-09-21",
+    content: fotoVanDeDag("Wij.jpg", "Wooooh, De honderste dag! Zie je nog altijd even graag en stiekem liever en liever.<br>Ik kan niet geloven hoeveel geluk ik heb met jou en ben blij met elke dag ❤️<br>Kleffe Luca, out! xx", "Hoezeee!")
+  },
+
+  {
     date: "2026-09-22",
     content: `
       <h2>Weetje van de dag</h2>
@@ -2055,6 +2108,15 @@ const PAGES = [
   {
     date: "2026-09-23",
     content: quoteVanDeDag("Cool. Cool cool cool.", "Abed Nadir", "abed.webp", "On the spectrum? None of ya business.")
+  },
+
+  {
+    date: "2026-09-24",
+    content: `
+      <h2>Time-waster van de dag:</h2>
+      <p><a href="https://plasmastarfish.itch.io/pack">Ik ga op reis en ik neem mee...</a></p>
+      <p>- Satisfying inpak dingetje -</p>
+    `
   },
 
   {
