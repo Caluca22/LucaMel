@@ -296,7 +296,7 @@ const REISGAME_ITEMS = [
 
 //---- TEMPLATES ------------------------------------------------
 
-function fotoVanDeDag(file, extraText="", fotoText="") {
+function fotoVanDeDag(file, fotoText="", extraText="") {
   return `
           <h2>Foto van de dag</h2>
           <p>${extraText}</p>
@@ -412,6 +412,38 @@ function plantVanDeDag(naam, latijnseNaam, uitleg, ...fotos) {
       ${afbeeldingen}
     </p>
   `;
+}
+
+function DierVanDeDag(naam, uitleg, ...fotos) {
+  const afbeeldingen = fotos
+    .map(foto => `
+      <img src="images/${foto}" style="width: 70%; display: block; margin: 20px auto 0;">
+    `)
+    .join("");
+
+  return `
+    <h2>Dier van de dag:</h2>
+    <h3>${naam}</h3>
+    <p>
+      ${uitleg}
+    </p>
+    <p>
+      ${afbeeldingen}
+    </p>
+  `;
+}
+
+function puzzelVanDeDag(uitleg, foto, antwoord, antwoordfoto="") {
+  return `
+      <h2>Puzzel van de dag:</h2>
+      <p>${uitleg}</p>
+      <img src="images/${foto}" style="height: 80%; display: block; margin: 20px auto 20px;">
+      <details class="spoiler">
+        <summary>Klik hier voor het antwoord</summary>
+        <p>${antwoord}</p>
+        ${antwoordfoto ? `<img src="images/${antwoordfoto}" style="width: 80%; display: block; margin: 20px auto 0;">` : ""}
+      </details>
+    `
 }
 
 // ─── PAGINA'S ─────────────────────────────────────────────────
@@ -2094,7 +2126,7 @@ const PAGES = [
 
   {
     date: "2026-09-21",
-    content: fotoVanDeDag("Wij.jpg", "Wooooh, De honderste dag! Zie je nog altijd even graag en stiekem liever en liever.<br>Ik kan niet geloven hoeveel geluk ik heb met jou en ben blij met elke dag ❤️<br>Kleffe Luca, out! xx", "Hoezeee!")
+    content: fotoVanDeDag("Wij.jpg", "Hoezeee!", "Wooooh, De honderste dag! Zie je nog altijd even graag en stiekem liever en liever.<br>Ik kan niet geloven hoeveel geluk ik heb met jou en ben blij met elke dag ❤️<br>Kleffe Luca, out! xx")
   },
 
   {
@@ -2122,6 +2154,80 @@ const PAGES = [
   {
     date: "2026-09-26",
     content: fotoVanDeDag("Rico.png", "Sint en gekke Piet")
+  },
+
+  {
+    date: "2026-09-28",
+    content: `
+      <h2>Puzzel van de dag</h2>
+      <p>Wat staat hier?</p>
+      <p><img src="images/droedel.png" style="width: 30%; display: block; margin: 20px auto 0;"></p>
+      <details class="spoiler">
+        <summary>Klik hier voor het antwoord!</summary>
+        <p>Revolver</p>
+      </details>
+    `
+  },
+
+  {
+    date: "2026-09-29",
+    content: `
+      <h2>Nieuwe queeste! ⚔️</h2>
+
+      <div class="quest-card">
+        <div class="quest-scroll-top"></div>
+
+        <div class="quest-body">
+          <p class="quest-label">Jouw queeste</p>
+          <p class="quest-description">
+            Stuur je geliefde 5 foto's van iets blauw
+          </p>
+        </div>
+
+        <div class="quest-scroll-bottom"></div>
+      </div>
+
+      <div class="quest-reward">
+        <div class="quest-wax-seal">♥</div>
+        <div class="quest-reward-text">
+          <p class="quest-reward-label">Beloning</p>
+          <p class="quest-reward-title">Hartjes</p>
+          <p class="quest-reward-hearts">+5 ♥</p>
+        </div>
+      </div>
+    `
+  },
+
+  {
+    date: "2026-09-30",
+    content: wavelength(4, "Cirrus.avif", "Deze wolk", "pizzaFunghi.jpg", "Deze Dr Oetker pizza", "cowboyHat.jpg", "Dit hoofddeksel", "step.jpg", "Dit vervoersmiddel")
+  },
+
+  {
+    date: "2026-10-01",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="aspect-ratio: 374/664; width: 30%" src="https://www.youtube.com/embed/0RcWcz6u-zk" title="2 karren joh #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
+    date: "2026-10-02",
+    content: DierVanDeDag("Dumbo Octopus", "KIJK HOE KJOET (allee die laatste iets minder, maar we zien hem ook graag)", "Dumbo.webp", "Dumbo2.jpg", "Dumbo3.jpg")
+  },
+
+  {
+    date: "2026-10-03",
+    content: `
+      <h2>Weetje van de dag</h2>
+      <p>De "football huddle" is uitgevonden door het American football team van de Gallaudet universiteit. Ze waren doof en wouden zo hun gebarentaal verstoppen voor de tegenstander.</p>
+        <img src="images/huddle.jpg" style="width: 70%; display: block; margin: 20px auto 0;">
+    `
+  },
+
+  {
+    date: "2026-10-04",
+    content: plantVanDeDag("Bekerplant", "Nephentes", "Een vleesetende plant in de vorm van een beker. Op de rand zit nectar, maar de binnenkant is heel glad en dan vallen de beestjes erin! Stiekeme rakker die nephentes.", "vleeseet.jpg", "vleeseet2.jpg", "vleeseet3.jpg")
   }
 ];
 
