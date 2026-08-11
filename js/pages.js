@@ -304,6 +304,14 @@ function fotoVanDeDag(file, fotoText="", extraText="") {
           `
 }
 
+function mopVanDeDag(file="", text="") {
+  return `
+          <h2>Mop van de dag</h2>
+          <p>${text}</p>
+          ${file ? `<img src="images/${file}" style="width: 80%; display: block; margin: 20px auto 0;">` : ""}
+          `
+}
+
 function wavelength(ans, foto1, titel1, foto2, titel2, foto3, titel3, foto4, titel4) {
   return `
 
@@ -364,7 +372,7 @@ function wavelength(ans, foto1, titel1, foto2, titel2, foto3, titel3, foto4, tit
     `
 }
 
-function quoteVanDeDag(quote, persoon, foto, extraText="") {
+function quoteVanDeDag(quote, persoon, foto, fotoText="") {
   return `
     <h2>Quote van de dag:</h2>
       <p>
@@ -372,7 +380,7 @@ function quoteVanDeDag(quote, persoon, foto, extraText="") {
         <i>- ${persoon}</i>
         <br>
         <p>
-        <img src="images/${foto}" title="${extraText}" style="width: 60%; display: block; margin: 20px auto 0;">
+        <img src="images/${foto}" title="${fotoText}" style="width: 60%; display: block; margin: 20px auto 0;">
       </p></p>
     `
 }
@@ -405,6 +413,25 @@ function plantVanDeDag(naam, latijnseNaam, uitleg, ...fotos) {
   return `
     <h2>Plant van de dag:</h2>
     <h3>${naam} (${latijnseNaam})</h3>
+    <p>
+      ${uitleg}
+    </p>
+    <p>
+      ${afbeeldingen}
+    </p>
+  `;
+}
+
+function plaatsVanDeDag(naam, locatie, uitleg, ...fotos) {
+  const afbeeldingen = fotos
+    .map(foto => `
+      <img src="images/${foto}" style="width: 70%; display: block; margin: 20px auto 0;">
+    `)
+    .join("");
+
+  return `
+    <h2>Plant van de dag:</h2>
+    <h3>${naam} (${locatie})</h3>
     <p>
       ${uitleg}
     </p>
@@ -2152,8 +2179,18 @@ const PAGES = [
   },
 
   {
+    date: "2026-09-25",
+    content: mopVanDeDag("ElementLik.jpg")
+  },
+
+  {
     date: "2026-09-26",
     content: fotoVanDeDag("Rico.png", "Sint en gekke Piet")
+  },
+
+  {
+    date: "2026-09-27",
+    content: plaatsVanDeDag("Giant's Causeway", "Noord-Ierland", "Allemaal zeshoekige basaltzuilen. Er is daar iets gefilmd van Game of Thrones ook zeker?", "giant.webp", "giant2.jpg", "giant3.jpg")
   },
 
   {
@@ -2228,6 +2265,26 @@ const PAGES = [
   {
     date: "2026-10-04",
     content: plantVanDeDag("Bekerplant", "Nephentes", "Een vleesetende plant in de vorm van een beker. Op de rand zit nectar, maar de binnenkant is heel glad en dan vallen de beestjes erin! Stiekeme rakker die nephentes.", "vleeseet.jpg", "vleeseet2.jpg", "vleeseet3.jpg")
+  },
+
+  {
+    date: "2026-10-05",
+    content: woordVanDeDag("Autologische woorden", "Autologische woorden zijn woorden die zichzelf beschrijven: <b>Vijflettergrepig</b> heeft vijf lettergrepen, <b>Kort</b> is kort en <b>afk.</b> is een afkorting.")
+  },
+
+  {
+    date: "2026-10-06",
+    content: fotoVanDeDag("FotoTheo.JPG", "Kijk hoe klein ❤️")
+  },
+
+  {
+    date: "2026-10-16",
+    content: fotoVanDeDag("FotoTheo2.JPG", "Zoek het konijn")
+  },
+
+  {
+    date: "2026-10-17",
+    content: woordVanDeDag("Contraniemen (of auto-antoniemen)", "Woorden die het tegenovergestelde zijn van zichzelf:<ul><li><b>Zelfbewust</b>: Zelfbewust handelen kan zelfzeker zijn, maar zich zeer zelfbewust voelen is juist onzekerheid</li><li><b>sanctioneren</b>: Iets sanctioneren is iets toestaan, maar een sanctie ontvangen (of ook sanctioneren) is dan weer een straf of verbod</li></ul><p>Er zijn ook Engelse:</p><ul><li><b>To drop</b>: Iets releasen of opstarten (zoals een muziekalbum) of iets laten vallen en niet meer verderzetten</li><li><b>To dust</b>: Iets afstoffen of juist stof dat ergens opkomt</li><li><b>Earthbound</b>: iets of iemand op aarde of juist in de ruimte dat op weg is naar de aarde</li></ul><b>Obbligato</b> is een term in de muziek voor een deel dat verplicht is of exact zoals beschreven moet gespeeld worden, maar kan blijkbaar ook gebruikt worden voor een stuk dat optioneel is (bijvoorbeeld een moeilijk deel met een makkelijker alternatief)")
   }
 ];
 
