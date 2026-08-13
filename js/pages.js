@@ -2278,6 +2278,26 @@ const PAGES = [
   },
 
   {
+    date: "2026-10-07",
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/45Rxu7AonOsMOHmNBnjQ2y?utm_source=generator&si=b4e1ccdd86284862")
+  },
+
+  {
+    date: "2026-10-08",
+    content: quoteVanDeDag("Ik heb slaaptekort want ik slaap te kort", "Boef", "boef.jpg")
+  },
+
+  {
+    date: "2026-10-09",
+    content: mopVanDeDag("shrodinger.jpeg")
+  },
+
+  {
+    date: "2026-10-10",
+    content: plaatsVanDeDag("Racetrack Playa", "Californië", 'Een meerbodem in Death Valley met "sailing stones". Het is nog maar vrij recent dat ze weten hoe het komt: Het water dat \'s nachts bevriest en \'s morgens breekt vormt grote ijsplaten. Als er genoeg wind is worden die dan verschoven en duwen ze tegen de stenen!', "racetrack.jpg", "racetrack2.jpg", "racetrack3.jpg")
+  },
+
+  {
     date: "2026-10-16",
     content: fotoVanDeDag("FotoTheo2.JPG", "Zoek het konijn")
   },
