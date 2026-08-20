@@ -460,16 +460,16 @@ function DierVanDeDag(naam, uitleg, ...fotos) {
   `;
 }
 
-function puzzelVanDeDag(uitleg, foto, antwoord, antwoordfoto="") {
+function puzzelVanDeDag(uitleg, foto="", antwoord="", antwoordfoto="") {
   return `
       <h2>Puzzel van de dag:</h2>
       <p>${uitleg}</p>
-      <img src="images/${foto}" style="height: 80%; display: block; margin: 20px auto 20px;">
-      <details class="spoiler">
+      ${foto ? '<img src="images/${foto}" style="height: 80%; display: block; margin: 20px auto 20px;">' : ""}
+      ${antwoord ? `<details class="spoiler">
         <summary>Klik hier voor het antwoord</summary>
         <p>${antwoord}</p>
         ${antwoordfoto ? `<img src="images/${antwoordfoto}" style="width: 80%; display: block; margin: 20px auto 0;">` : ""}
-      </details>
+      </details>`: ""}
     `
 }
 
@@ -1911,29 +1911,7 @@ const PAGES = [
 
   {
     date: "2026-08-28",
-    content: `
-      <h2>Raadsel van de dag:</h2>
-      <p>
-        Je maakt (veel) frambozenconfituur met je papa en je hebt exact 6 liter water nodig.
-      </p>
-      <p>
-        Jammergenoeg heb je maar 2 emmers. Een emmer van 4 liter en een emmer van 9 liter.<br>
-        Hoe kan je toch exact 6 liter afmeten? Je hebt een kraan met zoveel water als je wil.
-      </p>
-      <details class="spoiler">
-        <summary>Klik hier voor het antwoord</summary>
-        <ul>
-          <li>Vul de emmer van 9 liter</li>
-          <li>Giet ze over in de emmer van 4 liter, er blijft 5 liter over</li>
-          <li>Giet de emmer van 4 liter leeg</li>
-          <li>Vul ze opnieuw met de andere emmer, er blijft nu nog 1 liter over</li>
-          <li>Giet de emmer van 4 liter opnieuw leeg en vul ze met de laatste liter</li>
-          <li>Vul de emmer van 9 liter opnieuw</li>
-          <li>Giet water in de emmer van 4 liter tot ze vol is</li>
-          <li>Er blijft nu nog 6 liter over in de emmer van 9 liter</li>
-        </ul>
-      </details>
-    `
+    content: puzzelVanDeDag('<p><a href="https://murdoku.com/play/"><h3>Murdoku</h3></a></p><p>Beetje sudoku maar dan met een moord! jawadde! Goedgekeurd door Maite!</p>')
   },
 
   {
@@ -2053,7 +2031,7 @@ const PAGES = [
         <div class="quest-body">
           <p class="quest-label">Jouw queeste</p>
           <p class="quest-description">
-            Neem een selfie met iemand en stuur hem door naar je geliefde!
+            Neem een selfie met iemand die je geliefde niet kent en stuur hem door!
           </p>
         </div>
 
@@ -2298,6 +2276,43 @@ const PAGES = [
   },
 
   {
+    date: "2026-10-11",
+    content: `
+      <h2>Raadsel van de dag:</h2>
+      <p>
+        Je maakt (veel) frambozenconfituur met je papa en je hebt exact 6 liter water nodig.
+      </p>
+      <p>
+        Jammergenoeg heb je maar 2 emmers. Een emmer van 4 liter en een emmer van 9 liter.<br>
+        Hoe kan je toch exact 6 liter afmeten? Je hebt een kraan met zoveel water als je wil.
+      </p>
+      <details class="spoiler">
+        <summary>Klik hier voor het antwoord</summary>
+        <ul>
+          <li>Vul de emmer van 9 liter</li>
+          <li>Giet ze over in de emmer van 4 liter, er blijft 5 liter over</li>
+          <li>Giet de emmer van 4 liter leeg</li>
+          <li>Vul ze opnieuw met de andere emmer, er blijft nu nog 1 liter over</li>
+          <li>Giet de emmer van 4 liter opnieuw leeg en vul ze met de laatste liter</li>
+          <li>Vul de emmer van 9 liter opnieuw</li>
+          <li>Giet water in de emmer van 4 liter tot ze vol is</li>
+          <li>Er blijft nu nog 6 liter over in de emmer van 9 liter</li>
+        </ul>
+      </details>
+    `
+  },
+
+  {
+    date: "2026-10-14",
+    content: wavelength(10, "kazachstan.svg", "Deze vlag van een land", "Koffiekoek.jpg", "Deze koffiekoek", "GoodWillHunting.jpg", "Deze Film", "OuterWilds.avif", "Dit spelletje")
+  },
+
+  {
+    date: "2026-10-15",
+    content: DierVanDeDag("Rode Lipvleermuisvis", "Hihi want hij is een beetje boos:", "lipvleermuisvis.jpg", "lipvleermuisvis2.jpg", "lipvleermuisvis3.jpg")
+  },
+
+  {
     date: "2026-10-16",
     content: fotoVanDeDag("FotoTheo2.JPG", "Zoek het konijn")
   },
@@ -2305,6 +2320,19 @@ const PAGES = [
   {
     date: "2026-10-17",
     content: woordVanDeDag("Contraniemen (of auto-antoniemen)", "Woorden die het tegenovergestelde zijn van zichzelf:<ul><li><b>Zelfbewust</b>: Zelfbewust handelen kan zelfzeker zijn, maar zich zeer zelfbewust voelen is juist onzekerheid</li><li><b>sanctioneren</b>: Iets sanctioneren is iets toestaan, maar een sanctie ontvangen (of ook sanctioneren) is dan weer een straf of verbod</li></ul><p>Er zijn ook Engelse:</p><ul><li><b>To drop</b>: Iets releasen of opstarten (zoals een muziekalbum) of iets laten vallen en niet meer verderzetten</li><li><b>To dust</b>: Iets afstoffen of juist stof dat ergens opkomt</li><li><b>Earthbound</b>: iets of iemand op aarde of juist in de ruimte dat op weg is naar de aarde</li></ul><b>Obbligato</b> is een term in de muziek voor een deel dat verplicht is of exact zoals beschreven moet gespeeld worden, maar kan blijkbaar ook gebruikt worden voor een stuk dat optioneel is (bijvoorbeeld een moeilijk deel met een makkelijker alternatief)")
+  },
+
+  {
+    date: "2026-10-18",
+    content: plantVanDeDag("Venus Flytrap", "Dionaea muscipula", "De OG van vleesetende planten 💪", "venusFlytrap.jpg", "venusFlytrap2.jpg", "venusFlytrap3.jpg")
+  },
+
+  {
+    date: "2026-10-19",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="aspect-ratio: 834/469; width: 90%" src="https://www.youtube.com/embed/4jIPmdKfBqk" title="Ik Ga Zeker Nog Een Kind Slaan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
   }
 ];
 
