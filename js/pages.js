@@ -2151,8 +2151,8 @@ const PAGES = [
     date: "2026-09-24",
     content: `
       <h2>Time-waster van de dag:</h2>
-      <p><a href="https://plasmastarfish.itch.io/pack">Ik ga op reis en ik neem mee...</a></p>
-      <p>- Satisfying inpak dingetje -</p>
+      <p><a href="https://enclose.horse/tutorial">Paardje</a></p>
+      <p>Je moet het paard omringen met muren en zoveel mogelijk veldjes innemen.</p>
     `
   },
 
@@ -2303,6 +2303,15 @@ const PAGES = [
   },
 
   {
+    date: "2026-10-12",
+    content: `<h2>Nutteloos weetje van de dag:</h2>
+      <p>We slaan PNGs op op vogels<br>Dus ja<br>Da's een ding<br><br></p>
+      <p>Wetenschappers hebben een prentje van een vogel opgeslaan als geluid en laten horen aan een spreeuw. Die heeft het dan gezongen en dat konden ze weer omzetten in de afbeelding</p>
+      <img src="images/starling.jpg" title="Is de vogel dan hardware?" style="width: 80%; display: block; margin: 20px auto 0;">
+      `
+  },
+
+  {
     date: "2026-10-14",
     content: wavelength(10, "kazachstan.svg", "Deze vlag van een land", "Koffiekoek.jpg", "Deze koffiekoek", "GoodWillHunting.jpg", "Deze Film", "OuterWilds.avif", "Dit spelletje")
   },
@@ -2332,6 +2341,74 @@ const PAGES = [
     content: `
     <h2>Meme van de dag</h2>
     <iframe style="aspect-ratio: 834/469; width: 90%" src="https://www.youtube.com/embed/4jIPmdKfBqk" title="Ik Ga Zeker Nog Een Kind Slaan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
+    date: "2026-10-21",
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&si=2495e5240b794a0e", "Eventjes een Hamilton pauze x", "kingGeorge.gif")
+  },
+
+  {
+    date: "2026-10-22",
+    content: `
+      <h2>Time-waster van de dag:</h2>
+      <p><a href="https://plasmastarfish.itch.io/pack">Ik ga op reis en ik neem mee...</a></p>
+      <p>- Satisfying inpak dingetje -</p>
+    `
+  },
+
+  {
+    date: "2026-10-23",
+    content: `
+      <h2>Weetje van de dag:</h2>
+      <p>
+        De sandwich is vernoemd naar John Montagu, de graaf van Sandwich. Hij zou de sandwich uitgevonden hebben om te kunnen gokken en eten tegelijkertijd!
+      </p>
+    `
+  },
+
+  {
+    date: "2026-10-24",
+    content: quoteVanDeDag("Give a man a fire and he's warm for a day, but set fire to him and he's warm for the rest of his life.", "Terry Pratchet", "TerryPratchet.webp", "Slimme man?")
+  },
+
+  {
+    date: "2026-10-25",
+    content: `<h2>Mopje van de dag</h2><p>Een vrouw zit op de begrafenis van haar pas overleden man. Een man komt naar haar toe en vraagt: "Zou ik iets mogen zeggen?"<br><br>"Ja hoor, ga uw gang.", zegt de vrouw<br><br>De man gaat staan, schraapt zijn keel en zegt: "plethora", hij gaat opnieuw gaan zitten.<br><br>"Dankjewel", zegt de vrouw, "Dat betekent veel."</p>`
+  },
+
+  {
+    date: "2026-10-26",
+    content: fotoVanDeDag("RicoSneeuw.jpg", "Ice-cold", "Jarige job! 🥳")
+  },
+
+  {
+    date: "2026-10-29",
+    content: wavelength(7, "RightHandMan.webp", "Dit Hamilton liedje", "herfstvakantie.jpeg", "Deze schoolvakantie", "woensdag.webp", "Deze dag van de week", "emoji.png", "Deze emoji")
+  },
+  
+  {
+    date: "2026-11-01",
+    content: `
+      <h2>Weetje van de dag:</h2>
+      <p>
+        Het pauze-symbool komt van het muzikale symbool voor een cesuur!
+      </p>
+    `
+  },
+
+  {
+    date: "2026-11-05",
+    content: fotoVanDeDag("raket.webp", fotoText="Vogels schrikken zich een hoedje")
+  },
+
+  {
+    date: "2026-11-07",
+    content: `
+      <h2>Time-waster van de dag:</h2>
+      <p><a href="https://magnitudle.com/size-it-up/pop-culture">Size it up!</a></p>
+      <p>Hoe groot is Treebeard vergeleken met een voetbalgoal?<br>Dit zijn de pop-culture dingen, maar je kan ook spelen met echte-wereld-dingen 😊</p>
     `
   }
 ];
