@@ -385,6 +385,15 @@ function quoteVanDeDag(quote, persoon, foto, fotoText="") {
     `
 }
 
+function weetjeVanDeDag(tekst) {
+  return `
+      <h2>Weetje van de dag:</h2>
+      <p>
+        ${tekst}
+      </p>
+    `
+}
+
 function liedjeVanDeDag(lied, tekst="", gif="") {
   return `
       <h2>Liedje van de dag:</h2>
@@ -2387,6 +2396,16 @@ const PAGES = [
     date: "2026-10-29",
     content: wavelength(7, "RightHandMan.webp", "Dit Hamilton liedje", "herfstvakantie.jpeg", "Deze schoolvakantie", "woensdag.webp", "Deze dag van de week", "emoji.png", "Deze emoji")
   },
+
+  {
+    date: "2026-10-30",
+    content: DierVanDeDag("Bladslak (Costasiella kuroshimae)", "<p>Ok, we hebben al eens de zeeslak gehad, maar dit is een extra coole zeeslak. Ze kan zichzelf onthoofden en haar hele lijf opnieuw groeien en dat doet ze om parasieten te verwijderen.</p><p>Na enkele uren (afhankelijk van de leeftijd) kan ze weer eten en na 7 dagen heeft ze een nieuw hart.</p><p>Go zeeslakken!</p>", "zeeslak3.jpg")
+  },
+
+  {
+    date: "2026-10-31",
+    content: woordVanDeDag("Escherzin", "<p>Escher-zinnen zijn zinnen die op het eerste zicht normaal lijken, maar eigenlijk nergens op slaan:</p><ul><li>Er zijn meer mensen naar Berlijn geweest dan ik ben geweest.</li><li>Ik ga morgen naar de bakker, maar bij aankomst bleek hij gesloten.</li></ul>")
+  },
   
   {
     date: "2026-11-01",
@@ -2399,8 +2418,21 @@ const PAGES = [
   },
 
   {
+    date: "2026-11-03",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="aspect-ratio: 478/849; width: 30%" src="https://www.youtube.com/embed/wuHkmy-UOIA" title="Please can i have the red 😂 the end is ⬆️😂 #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
     date: "2026-11-05",
     content: fotoVanDeDag("raket.webp", fotoText="Vogels schrikken zich een hoedje")
+  },
+
+  {
+    date: "2026-11-06",
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/6OKUhXuJMvoVPde9fMJJzy?utm_source=generator")
   },
 
   {
@@ -2410,6 +2442,38 @@ const PAGES = [
       <p><a href="https://magnitudle.com/size-it-up/pop-culture">Size it up!</a></p>
       <p>Hoe groot is Treebeard vergeleken met een voetbalgoal?<br>Dit zijn de pop-culture dingen, maar je kan ook spelen met echte-wereld-dingen 😊</p>
     `
+  },
+
+  {
+    date: "2026-11-12",
+    content: weetjeVanDeDag("Start langs de ene kant bij de kleinst gekende afstand, 'de Planck-lengte', en langs de andere kant de grootste, het waarneembaar universum.<br>Als je nu telkens de kleinste afstand 10 keer vergroot en de grootste 10 keer verkleint, komen ze elkaar tegen rond 0.1mm, de grootte van een menselijke eicel.")
+  },
+
+  {
+    date: "2026-11-15",
+    content: fotoVanDeDag("rolypoly.jpg", "kjoet", "4 jaar oude imker, afgeleid door een insectje")
+  },
+
+  {
+    date: "2026-11-19",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="aspect-ratio: 1105/829; width: 90%" src="https://www.youtube.com/embed/NVZrGCegjCM" title="Ik denk dat er een oven op mijn kop ligt." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
+    date: "2026-11-21",
+    content: `
+      <h2>Time-waster van de dag:</h2>
+      <p><a href="https://townscaper.org/">Townscaper</a></p>
+      <p>Voor de innerlijke stadsarchitect in elk van ons.</p>
+    `
+  },
+
+  {
+    date: "2026-11-23",
+    content: weetjeVanDeDag("Een kerel in de 16de eeuw had GOD BE WITH YE afgekort als GOD B W YE, dat werd dan gelezen als GOODBYE en daarom zeggen we nu goodbye. Door 16de eeuwse chattaal.")
   }
 ];
 
