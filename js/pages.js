@@ -473,8 +473,8 @@ function puzzelVanDeDag(uitleg, foto="", antwoord="", antwoordfoto="") {
   return `
       <h2>Puzzel van de dag:</h2>
       <p>${uitleg}</p>
-      ${foto ? '<img src="images/${foto}" style="height: 80%; display: block; margin: 20px auto 20px;">' : ""}
-      ${antwoord ? `<details class="spoiler">
+      ${foto ? `<img src="images/${foto}" style="height: 80%; display: block; margin: 20px auto 20px;">` : ""}
+      ${(antwoord || antwoordfoto) ? `<details class="spoiler">
         <summary>Klik hier voor het antwoord</summary>
         <p>${antwoord}</p>
         ${antwoordfoto ? `<img src="images/${antwoordfoto}" style="width: 80%; display: block; margin: 20px auto 0;">` : ""}
@@ -2354,6 +2354,92 @@ const PAGES = [
   },
 
   {
+    date: "2026-10-20",
+    content: `
+      <h2>Nog kleurtjes, wooh!</h2>
+
+      <div class="theme-grid">
+
+      <button class="theme-btn theme-btn--aang" onclick="setTheme('aang', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #f5c518, #e08b00, #6e3a00);"></span>
+        Aang
+      </button>
+
+      <button class="theme-btn theme-btn--toph" onclick="setTheme('toph', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #a9a79a, #78776c, #33322c);"></span>
+        Toph
+      </button>
+
+      <button class="theme-btn theme-btn--iroh" onclick="setTheme('iroh', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #b9ab6e, #8a7c42, #3e3715);"></span>
+        Iroh
+      </button>
+
+      <button class="theme-btn theme-btn--zuko" onclick="setTheme('zuko', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #ffb26b, #b8412a, #16100e);"></span>
+        Zuko
+      </button>
+
+      <button class="theme-btn theme-btn--azula" onclick="setTheme('azula', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #a5ecff, #2196bd, #080d12);"></span>
+        Azula
+      </button>
+
+      <button class="theme-btn theme-btn--sokka" onclick="setTheme('sokka', this)">
+        <span class="theme-swatch" style="background: radial-gradient(circle at 35% 35%, #dcc79a, #3f7bab, #0c1420);"></span>
+        Sokka
+      </button>
+
+      </div>
+
+      <p id="theme-confirm" class="theme-confirm"></p>
+
+      <script>
+        (function () {
+          const confirmEl = document.getElementById('theme-confirm');
+
+          const labels = {
+            amber:    'Origineel 🍂',
+            lavendel: 'Bosbes 🫐',
+            koper:    'Karamel 🍮',
+            kers:     'Kers 🍒',
+            zand:     'Koffie ☕',
+            munt:     'Munt 🌿',
+            aang:     'Aang 💨',
+            toph:     'Toph 🪨',
+            iroh:     'Iroh 🍵',
+            zuko:     'Zuko 🔥',
+            azula:    'Azula ⚡',
+            sokka:    'Sokka 🪃'
+          };
+
+          function markActive(theme) {
+            document.querySelectorAll('.theme-btn').forEach(function (btn) {
+              btn.classList.toggle('active', btn.classList.contains('theme-btn--' + theme));
+            });
+          }
+
+          window.setTheme = function (theme, btn) {
+            if (theme === 'amber') {
+              document.documentElement.removeAttribute('data-theme');
+            } else {
+              document.documentElement.setAttribute('data-theme', theme);
+            }
+            localStorage.setItem('onzedagen-theme', theme);
+            markActive(theme);
+            confirmEl.textContent = (labels[theme] || 'Thema') + ' opgeslagen!';
+            setTimeout(function () { confirmEl.textContent = ''; }, 2500);
+          };
+
+          // Mark whichever theme is currently active on page load
+          const current = localStorage.getItem('onzedagen-theme') || 'amber';
+          markActive(current);
+        })();
+      </script>
+    `
+  },
+
+  {
     date: "2026-10-21",
     content: liedjeVanDeDag("https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX?utm_source=generator&si=2495e5240b794a0e", "Eventjes een Hamilton pauze x", "kingGeorge.gif")
   },
@@ -2393,6 +2479,16 @@ const PAGES = [
   },
 
   {
+    date: "2026-10-27",
+    content: plaatsVanDeDag("Son Doon Grot", "Vietnam", "'s Werelds grootste grot, heel mooi met jungle erin en ondergrondse rivieren", "sonDoon.jpg", "SonDoon2.jpg", "sonDoon3.jpg")
+  },
+
+  {
+    date: "2026-10-28",
+    content: puzzelVanDeDag("Kan je de munten op een rij leggen zoals in de foto? Je mag maar 1 munt verplaatsen per keer, je mag geen andere munten duwen en je mag een munt pas loslaten als ze 2 andere munten raakt!", "centjesPuzzel2.webp", "", "oplossingCentjes.png")
+  },
+
+  {
     date: "2026-10-29",
     content: wavelength(7, "RightHandMan.webp", "Dit Hamilton liedje", "herfstvakantie.jpeg", "Deze schoolvakantie", "woensdag.webp", "Deze dag van de week", "emoji.png", "Deze emoji")
   },
@@ -2418,10 +2514,44 @@ const PAGES = [
   },
 
   {
+    date: "2026-11-02",
+    content: plantVanDeDag("Pando", "Populus tremuloides", "Pando is een gigantische kolonie van trillende esp. Het zien er veel bomen uit, maar ze delen allemaal hetzelfde wortelstelsel dus is het eigenlijk één organisme", "pando.jpg", "pando2.jpg", "pando3.jpg")
+  },
+
+  {
     date: "2026-11-03",
     content: `
     <h2>Meme van de dag</h2>
     <iframe style="aspect-ratio: 478/849; width: 30%" src="https://www.youtube.com/embed/wuHkmy-UOIA" title="Please can i have the red 😂 the end is ⬆️😂 #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
+    date: "2026-11-04",
+    content: `
+      <h2>Nieuwe queeste! ⚔️</h2>
+
+      <div class="quest-card">
+        <div class="quest-scroll-top"></div>
+
+        <div class="quest-body">
+          <p class="quest-label">Jouw queeste</p>
+          <p class="quest-description">
+            Stuur je geliefde 5 foto's van iets paars
+          </p>
+        </div>
+
+        <div class="quest-scroll-bottom"></div>
+      </div>
+
+      <div class="quest-reward">
+        <div class="quest-wax-seal">♥</div>
+        <div class="quest-reward-text">
+          <p class="quest-reward-label">Beloning</p>
+          <p class="quest-reward-title">Hartjes</p>
+          <p class="quest-reward-hearts">+5 ♥</p>
+        </div>
+      </div>
     `
   },
 
@@ -2442,6 +2572,21 @@ const PAGES = [
       <p><a href="https://magnitudle.com/size-it-up/pop-culture">Size it up!</a></p>
       <p>Hoe groot is Treebeard vergeleken met een voetbalgoal?<br>Dit zijn de pop-culture dingen, maar je kan ook spelen met echte-wereld-dingen 😊</p>
     `
+  },
+
+  {
+    date: "2026-11-08",
+    content: quoteVanDeDag("No mourners. No funerals", "Leigh Bardugo, Sif of Crows", "sixOfCrows.avif")
+  },
+
+  {
+    date: "2026-11-09",
+    content: mopVanDeDag("jezusGitaar.png")
+  },
+
+  {
+    date: "2026-11-10",
+    content: plaatsVanDeDag("Kawah Ijen vulkaan", "Indonesië", "Vulkaan waar door de zwavelgassen blauwe vlammen ontstaan en de lava blauw lijkt", "blauweVulkaan.avif", "blauweVulkaan2.jpg", "blauweVulkaan3.jpg")
   },
 
   {

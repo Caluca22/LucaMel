@@ -1236,6 +1236,133 @@ img {
 .theme-btn--zand     { background: #f5e8d0; color: #5a3010; }
 .theme-btn--munt     { background: #d8f0e8; color: #083c2c; }
 
+/* ================================================================
+   AVATAR-THEMA'S
+   Plak deze blokken bij de andere [data-theme] regels in style.css.
+   Zes nieuwe thema's, gekozen op kleurgebieden die nog vrij waren:
+   helder saffraan, neutraal steengrijs, warm olijf, donker ember,
+   donker cyaan en donker marineblauw.
+   ================================================================ */
+
+/* ── Aang — saffraan & luchtnomade ── */
+[data-theme="aang"] {
+  --cream:       #fffcf0;
+  --parchment:   #fbe9b0;
+  --gold:        #f5c518;
+  --amber:       #e08b00;
+  --deep-amber:  #a35400;
+  --sienna:      #6e3a00;
+  --text-dark:   #2b1800;
+  --text-mid:    #7d4e0c;
+  --text-light:  #bf9840;
+  --shadow:      rgba(224, 139, 0, 0.20);
+  --shadow-deep: rgba(110, 58, 0, 0.30);
+}
+
+/* ── Toph — steen & metaal ── */
+[data-theme="toph"] {
+  --cream:       #f5f5f2;
+  --parchment:   #e6e5df;
+  --gold:        #a9a79a;
+  --amber:       #78776c;
+  --deep-amber:  #4d4c44;
+  --sienna:      #33322c;
+  --text-dark:   #22211c;
+  --text-mid:    #5a5951;
+  --text-light:  #908f85;
+  --shadow:      rgba(77, 76, 68, 0.18);
+  --shadow-deep: rgba(34, 33, 28, 0.30);
+}
+
+/* ── Iroh — jasmijnthee & olijf ── */
+[data-theme="iroh"] {
+  --cream:       #f6f5ec;
+  --parchment:   #e7e6d2;
+  --gold:        #b9ab6e;
+  --amber:       #8a7c42;
+  --deep-amber:  #5d5225;
+  --sienna:      #3e3715;
+  --text-dark:   #262114;
+  --text-mid:    #5e5734;
+  --text-light:  #979069;
+  --shadow:      rgba(138, 124, 66, 0.20);
+  --shadow-deep: rgba(62, 55, 21, 0.30);
+}
+
+/* ── Zuko — sintels & as (donker) ── */
+[data-theme="zuko"] {
+  --cream:       #16100e;
+  --parchment:   #241a17;
+  --gold:        #c2452f;
+  --amber:       #b8412a;
+  --deep-amber:  #7a2413;
+  --sienna:      #ffb26b;
+  --text-dark:   #f6e6dc;
+  --text-mid:    #cfa694;
+  --text-light:  #9a7264;
+  --shadow:      rgba(226, 89, 58, 0.28);
+  --shadow-deep: rgba(0, 0, 0, 0.60);
+}
+
+/* ── Azula — blauw vuur (donker) ── */
+[data-theme="azula"] {
+  --cream:       #080d12;
+  --parchment:   #121d26;
+  --gold:        #2e93b8;
+  --amber:       #2196bd;
+  --deep-amber:  #12688f;
+  --sienna:      #a5ecff;
+  --text-dark:   #e8f7fd;
+  --text-mid:    #a7cdde;
+  --text-light:  #6b8fa3;
+  --shadow:      rgba(52, 198, 230, 0.25);
+  --shadow-deep: rgba(0, 0, 0, 0.65);
+}
+
+/* ── Sokka — marineblauw & been (donker) ── */
+[data-theme="sokka"] {
+  --cream:       #0c1420;
+  --parchment:   #16212f;
+  --gold:        #4a7fae;
+  --amber:       #3f7bab;
+  --deep-amber:  #234f78;
+  --sienna:      #dcc79a;
+  --text-dark:   #e7eef5;
+  --text-mid:    #a8bccd;
+  --text-light:  #6f8598;
+  --shadow:      rgba(94, 159, 212, 0.22);
+  --shadow-deep: rgba(0, 0, 0, 0.60);
+}
+
+/* ── Knoppen in de themakiezer ── */
+.theme-btn--aang   { background: #fbe9b0; color: #6e3a00; }
+.theme-btn--toph   { background: #e6e5df; color: #33322c; }
+.theme-btn--iroh   { background: #e7e6d2; color: #3e3715; }
+.theme-btn--zuko   { background: #241a17; color: #ffb26b; }
+.theme-btn--azula  { background: #121d26; color: #a5ecff; }
+.theme-btn--sokka  { background: #16212f; color: #dcc79a; }
+
+/* ================================================================
+   KLEINE FIXES VOOR DONKERE THEMA'S
+   In style.css staan twee hardgecodeerde kleuren die op een donker
+   thema niet werken. Vervang de bestaande regels hierdoor.
+   (Nacht heeft nu hetzelfde probleem, dus dit helpt daar ook.)
+   ================================================================ */
+
+/* Vervangt: color: rgba(107, 58, 31, 0.28); */
+.cal-day--disabled,
+.cal-day--future {
+  color: color-mix(in srgb, var(--text-light) 45%, transparent);
+  cursor: default;
+}
+
+/* Vervangt de inset-highlight in .page-card box-shadow */
+.page-card {
+  box-shadow:
+    0 4px 24px var(--shadow),
+    0 1px 0 color-mix(in srgb, var(--parchment) 70%, #fff) inset;
+}
+
 /* ---- SHOP PAGE ---- */
 .shop-keeper {
   display: flex;
