@@ -2321,6 +2321,78 @@ const PAGES = [
   },
 
   {
+    date: "2026-10-13",
+    content: `
+      <h2>Winkel</h2>
+
+      <!-- ═══════════════════════════════════════════════════
+          WINKELHOUDER — verander src naar jouw foto/afbeelding
+          en pas de naam en tekst aan
+      ═══════════════════════════════════════════════════ -->
+      <div class="shop-keeper">
+        <img class="shop-keeper-img" src="images/TomHolland.webp" alt="Winkelhouder">
+        <div class="shop-keeper-bubble">
+          <p class="shop-keeper-name">Koopman Tom</p>
+          <p class="shop-keeper-speech">Ha daar ben je weer! Blij je te zien.<br>Ik heb een aantal nieuwe dingen voor mijn beste klant...<br>En enige...<br>Laat maar weten waar je oog op valt!</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════
+          ITEMS — kopieer een .shop-item blok voor elk item
+          Verander: img src, naam, beschrijving, symbool en prijs
+      ═══════════════════════════════════════════════════ -->
+      <div class="shop-grid">
+
+        <div class="shop-item">
+          <img class="shop-item-img" id="shop-image" src="images/voucher.png">
+          <div class="shop-item-body">
+            <p class="shop-item-name">Keuze Voucher</p>
+            <p class="shop-item-desc">Wanneer je deze bon inwisselt mag jij bepalen wie de huidige keuze maakt. Geldig voor één keuze.<br><br>- 3 bonnen op voorraad -</p>
+          </div>
+          <div class="shop-item-footer">
+            <span class="shop-item-price"><span class="shop-currency-symbol">♥</span> 3</span>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <img class="shop-item-img" id="shop-image" src="images/Vraagteken.webp" alt="Item 2">
+          <div class="shop-item-body">
+            <p class="shop-item-name">Iets lekkers</p>
+            <p class="shop-item-desc">Laat je verrassen door onze huis-chef met een snack voor jou en je vriend.</p>
+          </div>
+          <div class="shop-item-footer">
+            <span class="shop-item-price"><span class="shop-currency-symbol">♥</span> 5</span>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <img class="shop-item-img" id="shop-image" src="images/kader.jpg">
+          <div class="shop-item-body">
+            <p class="shop-item-name">Ingekaderde foto</p>
+            <p class="shop-item-desc">Een cute of grappige foto van jou en je liefje ingekaderd. Om naar te staren ofzo.</p>
+          </div>
+          <div class="shop-item-footer">
+            <span class="shop-item-price"><span class="shop-currency-symbol">♥</span> 9</span>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <img class="shop-item-img" id="shop-image" src="images/diner.jpg" alt="Item 3">
+          <div class="shop-item-body">
+            <p class="shop-item-name">Etentje</p>
+            <p class="shop-item-desc">Eens lekker gaan eten met je lief.</p>
+          </div>
+          <div class="shop-item-footer">
+            <span class="shop-item-price"><span class="shop-currency-symbol">♥</span> 10</span>
+            <span class="shop-item-price"><span class="shop-currency-symbol">♦</span> 1</span>
+          </div>
+        </div>
+
+      </div>
+    `
+  },
+
+  {
     date: "2026-10-14",
     content: wavelength(10, "kazachstan.svg", "Deze vlag van een land", "Koffiekoek.jpg", "Deze koffiekoek", "GoodWillHunting.jpg", "Deze Film", "OuterWilds.avif", "Dit spelletje")
   },
@@ -2357,6 +2429,13 @@ const PAGES = [
     date: "2026-10-20",
     content: `
       <h2>Nog kleurtjes, wooh!</h2>
+
+      <p>Je kan altijd terug veranderen op de pagina's van:
+      <ul>
+        <li>17 juli</li>
+        <li>16 augustus</li>
+      </ul>
+      </p>
 
       <div class="theme-grid">
 
@@ -2587,6 +2666,11 @@ const PAGES = [
   {
     date: "2026-11-10",
     content: plaatsVanDeDag("Kawah Ijen vulkaan", "Indonesië", "Vulkaan waar door de zwavelgassen blauwe vlammen ontstaan en de lava blauw lijkt", "blauweVulkaan.avif", "blauweVulkaan2.jpg", "blauweVulkaan3.jpg")
+  },
+
+  {
+    date: "2026-11-11",
+    content: puzzelVanDeDag("Kan je alle kleuren verbinden? je mag geen kleuren kruisen!", "verbinden.jpeg", "", "verbindenOplossing.png")
   },
 
   {
