@@ -439,7 +439,7 @@ function plaatsVanDeDag(naam, locatie, uitleg, ...fotos) {
     .join("");
 
   return `
-    <h2>Plant van de dag:</h2>
+    <h2>Plaats van de dag:</h2>
     <h3>${naam} (${locatie})</h3>
     <p>
       ${uitleg}
@@ -2527,8 +2527,8 @@ const PAGES = [
     date: "2026-10-22",
     content: `
       <h2>Time-waster van de dag:</h2>
-      <p><a href="https://plasmastarfish.itch.io/pack">Ik ga op reis en ik neem mee...</a></p>
-      <p>- Satisfying inpak dingetje -</p>
+      <p><a href="https://krillion.io/">One in a Krillion</a></p>
+      <p>Geef een antwoord op de vraag, maar ga voor het minst gegeven antwoord!</p>
     `
   },
 
@@ -2544,7 +2544,7 @@ const PAGES = [
 
   {
     date: "2026-10-24",
-    content: quoteVanDeDag("Give a man a fire and he's warm for a day, but set fire to him and he's warm for the rest of his life.", "Terry Pratchet", "TerryPratchet.webp", "Slimme man?")
+    content: quoteVanDeDag("Give a man a fire and he's warm for a day, but set fire to him and he's warm for the rest of his life.", "Terry Pratchett", "TerryPratchett.webp", "Slimme man?")
   },
 
   {
@@ -2679,8 +2679,33 @@ const PAGES = [
   },
 
   {
+    date: "2026-11-13",
+    content: DierVanDeDag("Pangolin", "Omdat ze zo coole schubben hebben en lopen als stiekeme rakkertjes", "pangolin.jpg", "pangolin2.jpg", "pangolin3.webp")
+  },
+
+  {
+    date: "2026-11-14",
+    content: plantVanDeDag("Grootste individuele bloem", "Rafflesia Arnoldii", "Dit is een parasitaire plant waarvan de bloem een diameter tot 1 meter kan hebben, wauw!<br>De plant heeft geen bladeren, stengel of wortels, maar leeft in een gastheerpant en wordt grotendeels pas zichtbaar wanneer ze bloeit, cool?<br>De bloem kan tot 11kg wegen en ruikt naar rottend vlees. Oh.", "groteBloem.jpg", "groteBloem2.jpg", "groteBloem3.jpg")
+  },
+
+  {
     date: "2026-11-15",
     content: fotoVanDeDag("rolypoly.jpg", "kjoet", "4 jaar oude imker, afgeleid door een insectje")
+  },
+
+  {
+    date: "2026-11-16",
+    content: woordVanDeDag("Tuinpadzinnen", "<p>Tuinpadzinnen zijn zinnen die grammaticaal correct zijn, maar je eerst op het verkeerde been zetten:</p><ul><li>De oude stal van de boer maar werd gepakt.</li><li>The old man the boat.</li></ul>")
+  },
+
+  {
+    date: "2026-11-17",
+    content: wavelength(1, "hobbyHorse.webp", "Deze sport", "benCrabbe.jpg", "Deze TV-presentator", "Ram.jpg", "Dit sterrenbeeld (niet de mensen die dit zijn)", "Leander.webp", "Dit Hogwarts personage")
+  },
+
+  {
+    date: "2026-11-18",
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/3uYDO9dPLTVrgfwg7EYXSf?utm_source=generator&si=4862b69835db4ea0", "Lied van één van de grootste rappers allertijden, beste stukje rond 1:45, maar alles luisteren voor de beste ervaring.", "kanye.gif")
   },
 
   {
@@ -2688,6 +2713,35 @@ const PAGES = [
     content: `
     <h2>Meme van de dag</h2>
     <iframe style="aspect-ratio: 1105/829; width: 90%" src="https://www.youtube.com/embed/NVZrGCegjCM" title="Ik denk dat er een oven op mijn kop ligt." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
+    date: "2026-11-20",
+    content: `
+      <h2>Nieuwe queeste! ⚔️</h2>
+
+      <div class="quest-card">
+        <div class="quest-scroll-top"></div>
+
+        <div class="quest-body">
+          <p class="quest-label">Jouw queeste</p>
+          <p class="quest-description">
+            Stuur je geliefde 5 foto's van iets roods
+          </p>
+        </div>
+
+        <div class="quest-scroll-bottom"></div>
+      </div>
+
+      <div class="quest-reward">
+        <div class="quest-wax-seal">♥</div>
+        <div class="quest-reward-text">
+          <p class="quest-reward-label">Beloning</p>
+          <p class="quest-reward-title">Hartjes</p>
+          <p class="quest-reward-hearts">+5 ♥</p>
+        </div>
+      </div>
     `
   },
 
@@ -2701,8 +2755,41 @@ const PAGES = [
   },
 
   {
+    date: "2026-11-22",
+    content: quoteVanDeDag(`“Well,----me,” he said. “A----ing wizard. I hate----ing wizards!”<br>“You shouldn’t----them, then,” muttered one of his henchmen, effortlessly pronouncing a row of dashes.”`, "Terry Pratchett, één van mijn nieuwe favoriete schrijvers", "TerryPratchett.webp")
+  },
+
+  {
     date: "2026-11-23",
     content: weetjeVanDeDag("Een kerel in de 16de eeuw had GOD BE WITH YE afgekort als GOD B W YE, dat werd dan gelezen als GOODBYE en daarom zeggen we nu goodbye. Door 16de eeuwse chattaal.")
+  },
+
+  {
+    date: "2026-11-25",
+    content: fotoVanDeDag("computerRijst.png", "Of gewoon een gigantische rijstkorrel?", "De kleinste computer naast een rijstkorrel")
+  },
+
+  {
+    date: "2026-12-04",
+    content: weetjeVanDeDag(`(Vervelend weetje van de dag) Er is wetenschappelijke onderzoek gedaan naar het inpakken van vierkantjes in een vierkant. Dit is tot nu toe de meest efficiënt gevonden manier om 17 vierkanten in één groot vierkant te leggen:<br><img src="images/vierkantenInVierkant.gif" style="width: 50%; display: block; margin: 20px auto 0;">`)
+  },
+
+  {
+    date: "2026-12-06",
+    content: `
+      <h2>Time-waster van de dag:</h2>
+      <p><a href="https://plasmastarfish.itch.io/pack">Ik ga op reis en ik neem mee...</a></p>
+      <p>- Satisfying inpak dingetje -</p>
+    `
+  },
+
+  {
+    date: "2026-12-16",
+    content: `
+      <h2>Time-waster van de dag:</h2>
+      <p><a href="https://www.weatherdarts.com/">Weather Darts</a></p>
+      <p>Krijg de temperatuur op 0 door steden te raden. Bij elke stad die je raadt gaat de huidige temperatuur op die plaats van de score af!</p>
+    `
   }
 ];
 
