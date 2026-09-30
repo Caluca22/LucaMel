@@ -2140,7 +2140,7 @@ const PAGES = [
 
   {
     date: "2026-09-21",
-    content: fotoVanDeDag("Wij.jpg", "Hoezeee!", "Wooooh, De honderste dag! Zie je nog altijd even graag en stiekem liever en liever.<br>Ik kan niet geloven hoeveel geluk ik heb met jou en ben blij met elke dag ❤️<br>Kleffe Luca, out! xx")
+    content: fotoVanDeDag("Wij.jpg", "Hoezeee!", "Wooooh, De honderdste dag! Zie je nog altijd even graag en stiekem liever en liever.<br>Ik kan niet geloven hoeveel geluk ik heb met jou en ben blij met elke dag ❤️<br>Kleffe Luca, out! xx")
   },
 
   {
@@ -2251,7 +2251,7 @@ const PAGES = [
 
   {
     date: "2026-10-04",
-    content: plantVanDeDag("Bekerplant", "Nephentes", "Een vleesetende plant in de vorm van een beker. Op de rand zit nectar, maar de binnenkant is heel glad en dan vallen de beestjes erin! Stiekeme rakker die nephentes.", "vleeseet.jpg", "vleeseet2.jpg", "vleeseet3.jpg")
+    content: plantVanDeDag("Bekerplant", "Nepenthes", "Een vleesetende plant in de vorm van een beker. Op de rand zit nectar, maar de binnenkant is heel glad en dan vallen de beestjes erin! Stiekeme rakker die nepenthes.", "vleeseet.jpg", "vleeseet2.jpg", "vleeseet3.jpg")
   },
 
   {
@@ -2315,7 +2315,7 @@ const PAGES = [
     date: "2026-10-12",
     content: `<h2>Nutteloos weetje van de dag:</h2>
       <p>We slaan PNGs op op vogels<br>Dus ja<br>Da's een ding<br><br></p>
-      <p>Wetenschappers hebben een prentje van een vogel opgeslaan als geluid en laten horen aan een spreeuw. Die heeft het dan gezongen en dat konden ze weer omzetten in de afbeelding</p>
+      <p>Wetenschappers hebben een prentje van een vogel opgeslagen als geluid en laten horen aan een spreeuw. Die heeft het dan gezongen en dat konden ze weer omzetten in de afbeelding</p>
       <img src="images/starling.jpg" title="Is de vogel dan hardware?" style="width: 80%; display: block; margin: 20px auto 0;">
       `
   },
@@ -2394,7 +2394,7 @@ const PAGES = [
 
   {
     date: "2026-10-14",
-    content: wavelength(10, "kazachstan.svg", "Deze vlag van een land", "Koffiekoek.jpg", "Deze koffiekoek", "GoodWillHunting.jpg", "Deze Film", "OuterWilds.avif", "Dit spelletje")
+    content: wavelength(10, "kazachstan.svg", "Deze vlag van een land", "Koffiekoek.jpg", "Deze koffiekoek", "GoodWillHunting.jpg", "Deze film", "OuterWilds.avif", "Dit spelletje")
   },
 
   {
@@ -2549,7 +2549,7 @@ const PAGES = [
 
   {
     date: "2026-10-25",
-    content: `<h2>Mopje van de dag</h2><p>Een vrouw zit op de begrafenis van haar pas overleden man. Een man komt naar haar toe en vraagt: "Zou ik iets mogen zeggen?"<br><br>"Ja hoor, ga uw gang.", zegt de vrouw<br><br>De man gaat staan, schraapt zijn keel en zegt: "plethora", hij gaat opnieuw gaan zitten.<br><br>"Dankjewel", zegt de vrouw, "Dat betekent veel."</p>`
+    content: `<h2>Mopje van de dag</h2><p>Een vrouw zit op de begrafenis van haar pas overleden man. Een man komt naar haar toe en vraagt: "Zou ik iets mogen zeggen?"<br><br>"Ja hoor, ga uw gang", zegt de vrouw<br><br>De man gaat staan, schraapt zijn keel en zegt: "plethora", hij gaat weer zitten.<br><br>"Dankjewel", zegt de vrouw, "Dat betekent veel."</p>`
   },
 
   {
@@ -2559,7 +2559,7 @@ const PAGES = [
 
   {
     date: "2026-10-27",
-    content: plaatsVanDeDag("Son Doon Grot", "Vietnam", "'s Werelds grootste grot, heel mooi met jungle erin en ondergrondse rivieren", "sonDoon.jpg", "SonDoon2.jpg", "sonDoon3.jpg")
+    content: plaatsVanDeDag("Son Doong Grot", "Vietnam", "'s Werelds grootste grot, heel mooi met jungle erin en ondergrondse rivieren", "sonDoon.jpg", "SonDoon2.jpg", "sonDoon3.jpg")
   },
 
   {
@@ -2655,7 +2655,7 @@ const PAGES = [
 
   {
     date: "2026-11-08",
-    content: quoteVanDeDag("No mourners. No funerals", "Leigh Bardugo, Sif of Crows", "sixOfCrows.avif")
+    content: quoteVanDeDag("No mourners. No funerals", "Leigh Bardugo, Six of Crows", "sixOfCrows.avif")
   },
 
   {
@@ -2685,7 +2685,7 @@ const PAGES = [
 
   {
     date: "2026-11-14",
-    content: plantVanDeDag("Grootste individuele bloem", "Rafflesia Arnoldii", "Dit is een parasitaire plant waarvan de bloem een diameter tot 1 meter kan hebben, wauw!<br>De plant heeft geen bladeren, stengel of wortels, maar leeft in een gastheerpant en wordt grotendeels pas zichtbaar wanneer ze bloeit, cool?<br>De bloem kan tot 11kg wegen en ruikt naar rottend vlees. Oh.", "groteBloem.jpg", "groteBloem2.jpg", "groteBloem3.jpg")
+    content: plantVanDeDag("Grootste individuele bloem", "Rafflesia arnoldii", "Dit is een parasitaire plant waarvan de bloem een diameter tot 1 meter kan hebben, wauw!<br>De plant heeft geen bladeren, stengel of wortels, maar leeft in een gastheerplant en wordt grotendeels pas zichtbaar wanneer ze bloeit, cool?<br>De bloem kan tot 11kg wegen en ruikt naar rottend vlees. Oh.", "groteBloem.jpg", "groteBloem2.jpg", "groteBloem3.jpg")
   },
 
   {
@@ -2705,7 +2705,7 @@ const PAGES = [
 
   {
     date: "2026-11-18",
-    content: liedjeVanDeDag("https://open.spotify.com/embed/track/3uYDO9dPLTVrgfwg7EYXSf?utm_source=generator&si=4862b69835db4ea0", "Lied van één van de grootste rappers allertijden, beste stukje rond 1:45, maar alles luisteren voor de beste ervaring.", "kanye.gif")
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/3uYDO9dPLTVrgfwg7EYXSf?utm_source=generator&si=4862b69835db4ea0", "Lied van één van de grootste rappers aller tijden, beste stukje rond 1:45, maar alles luisteren voor de beste ervaring.", "kanye.gif")
   },
 
   {
@@ -2771,7 +2771,7 @@ const PAGES = [
 
   {
     date: "2026-12-04",
-    content: weetjeVanDeDag(`(Vervelend weetje van de dag) Er is wetenschappelijke onderzoek gedaan naar het inpakken van vierkantjes in een vierkant. Dit is tot nu toe de meest efficiënt gevonden manier om 17 vierkanten in één groot vierkant te leggen:<br><img src="images/vierkantenInVierkant.gif" style="width: 50%; display: block; margin: 20px auto 0;">`)
+    content: weetjeVanDeDag(`(Vervelend weetje van de dag) Er is wetenschappelijk onderzoek gedaan naar het inpakken van vierkantjes in een vierkant. Dit is tot nu toe de meest efficiënt gevonden manier om 17 vierkanten in één groot vierkant te leggen:<br><img src="images/vierkantenInVierkant.gif" style="width: 50%; display: block; margin: 20px auto 0;">`)
   },
 
   {
