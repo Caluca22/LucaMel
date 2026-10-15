@@ -2765,8 +2765,29 @@ const PAGES = [
   },
 
   {
+    date: "2026-11-24",
+    content: `
+      <h2>Dingetje van de dag:</h2>
+      <p>Je hoort wat je leest 😯</p>
+      <iframe style="aspect-ratio: 476/849; width: 50%" src="https://www.youtube.com/embed/U_vDLxHHtCo" title="Do you hear &quot;Oh Barbie&quot; or &quot;Oh F*CK&quot;???" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
     date: "2026-11-25",
     content: fotoVanDeDag("computerRijst.png", "Of gewoon een gigantische rijstkorrel?", "De kleinste computer naast een rijstkorrel")
+  },
+
+  {
+    date: "2026-11-26",
+    content: `<h2>Plaats van de dag:</h2>
+      <p>Deze 2 meren in British-Columbia in Canda genaamd \"Another Lake\" en \"And Another Lake\"</p>
+      <img src="images/candaLakes.jpg">`
+  },
+
+  {
+    date: "2026-11-27",
+    content: woordVanDeDag("Isogram", "Een isogram is een woord waar elke letter maar één keer voorkomt. \"Vier\", \"Kleur\" en \"Isogram\" zijn isogrammen. Het langste dat ik online vond was <b>\"Whiskeyproducent\"</b>. Leuk voor als je mensen wil pesten bij Galgje.")
   },
 
   {
@@ -2784,12 +2805,32 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-15",
+    content: weetjeVanDeDag(`In 2012 is er in het Tsjechische dorpje Desna een volledige skilift <a href="https://unofficialnetworks.com/2016/07/10/that-time-an-entire-ski-lift-was-stolen-in-the-czech-republic/">gestolen.</a>`)
+  },
+
+  {
     date: "2026-12-16",
     content: `
       <h2>Time-waster van de dag:</h2>
       <p><a href="https://www.weatherdarts.com/">Weather Darts</a></p>
       <p>Krijg de temperatuur op 0 door steden te raden. Bij elke stad die je raadt gaat de huidige temperatuur op die plaats van de score af!</p>
     `
+  },
+
+  {
+    date: "2026-12-28",
+    content: `<h2>Time-Waster van de dag:</h2><p>Je krijgt 3 kansen om zo dicht mogelijk bij 100 te geraken, maar ga er niet over!</p><p><a href="https://www.dartle.net">Dartle</a></p>`
+  },
+
+  {
+    date: "2027-01-08",
+    content: weetjeVanDeDag("100 Years is een film van John Malkovitch waar hij zelf ook in meespeelt. De Film gaat in première op 18 november <b>2115</b>")
+  },
+
+  {
+    date: "2027-01-18",
+    content: weetjeVanDeDag("Een luiaard kan zijn adem tot 40 minuten inhouden, dat is langer dan een dolfijn!")
   }
 ];
 
