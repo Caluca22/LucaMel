@@ -450,6 +450,25 @@ function plaatsVanDeDag(naam, locatie, uitleg, ...fotos) {
   `;
 }
 
+function artiestVanDeDag(naam, uitleg, ...fotos) {
+  const afbeeldingen = fotos
+    .map(foto => `
+      <img src="images/${foto}" style="width: 70%; display: block; margin: 20px auto 0;">
+    `)
+    .join("");
+
+  return `
+    <h2>Artiest van de dag:</h2>
+    <h3>${naam}</h3>
+    <p>
+      ${uitleg}
+    </p>
+    <p>
+      ${afbeeldingen}
+    </p>
+  `;
+}
+
 function DierVanDeDag(naam, uitleg, ...fotos) {
   const afbeeldingen = fotos
     .map(foto => `
@@ -2791,6 +2810,11 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-02",
+    content: DierVanDeDag("Shima Enaga", "KIJK HOE FLUFFY<br>Dit zijn vogeltjes van het Japanse eiland Hokkaido. Ze zijn een goeie 10cm groot en staan ook bekend als 'Snow Fairy'", "shima1.jpg", "shima2.jpg", "shima3.jpg")
+  },
+
+  {
     date: "2026-12-04",
     content: weetjeVanDeDag(`(Vervelend weetje van de dag) Er is wetenschappelijk onderzoek gedaan naar het inpakken van vierkantjes in een vierkant. Dit is tot nu toe de meest efficiënt gevonden manier om 17 vierkanten in één groot vierkant te leggen:<br><img src="images/vierkantenInVierkant.gif" style="width: 50%; display: block; margin: 20px auto 0;">`)
   },
@@ -2802,6 +2826,11 @@ const PAGES = [
       <p><a href="https://plasmastarfish.itch.io/pack">Ik ga op reis en ik neem mee...</a></p>
       <p>- Satisfying inpak dingetje -</p>
     `
+  },
+
+  {
+    date: "2026-12-10",
+    content: mopVanDeDag(file= "", "Ik heb het hart van een leeuw en mag niet meer binnen in de zoo van Planckendael.")
   },
 
   {
@@ -2819,6 +2848,16 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-22",
+    content: artiestVanDeDag("Myoung Ho Lee", "Een fotograaf die doeken achter bomen plaatst om ze te fotograferen waardoor ze net schilderijen zijn.", "boom1.jpg", "boom2.jpg", "boom3.jpg", "boom4.jpg", )
+  },
+
+  {
+    date: "2026-12-26",
+    content: weetjeVanDeDag("De Vikings hadden een bijeenkomst waar belangrijke besluiten werden gemaakt genaamd een <b>thing</b>. Hier komt ook het Engelse woord vandaan. De parlementen van IJsland, Denemarken en Noorwegen heten nog steeds <b>Althing</b> (general thing), <b>Folketing</b> (people's thing) en <b>Storting</b> (great thing).")
+  },
+
+  {
     date: "2026-12-28",
     content: `<h2>Time-Waster van de dag:</h2><p>Je krijgt 3 kansen om zo dicht mogelijk bij 100 te geraken, maar ga er niet over!</p><p><a href="https://www.dartle.net">Dartle</a></p>`
   },
@@ -2829,8 +2868,22 @@ const PAGES = [
   },
 
   {
+    date: "2027-01-09",
+    content: mopVanDeDag("", "Wat is het verschil tussen een goeie en een slechte mop timing.")
+  },
+
+  {
     date: "2027-01-18",
     content: weetjeVanDeDag("Een luiaard kan zijn adem tot 40 minuten inhouden, dat is langer dan een dolfijn!")
+  },
+
+  {
+    date: "2027-01-20",
+    content: mopVanDeDag("", "Ik zei tegen de dokter dat ik mijn arm op 2 plaatsen gebroken heb.<br>Hij heeft gevraagd om te stoppen met naar die plaatsen te gaan.")
+  },
+  {
+    date: "2027-01-28",
+    content: weetjeVanDeDag("De straat 'Klein Turkije' aan de Korenmarkt is zo genoemd omdat vroeger de Korenmarkt het plein was van de openbare verkoop. Vroeger als een bedrijf failliet was werd haar hele inboedel verkocht op de Korenmarkt. In afwachting daarvan werd al het meubilair op de keien van de straat gezet of 'ter keien'. De naam is dan verbasterd naar 'Turkije'")
   }
 ];
 
