@@ -2810,6 +2810,11 @@ const PAGES = [
   },
 
   {
+    date: "2026-11-28",
+    content: wavelength(3, "Bart.webp", "Dit musical onderwerp", "cena.avif", "Deze acteur", "Ezel.jpeg", "Deze wekker", "queen.jpg", "Deze album cover")
+  },
+
+  {
     date: "2026-12-02",
     content: DierVanDeDag("Shima Enaga", "KIJK HOE FLUFFY<br>Dit zijn vogeltjes van het Japanse eiland Hokkaido. Ze zijn een goeie 10cm groot en staan ook bekend als 'Snow Fairy'", "shima1.jpg", "shima2.jpg", "shima3.jpg")
   },
@@ -2883,7 +2888,7 @@ const PAGES = [
   },
   {
     date: "2027-01-28",
-    content: weetjeVanDeDag("De straat 'Klein Turkije' aan de Korenmarkt is zo genoemd omdat vroeger de Korenmarkt het plein was van de openbare verkoop. Vroeger als een bedrijf failliet was werd haar hele inboedel verkocht op de Korenmarkt. In afwachting daarvan werd al het meubilair op de keien van de straat gezet of 'ter keien'. De naam is dan verbasterd naar 'Turkije'")
+    content: weetjeVanDeDag("De straat 'Klein Turkije' aan de Korenmarkt is zo genoemd omdat vroeger de Korenmarkt het plein was van de openbare verkoop. Als een bedrijf failliet was, werd haar hele inboedel verkocht op de Korenmarkt. In afwachting daarvan werd al het meubilair op de keien van de straat gezet of 'ter keien'. De naam is dan verbasterd naar 'Turkije'")
   }
 ];
 
