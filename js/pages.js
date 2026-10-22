@@ -1310,6 +1310,7 @@ const PAGES = [
           Check! ✅
         </button>
         <p id="dag26-result" class="dag26-result"></p>
+        <a href="korok.html" class="korok"><img src="images/korok.png"></a>
       </div>
     `
   },
@@ -2815,6 +2816,11 @@ const PAGES = [
   },
 
   {
+    date: "2026-11-29",
+    content: puzzelVanDeDag("<p>Er zijn 12 balletjes, ze wegen allemaal hetzelfde, behalve één. De bal kan zwaarder of lichter zijn dan de andere. Je hebt een balans die je 3 keer mag gebruiken. Hoe bepaal je welke bal een ander gewicht heeft dan de rest en is deze zwaarder of lichter?</p><p>Deze is echt een moeilijke, heb het zelf opgegeven, dus voor als je je eens hard verveelt xxx</p>", "captainHolt.jpg", `<a href="https://codingnconcepts.com/puzzle/12-balls-weight-puzzle/">Jeetje</a>`)
+  },
+
+  {
     date: "2026-12-02",
     content: DierVanDeDag("Shima Enaga", "KIJK HOE FLUFFY<br>Dit zijn vogeltjes van het Japanse eiland Hokkaido. Ze zijn een goeie 10cm groot en staan ook bekend als 'Snow Fairy'", "shima1.jpg", "shima2.jpg", "shima3.jpg")
   },
@@ -2830,6 +2836,39 @@ const PAGES = [
       <h2>Time-waster van de dag:</h2>
       <p><a href="https://plasmastarfish.itch.io/pack">Ik ga op reis en ik neem mee...</a></p>
       <p>- Satisfying inpak dingetje -</p>
+    `
+  },
+
+  {
+    date: "2026-12-07",
+    content: `
+      <h2>Nieuwe queeste! ⚔️</h2>
+
+      <div class="quest-card">
+        <div class="quest-scroll-top"></div>
+
+        <div class="quest-body">
+          <p class="quest-label">Jouw queeste</p>
+          <p class="quest-description">
+            Kan je een korok voor mij vinden? Koroks zien er ongeveer zo uit:
+          </p>
+          <img src="images/korokQuest.webp">
+          <p class="quest-description">
+            Het is lang geleden dat ik deze korok gezien heb. Ik weet nog dat ik samen naar de WK-finale voetbal wou kijken, maar hij bleef de hele tijd zoeken naar de wavelength van die dag... 
+          </p>
+        </div>
+
+        <div class="quest-scroll-bottom"></div>
+      </div>
+
+      <div class="quest-reward">
+        <div class="quest-wax-seal">♥</div>
+        <div class="quest-reward-text">
+          <p class="quest-reward-label">Beloning</p>
+          <p class="quest-reward-title">Hartjes</p>
+          <p class="quest-reward-hearts">+3 ♥</p>
+        </div>
+      </div>
     `
   },
 
@@ -2850,6 +2889,11 @@ const PAGES = [
       <p><a href="https://www.weatherdarts.com/">Weather Darts</a></p>
       <p>Krijg de temperatuur op 0 door steden te raden. Bij elke stad die je raadt gaat de huidige temperatuur op die plaats van de score af!</p>
     `
+  },
+
+  {
+    date: "2026-12-18",
+    content: DierVanDeDag("Braziliaanse boomcicade (Bocydium globulare)", "Deze kleine vriend droomt er duidelijk van om een helikopter te worden later. Wetenschappers zijn nog niet helemaal zeker wat de bolletjes precies doen. Het zou ervoor kunnen zorgen dat hij moeilijker herkenbaar is of lijkt op giftige planten en zwammen, maar er staan ook kleine haartjes op waarmee hij zijn omgeving beter kan waarnemen.", "treehopper.webp", "treehopper2.jpg", "treehopper3.jpg")
   },
 
   {

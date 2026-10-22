@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Korok</title>
+
+  <!-- Haalt de kleurvariabelen (en thema's) uit de rest van de site -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    body {
+      display: block;
+      min-height: 0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--sienna);
+      margin: 12px 0 8px;
+      text-align: center;
+    }
+
+    .card {
+      background: var(--parchment);
+      color: var(--text-dark);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px var(--shadow);
+      text-align: center;
+    }
+
+    .card img {
+      width: 160px;
+      max-width: 60%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .small {
+      color: var(--text-light);
+      font-size: 0.9em;
+    }
+
+    /* Natuurrandje rond de tekst: dubbele rand + twee blaadjes in de hoeken */
+    .leaf-box {
+      position: relative;
+      margin: 24px 14px;
+      padding: 18px 22px;
+      background: var(--cream);
+      color: var(--text-dark);
+      border: 3px solid var(--amber);
+      border-radius: 16px;
+      outline: 2px dashed var(--gold);
+      outline-offset: 5px;
+    }
+
+    .leaf-box::before,
+    .leaf-box::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: var(--amber);
+      border-radius: 0 100% 0 100%; /* blaadjesvorm */
+    }
+
+    .leaf-box::before {
+      top: -18px;
+      left: 14px;
+      transform: rotate(-10deg);
+    }
+
+    .leaf-box::after {
+      bottom: -18px;
+      right: 14px;
+      background: var(--gold);
+      transform: rotate(170deg);
+    }
+
+    .leaf-box p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="images/korok.png" alt="Een korok" />
+    <h2>Yahaha! Je hebt me gevonden!</h2>
+    <div class="leaf-box">
+      <h2>Hier, +3❤️<br><br>Buh-bye!</h2>
+    </div>
+    <p><a href="index.html">Terug naar de site</a></p>
+  </div>
+
+</body>
+</html>

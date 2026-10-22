@@ -1599,3 +1599,9 @@ img {
   background: var(--amber);
   color: var(--cream);
 }
+
+.korok {
+  width: 10%;
+  display: block;
+  margin: 16px auto 0;
+}
