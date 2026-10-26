@@ -1402,7 +1402,7 @@ const PAGES = [
       <p>
       Die ken je waarschijnlijk al, maar toch is ze cool! Ookal is ze een beetje verlegen.
       </p>
-      <iframe style="width: 100%; aspect-ratio: 16 / 9;" frameborder="0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; web-share" allowfullscreen src="https://commons.wikimedia.org/wiki/File:Mimosa_pudica_leaves_folding_when_touched_2.ogv?embedplayer=true" />
+      <iframe style="width: 100%; aspect-ratio: 16 / 9;" frameborder="0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; web-share" allowfullscreen src="https://commons.wikimedia.org/wiki/File:Mimosa_pudica_leaves_folding_when_touched_2.ogv?embedplayer=true"></iframe>
     `
   },
 
@@ -2776,7 +2776,7 @@ const PAGES = [
 
   {
     date: "2026-11-22",
-    content: quoteVanDeDag(`“Well,----me,” he said. “A----ing wizard. I hate----ing wizards!”<br>“You shouldn’t----them, then,” muttered one of his henchmen, effortlessly pronouncing a row of dashes.”`, "Terry Pratchett, één van mijn nieuwe favoriete schrijvers", "TerryPratchett.webp")
+    content: quoteVanDeDag(`“Well,----me,” he said. “A----ing wizard. I hate----ing wizards!”<br>“You shouldn’t----them, then,” muttered one of his henchmen, effortlessly pronouncing a row of dashes.`, "Terry Pratchett, één van mijn nieuwe favoriete schrijvers", "TerryPratchett.webp")
   },
 
   {
