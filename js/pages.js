@@ -2873,6 +2873,11 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-08",
+    content: quoteVanDeDag("An escalator can never break; it can only become stairs.", "Mitch Hedberg","MitchHedberg.webp")
+  },
+
+  {
     date: "2026-12-10",
     content: mopVanDeDag(file= "", "Ik heb het hart van een leeuw en mag niet meer binnen in de zoo van Planckendael.")
   },
