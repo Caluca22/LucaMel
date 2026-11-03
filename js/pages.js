@@ -2821,6 +2821,16 @@ const PAGES = [
   },
 
   {
+    date: "2026-11-30",
+    content: plantVanDeDag("Hyperion, kustmammoetboom", "Sequoia sempervirens", "Hyperion, de grootste boom op aarde staat in Californië en is 116m hoog!", "Hyperion.jpg")
+  },
+
+  {
+    date: "2026-12-01",
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/7IEeHXr2ShUYCXAZdMMmeL?utm_source=generator&si=79f00e7ef4984bc7", "YOU MEEK MAAI DRIEMS-- 🎵", "500DaysofSummer.gif")
+  },
+
+  {
     date: "2026-12-02",
     content: DierVanDeDag("Shima Enaga", "KIJK HOE FLUFFY<br>Dit zijn vogeltjes van het Japanse eiland Hokkaido. Ze zijn een goeie 10cm groot en staan ook bekend als 'Snow Fairy'", "shima1.jpg", "shima2.jpg", "shima3.jpg")
   },
@@ -2828,6 +2838,11 @@ const PAGES = [
   {
     date: "2026-12-04",
     content: weetjeVanDeDag(`(Vervelend weetje van de dag) Er is wetenschappelijk onderzoek gedaan naar het inpakken van vierkantjes in een vierkant. Dit is tot nu toe de meest efficiënt gevonden manier om 17 vierkanten in één groot vierkant te leggen:<br><img src="images/vierkantenInVierkant.gif" style="width: 50%; display: block; margin: 20px auto 0;">`)
+  },
+
+  {
+    date: "2026-12-05",
+    content: fotoVanDeDag("DSC_0020.JPG", "Cool en zo, jwz", "OG's")
   },
 
   {
@@ -2883,6 +2898,21 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-11",
+    content: puzzelVanDeDag("<p>Help! Er is een valkparkiet ontsnapt in de Tom&Co!<br><br>Je weet dat de deugeniet zich verstop in één van de vijf gaten in het dak van de winkel. Jammergenoeg heb je per dag maar de tijd om één van de gaten te controleren. En wat erger is, na elke dag verplaatst de parkiet zich naar een aangrenzend gat.</p><p>Is het mogelijk om de valkparkiet te vangen? Wat is de beste strategie?</p>", "ParkietRaadsel.png", `<a href="https://www.youtube.com/watch?v=0Prp9n7XfP8">Hint: Denk even en oneven</a>`)
+  },
+
+  {
+    date: "2026-12-12",
+    content: woordVanDeDag("Aptoniem", `Een aptoniem is een eigenaam die opvallend goed bij de drager van de naam past. Zoals Nina Sterckx, de Belgische gewichthefster of <a href="https://www.youtube.com/shorts/JExULKGgLao">deze mevrouw</a>`)
+  },
+
+  {
+    date: "2026-12-14",
+    content: plantVanDeDag("Levende Steentjes", "Lithops", "Een plant met 2 hele dikke bladeren waardoor het een beetje lijkt op een steen. sommige lijken heel hard op de steentjes rond hen, maar ze hebben wel mooie bloemen!", "lithops1.jpg", "lithops2.jpg", "lithops3.jpg", "lithops4.jpg")
+  },
+
+  {
     date: "2026-12-15",
     content: weetjeVanDeDag(`In 2012 is er in het Tsjechische dorpje Desna een volledige skilift <a href="https://unofficialnetworks.com/2016/07/10/that-time-an-entire-ski-lift-was-stolen-in-the-czech-republic/">gestolen.</a>`)
   },
@@ -2899,6 +2929,11 @@ const PAGES = [
   {
     date: "2026-12-18",
     content: DierVanDeDag("Braziliaanse boomcicade (Bocydium globulare)", "Deze kleine vriend droomt er duidelijk van om een helikopter te worden later. Wetenschappers zijn nog niet helemaal zeker wat de bolletjes precies doen. Het zou ervoor kunnen zorgen dat hij moeilijker herkenbaar is of lijkt op giftige planten en zwammen, maar er staan ook kleine haartjes op waarmee hij zijn omgeving beter kan waarnemen.", "treehopper.webp", "treehopper2.jpg", "treehopper3.jpg")
+  },
+
+  {
+    date: "2026-12-20",
+    content: fotoVanDeDag("DSC_0125.jpg", "De bal draait sowieso, geloof mij")
   },
 
   {
