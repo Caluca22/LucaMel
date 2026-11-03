@@ -2737,7 +2737,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-11-20",
+    date: "2026-12-07",
     content: `
       <h2>Nieuwe queeste! ⚔️</h2>
 
@@ -2836,6 +2836,14 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-03",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="aspect-ratio: 989/457; width: 90%" src="https://www.youtube.com/embed/DtTfjj1Xxe0" title="Fietsen is fietsen (man bijt hond)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
     date: "2026-12-04",
     content: weetjeVanDeDag(`(Vervelend weetje van de dag) Er is wetenschappelijk onderzoek gedaan naar het inpakken van vierkantjes in een vierkant. Dit is tot nu toe de meest efficiënt gevonden manier om 17 vierkanten in één groot vierkant te leggen:<br><img src="images/vierkantenInVierkant.gif" style="width: 50%; display: block; margin: 20px auto 0;">`)
   },
@@ -2855,7 +2863,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-12-07",
+    date: "2026-11-20",
     content: `
       <h2>Nieuwe queeste! ⚔️</h2>
 
@@ -2927,8 +2935,21 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-17",
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/7uoFMmxln0GPXQ0AcCBXRq?utm_source=generator&si=203f41ca3c0c4bef", "Om al een beetje in de sfeer te komen eeeh", "olaf.gif")
+  },
+
+  {
     date: "2026-12-18",
     content: DierVanDeDag("Braziliaanse boomcicade (Bocydium globulare)", "Deze kleine vriend droomt er duidelijk van om een helikopter te worden later. Wetenschappers zijn nog niet helemaal zeker wat de bolletjes precies doen. Het zou ervoor kunnen zorgen dat hij moeilijker herkenbaar is of lijkt op giftige planten en zwammen, maar er staan ook kleine haartjes op waarmee hij zijn omgeving beter kan waarnemen.", "treehopper.webp", "treehopper2.jpg", "treehopper3.jpg")
+  },
+
+  {
+    date: "2026-12-19",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="aspect-ratio: 989/556; width: 90%" src="https://www.youtube.com/embed/2He_tPV-mY8" title="Sinterklaas Ik wil een XBOX met FIFA 18 #DUMPERT #SINTERKLAAS 2017" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
   },
 
   {
