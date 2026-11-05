@@ -2978,6 +2978,11 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-27",
+    content: puzzelVanDeDag("De rijke miljardair Timotheus heeft al zijn geld in een doos verstopt en beloofd aan zijn kinderen dat ze het krijgen als ze alle drie kunnen raden in welke doos.<br>Aan Maite vertelt hij de kleur van de doos en aan Marie het cijfer.<br>De regel van de wet zegt dat de zussen niet mogen overleggen over wat ze net gehoord hebben. Marie en Maite volgen de geest van de wet en het gesprek gaat als volgt:<br><br><b>Maite:</b> Ik weet niet welke doos de juiste is, maar ik ben zeker dat jij het ook niet weet!<br><br><b>Marie:</b> Klopt, ik weet het inderdaad niet, maar nu jij dat gezegd hebt weet ik het wel!<br><br><b>Maite:</b> Oh! Dankzij wat jij gezegd hebt weet ik het nu ook!<br><br>Merel staat erbij en kijkt ernaar. Weet jij ook in welke doos het geld verstopt zit?", "puzzeldozen.jpg", "Groene 5<br><br>Maite weet dat Marie niet genoeg heeft met enkel het cijfer. Dat kan enkel als het een groene of rode doos is, een cijfer op die dozen komt telkens nog eens voor in een andere kleur. Marie weet het nu wel, dat wil zeggen dat het cijfer niet 4 kan zijn, anders twijfelde ze nog tussen groen of rood. Hierdoor weet Maite het ook, als de kleur rood was zou ze nog twijfelen tussen 2 en 3, maar omdat ze het zeker weet gaat het om de groene 5!")
+  },
+
+  {
     date: "2026-12-28",
     content: `<h2>Time-Waster van de dag:</h2><p>Je krijgt 3 kansen om zo dicht mogelijk bij 100 te geraken, maar ga er niet over!</p><p><a href="https://www.dartle.net">Dartle</a></p>`
   },

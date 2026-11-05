@@ -603,7 +603,8 @@ img {
   border: 1px solid var(--parchment);
   border-radius: 6px;
   padding: 0.5em 1em;
-  width: max-content;
+  width: fit-content;
+  max-width: 100%;
   min-width: 40%;
   background: var(--cream);
 }
