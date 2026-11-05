@@ -2836,7 +2836,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-12-03",
+    date: "2026-12-19",
     content: `
     <h2>Meme van de dag</h2>
     <iframe style="aspect-ratio: 989/457; width: 90%" src="https://www.youtube.com/embed/DtTfjj1Xxe0" title="Fietsen is fietsen (man bijt hond)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -2854,7 +2854,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-12-06",
+    date: "2026-12-03",
     content: `
       <h2>Time-waster van de dag:</h2>
       <p><a href="https://plasmastarfish.itch.io/pack">Ik ga op reis en ik neem mee...</a></p>
@@ -2898,6 +2898,11 @@ const PAGES = [
   {
     date: "2026-12-08",
     content: quoteVanDeDag("An escalator can never break; it can only become stairs.", "Mitch Hedberg","MitchHedberg.webp")
+  },
+
+  {
+    date: "2026-12-09",
+    content: plaatsVanDeDag("Yellowstone", "Verenigde Staten", "Yellowstone ken je waarschijnlijk, maar wist je ook dat ongeveer 2/3 van alle actieve geisers in de wereld zich hier bevinden? Er zijn er jaarlijks tussen de 500 en 700! Jawadde, een plaats en een weetje op dezelfde pagina, wat een dag!", "Yellowstone.webp", "Yellowstone2.jpg")
   },
 
   {
@@ -2945,7 +2950,7 @@ const PAGES = [
   },
 
   {
-    date: "2026-12-19",
+    date: "2026-12-06",
     content: `
     <h2>Meme van de dag</h2>
     <iframe style="aspect-ratio: 989/556; width: 90%" src="https://www.youtube.com/embed/2He_tPV-mY8" title="Sinterklaas Ik wil een XBOX met FIFA 18 #DUMPERT #SINTERKLAAS 2017" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -2963,6 +2968,11 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-23",
+    content: quoteVanDeDag("Sommige mensen zijn het waard om voor te smelten", "Olaf", "Olaf.webp")
+  },
+
+  {
     date: "2026-12-26",
     content: weetjeVanDeDag("De Vikings hadden een bijeenkomst waar belangrijke besluiten werden gemaakt genaamd een <b>thing</b>. Hier komt ook het Engelse woord vandaan. De parlementen van IJsland, Denemarken en Noorwegen heten nog steeds <b>Althing</b> (general thing), <b>Folketing</b> (people's thing) en <b>Storting</b> (great thing).")
   },
@@ -2973,6 +2983,11 @@ const PAGES = [
   },
 
   {
+    date: "2027-01-05",
+    content: woordVanDeDag("Green needle of Brainstorm?", "Welk woord hoor jij? Luister ook eens terwijl je elk woord leest") + `<iframe width="110" height="200" src="https://www.myinstants.com/instant/brainstorm-green-needle-57788/embed/" frameborder="0" scrolling="no"></iframe>`
+  },
+
+  {
     date: "2027-01-08",
     content: weetjeVanDeDag("100 Years is een film van John Malkovitch waar hij zelf ook in meespeelt. De Film gaat in première op 18 november <b>2115</b>")
   },
@@ -2980,6 +2995,11 @@ const PAGES = [
   {
     date: "2027-01-09",
     content: mopVanDeDag("", "Wat is het verschil tussen een goeie en een slechte mop timing.")
+  },
+
+  {
+    date: "2027-01-10",
+    content: quoteVanDeDag("Just because you're trash doesn't mean you can't do great things.<br><br>It's called garbage can, not garbage cannot.", "Oscar the Grouch", "Oscar.png")
   },
 
   {
