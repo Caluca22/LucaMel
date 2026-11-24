@@ -2921,6 +2921,11 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-13",
+    content: wavelength(5, "aardbeiIjs.webp", "Deze ijs-smaak", "batman.webp", "Deze superheld", "complot.jpg", "Deze complottheorie", "Filosofie.webp", "Deze academische discipline")
+  },
+
+  {
     date: "2026-12-14",
     content: plantVanDeDag("Levende Steentjes", "Lithops", "Een plant met 2 hele dikke bladeren waardoor het een beetje lijkt op een steen. sommige lijken heel hard op de steentjes rond hen, maar ze hebben wel mooie bloemen!", "lithops1.jpg", "lithops2.jpg", "lithops3.jpg", "lithops4.jpg")
   },
@@ -2963,6 +2968,39 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-21",
+    content: `
+      <h2>Nieuwe queeste! ⚔️</h2>
+
+      <div class="quest-card">
+        <div class="quest-scroll-top"></div>
+
+        <div class="quest-body">
+          <p class="quest-label">Jouw queeste</p>
+          <p class="quest-description">
+            Kan je raden waar deze foto is genomen?
+          </p>
+          <img src="images/GG1.jpg">
+          <p class="quest-description">
+            Laat je gok weten aan je geliefde!
+          </p>
+        </div>
+
+        <div class="quest-scroll-bottom"></div>
+      </div>
+
+      <div class="quest-reward">
+        <div class="quest-wax-seal">♥</div>
+        <div class="quest-reward-text">
+          <p class="quest-reward-label">Beloning</p>
+          <p class="quest-reward-title">Hartjes</p>
+          <p class="quest-reward-hearts">Hoe dichter, hoe beter!</p>
+        </div>
+      </div>
+    `
+  },
+
+  {
     date: "2026-12-22",
     content: artiestVanDeDag("Myoung Ho Lee", "Een fotograaf die doeken achter bomen plaatst om ze te fotograferen waardoor ze net schilderijen zijn.", "boom1.jpg", "boom2.jpg", "boom3.jpg", "boom4.jpg", )
   },
@@ -2970,6 +3008,11 @@ const PAGES = [
   {
     date: "2026-12-23",
     content: quoteVanDeDag("Sommige mensen zijn het waard om voor te smelten", "Olaf", "Olaf.webp")
+  },
+
+  {
+    date: "2026-12-24",
+    content: plaatsVanDeDag("Rovaniemi", "Finland", "De 'officiële' thuisbasis van de Kerstman. Een stadje in Finland waar het altijd Kerst is!", "Rovaniemi.jpg", "Rovaniemi2.jpg", "Rovaniemi3.jpg")
   },
 
   {
@@ -2988,8 +3031,55 @@ const PAGES = [
   },
 
   {
+    date: "2026-12-30",
+    content: plantVanDeDag("Witte Moerbei", "Morus alba", `Een boom met kleine bloemetjes die zijn stuifmeel verspreidt met een katapult-achtig iets! De meeldraden zitten tijdens de groei gebogen in de bloem. Als de bloem rijp is slaan ze open en schiet de meeldraad recht. Hierdoor wordt het stuifmeel met een snelheid tot 180m/s verspreid! Daarom staat het bekend als 'het snelste levende ding' op aarde.<br><a href="https://www.youtube.com/watch?v=A0gmPf-hs1I">Hier</a> kan je het (een beetje) zien.`, "witteMoerbei.jpg")
+  },
+
+  {
+    date: "2027-01-02",
+    content: liedjeVanDeDag("https://open.spotify.com/embed/track/3wb1fBiJx0TC738gcmMVxn?utm_source=generator&si=6e3e271a8e924ade", "", "BillMurray.jpg")
+  },
+
+  {
+    date: "2027-01-04",
+    content: `
+    <h2>Meme van de dag</h2>
+    <iframe style="aspect-ratio: 1337/752; width: 90%" src="https://www.youtube.com/embed/99ud1oLjs6Y" title="WAT IS NOU UW DROOM BESTEMMING DE HEMEL!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
+  },
+
+  {
     date: "2027-01-05",
     content: woordVanDeDag("Green needle of Brainstorm?", "Welk woord hoor jij? Luister ook eens terwijl je elk woord leest") + `<iframe width="110" height="200" src="https://www.myinstants.com/instant/brainstorm-green-needle-57788/embed/" frameborder="0" scrolling="no"></iframe>`
+  },
+
+  {
+    date: "2027-01-06",
+    content: `
+      <h2>Nieuwe queeste! ⚔️</h2>
+
+      <div class="quest-card">
+        <div class="quest-scroll-top"></div>
+
+        <div class="quest-body">
+          <p class="quest-label">Jouw queeste</p>
+          <p class="quest-description">
+            Stuur je geliefde 5 foto's van iets roze
+          </p>
+        </div>
+
+        <div class="quest-scroll-bottom"></div>
+      </div>
+
+      <div class="quest-reward">
+        <div class="quest-wax-seal">♥</div>
+        <div class="quest-reward-text">
+          <p class="quest-reward-label">Beloning</p>
+          <p class="quest-reward-title">Hartjes</p>
+          <p class="quest-reward-hearts">+5 ♥</p>
+        </div>
+      </div>
+    `
   },
 
   {
@@ -3008,6 +3098,11 @@ const PAGES = [
   },
 
   {
+    date: "2027-01-14",
+    content: plaatsVanDeDag("El Ojo", "Argentinië", "Een cirkelvormig eiland dat langzaam ronddrijft in een even cirkelvormig meer. Het heeft een diameter van 120m en draait langzaam rondjes. Als het tegen de omgeving botst erodeert het stukjes van de rand waardoor het eiland en het meer bijna perfecte cirkels worden.", "elOjo2.jpg", "elOjo.jpg", "elOjo3.jpg")
+  },
+
+  {
     date: "2027-01-18",
     content: weetjeVanDeDag("Een luiaard kan zijn adem tot 40 minuten inhouden, dat is langer dan een dolfijn!")
   },
@@ -3016,6 +3111,7 @@ const PAGES = [
     date: "2027-01-20",
     content: mopVanDeDag("", "Ik zei tegen de dokter dat ik mijn arm op 2 plaatsen gebroken heb.<br>Hij heeft gevraagd om te stoppen met naar die plaatsen te gaan.")
   },
+
   {
     date: "2027-01-28",
     content: weetjeVanDeDag("De straat 'Klein Turkije' aan de Korenmarkt is zo genoemd omdat vroeger de Korenmarkt het plein was van de openbare verkoop. Als een bedrijf failliet was, werd haar hele inboedel verkocht op de Korenmarkt. In afwachting daarvan werd al het meubilair op de keien van de straat gezet of 'ter keien'. De naam is dan verbasterd naar 'Turkije'")
